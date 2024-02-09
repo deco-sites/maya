@@ -82,7 +82,8 @@ function Drawers({ menu, searchbar, children, platform }: Props) {
       >
         {children}
       </Drawer>
-      <Drawer // right drawer
+      {
+        /* <Drawer // right drawer
         class="drawer-end"
         open={displayCart.value !== false}
         onClose={() => displayCart.value = false}
@@ -96,7 +97,8 @@ function Drawers({ menu, searchbar, children, platform }: Props) {
         }
       >
         {children}
-      </Drawer>
+      </Drawer> */
+      }
     </>
   );
 }

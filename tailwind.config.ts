@@ -17,5 +17,9 @@ export default {
         },
       },
     },
+    fontFamily: {
+      bison: ["Bison"],
+      manrope: ["Manrope"],
+    },
   },
 };
