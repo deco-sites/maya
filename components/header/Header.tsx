@@ -13,19 +13,9 @@ export interface Logo {
   width?: number;
   height?: number;
 }
-export interface Buttons {
-  hideSearchButton?: boolean;
-  hideAccountButton?: boolean;
-  hideWishlistButton?: boolean;
-  hideCartButton?: boolean;
-}
 
 export interface Props {
   alerts?: string[];
-
-  /** @title Search Bar */
-  searchbar?: Omit<SearchbarProps, "platform">;
-
   /**
    * @title Navigation items
    * @description Navigation items used both on mobile and desktop menus
@@ -34,13 +24,10 @@ export interface Props {
 
   /** @title Logo */
   logo?: Logo;
-
-  buttons?: Buttons;
 }
 
 function Header({
   alerts,
-  searchbar,
   navItems = [
     {
       "@type": "SiteNavigationElement",
@@ -70,26 +57,22 @@ function Header({
     height: 16,
     alt: "Logo",
   },
-  buttons,
 }: Props) {
   const platform = usePlatform();
   const items = navItems ?? [];
 
   return (
     <>
-      <header style={{ height: headerHeight }}>
+      <header>
         <Drawers
           menu={{ items }}
-          searchbar={searchbar}
           platform={platform}
         >
-          <div class="bg-base-100 fixed w-full z-50">
+          <div class="bg-base-100 w-full z-50 ">
             {alerts && alerts.length > 0 && <Alert alerts={alerts} />}
             <Navbar
               items={items}
-              searchbar={searchbar && { ...searchbar, platform }}
               logo={logo}
-              buttons={buttons}
             />
           </div>
         </Drawers>

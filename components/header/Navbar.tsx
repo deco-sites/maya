@@ -13,27 +13,25 @@ import type { SiteNavigationElement } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
 import NavItem from "./NavItem.tsx";
 import { navbarHeight } from "./constants.ts";
-import { Buttons, Logo } from "$store/components/header/Header.tsx";
+import { Logo } from "$store/components/header/Header.tsx";
+import Text from "deco-sites/maya/components/ui/Text.tsx";
 
-function Navbar({ items, searchbar, logo, buttons }: {
+function Navbar({ items, logo }: {
   items: SiteNavigationElement[];
-  searchbar?: SearchbarProps;
   logo?: Logo;
-  buttons?: Buttons;
 }) {
   const platform = usePlatform();
 
   return (
     <>
-      {/* Mobile Version */}
-      <div // style={{ height: navbarHeight }}
-       class="flex justify-center items-center border-b border-base-200 w-full px-6 pb-6 gap-2">
+      <div style={{ height: navbarHeight }}
+       class="flex justify-between items-center w-full gap-2 px-[8.33%] mx-auto">
         {logo && (
           <a
             href="/"
-            class="flex-grow inline-flex items-center justify-center"
+            // class="flex-grow inline-flex items-center justify-center"
             // style={{ minHeight: navbarHeight }}
-            aria-label="Store logo"
+            aria-label="logo"
           >
             <Image
               src={logo.src}
@@ -43,7 +41,10 @@ function Navbar({ items, searchbar, logo, buttons }: {
             />
           </a>
         )}
-        <div className="ml-auto">
+        <div className="ml-auto flex items-center gap-8">
+          <Text variant="caption">
+            EN
+          </Text>
           <MenuButton />
         </div>
       </div>

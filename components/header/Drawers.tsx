@@ -14,7 +14,7 @@ const Searchbar = lazy(() => import("$store/components/search/Searchbar.tsx"));
 
 export interface Props {
   menu: MenuProps;
-  searchbar?: SearchbarProps;
+  // searchbar?: SearchbarProps;
   /**
    * @ignore_gen true
    */
@@ -29,7 +29,7 @@ const Aside = (
     children: ComponentChildren;
   },
 ) => (
-  <div class="bg-base-100 grid grid-rows-[auto_1fr] h-full divide-y max-w-[100vw]">
+  <div class="bg-base-100 grid grid-rows-[auto_1fr] h-full divide-y max-w-[100vw] w-full">
     <div class="flex justify-between items-center">
       <h1 class="px-4 py-3">
         <span class="font-medium text-2xl">{title}</span>
@@ -52,53 +52,29 @@ const Aside = (
   </div>
 );
 
-function Drawers({ menu, searchbar, children, platform }: Props) {
-  const { displayCart, displayMenu, displaySearchDrawer } = useUI();
+function Drawers({ menu, children, platform }: Props) {
+  const { displayMenu } = useUI();
 
   return (
     <>
-      <Drawer // left drawer
-        open={displayMenu.value || displaySearchDrawer.value}
+      <Drawer
+        open={displayMenu.value}
         onClose={() => {
           displayMenu.value = false;
-          displaySearchDrawer.value = false;
         }}
         aside={
           <Aside
             onClose={() => {
               displayMenu.value = false;
-              displaySearchDrawer.value = false;
             }}
             title={displayMenu.value ? "Menu" : "Buscar"}
           >
             {displayMenu.value && <Menu {...menu} />}
-            {searchbar && displaySearchDrawer.value && (
-              <div class="w-screen">
-                <Searchbar {...searchbar} />
-              </div>
-            )}
           </Aside>
         }
       >
         {children}
       </Drawer>
-      {
-        /* <Drawer // right drawer
-        class="drawer-end"
-        open={displayCart.value !== false}
-        onClose={() => displayCart.value = false}
-        aside={
-          <Aside
-            title="Minha sacola"
-            onClose={() => displayCart.value = false}
-          >
-            <Cart platform={platform} />
-          </Aside>
-        }
-      >
-        {children}
-      </Drawer> */
-      }
     </>
   );
 }
