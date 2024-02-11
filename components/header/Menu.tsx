@@ -1,10 +1,6 @@
-import Icon from "$store/components/ui/Icon.tsx";
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
-import type { ComponentChildren } from "preact";
 import { Logo } from "$store/components/header/Header.tsx";
-import Navbar from "$store/components/header/Navbar.tsx";
 import Text from "$store/components/ui/Text.tsx";
-import { navbarHeight } from "$store/components/header/constants.ts";
 import Image from "apps/website/components/Image.tsx";
 import MenuButton from "./Buttons/Menu.tsx";
 
@@ -16,7 +12,7 @@ export interface Props {
 
 function Menu({ items, langText, logo }: Props) {
   return (
-    <div class="w-full flex flex-col h-full bg-primary-content">
+    <div class="w-full flex flex-col h-full bg-primary-content overflow-y-auto gap-3">
       <div class="flex justify-between items-center w-full gap-2 px-[8.33%] mx-auto py-16">
         {logo && (
           <a
@@ -42,7 +38,7 @@ function Menu({ items, langText, logo }: Props) {
         {items.map((item) => (
           <li className="contents">
             <a class="" href={item.url}>
-              <Text variant="menu" class="leading-[80px]">
+              <Text variant="menu" class="leading-[90px]">
                 {item.name}
               </Text>
             </a>

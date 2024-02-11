@@ -1,9 +1,5 @@
 import type { Props as MenuProps } from "$store/components/header/Menu.tsx";
-import Cart from "$store/components/minicart/Cart.tsx";
-import type { Props as SearchbarProps } from "$store/components/search/Searchbar.tsx";
-import Button from "$store/components/ui/Button.tsx";
 import Drawer from "$store/components/ui/Drawer.tsx";
-import Icon from "$store/components/ui/Icon.tsx";
 import { useUI } from "$store/sdk/useUI.ts";
 import { usePlatform } from "$store/sdk/usePlatform.tsx";
 import type { ComponentChildren } from "preact";
@@ -23,9 +19,7 @@ export interface Props {
 }
 
 const Aside = (
-  { title, onClose, children }: {
-    title: string;
-    onClose?: () => void;
+  { children }: {
     children: ComponentChildren;
   },
 ) => (
@@ -53,12 +47,7 @@ function Drawers({ menu, children, platform }: Props) {
           displayMenu.value = false;
         }}
         aside={
-          <Aside
-            onClose={() => {
-              displayMenu.value = false;
-            }}
-            title={displayMenu.value ? "Menu" : "Buscar"}
-          >
+          <Aside>
             {displayMenu.value && <Menu {...menu} />}
           </Aside>
         }
