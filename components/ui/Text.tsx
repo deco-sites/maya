@@ -1,7 +1,6 @@
 import { JSX } from "preact";
 import { forwardRef, HTMLAttributes } from "preact/compat";
 
-
 const variants = {
   "caption": "font-bison font-bold text-3xl text-secondary",
   "heading-1": "font-bison text-[180px] text-primary uppercase",
@@ -21,7 +20,7 @@ const Text = forwardRef<HTMLSpanElement, Props>((
   { variant = "body", class: _class = "", ...props },
   ref,
 ) => {
-  const teste = {...variants}
+  const teste = { ...variants };
   const variantClasses = teste[variant];
   return (
     <span

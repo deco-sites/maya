@@ -7,7 +7,9 @@ export default function MenuButton() {
 
   return (
     <Button
-      class={`btn-ghost bg-transparent hover:bg-transparent p-0 m-0 min-h-fit h-auto ${displayMenu.value ? `text-white`:`text-primary`}`}
+      class={`btn-ghost bg-transparent hover:bg-transparent p-0 m-0 min-h-fit h-auto ${
+        displayMenu.value ? `text-white` : `text-primary`
+      }`}
       aria-label="open menu"
       onClick={() => {
         displayMenu.value = !displayMenu.value;

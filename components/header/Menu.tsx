@@ -6,7 +6,7 @@ import Navbar from "$store/components/header/Navbar.tsx";
 import Text from "$store/components/ui/Text.tsx";
 import { navbarHeight } from "$store/components/header/constants.ts";
 import Image from "apps/website/components/Image.tsx";
-import MenuButton from "./Buttons/Menu.tsx"
+import MenuButton from "./Buttons/Menu.tsx";
 
 export interface Props {
   items: SiteNavigationElement[];
@@ -17,9 +17,7 @@ export interface Props {
 function Menu({ items, langText, logo }: Props) {
   return (
     <div class="w-full flex flex-col h-full bg-primary-content">
-      <div
-        class="flex justify-between items-center w-full gap-2 px-[8.33%] mx-auto py-16"
-      >
+      <div class="flex justify-between items-center w-full gap-2 px-[8.33%] mx-auto py-16">
         {logo && (
           <a
             href="/"
