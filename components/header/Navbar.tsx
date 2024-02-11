@@ -16,21 +16,30 @@ import { navbarHeight } from "./constants.ts";
 import { Logo } from "$store/components/header/Header.tsx";
 import Text from "deco-sites/maya/components/ui/Text.tsx";
 
-function Navbar({ items, logo }: {
-  items: SiteNavigationElement[];
+function Navbar({
+  logo = {
+    src:
+      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7",
+    width: 327,
+    height: 135,
+    alt: "Logo",
+  },
+  langText = "EN",
+}: {
   logo?: Logo;
+  langText: string;
 }) {
   const platform = usePlatform();
 
   return (
     <>
-      <div style={{ height: navbarHeight }}
-       class="flex justify-between items-center w-full gap-2 px-[8.33%] mx-auto">
+      <div
+        style={{ height: navbarHeight }}
+        class="flex justify-between items-center w-full gap-2 px-[8.33%] mx-auto py-16"
+      >
         {logo && (
           <a
             href="/"
-            // class="flex-grow inline-flex items-center justify-center"
-            // style={{ minHeight: navbarHeight }}
             aria-label="logo"
           >
             <Image
@@ -43,7 +52,7 @@ function Navbar({ items, logo }: {
         )}
         <div className="ml-auto flex items-center gap-8">
           <Text variant="caption">
-            EN
+            {langText}
           </Text>
           <MenuButton />
         </div>

@@ -13,7 +13,25 @@ export default function MenuButton() {
         displayMenu.value = !displayMenu.value;
       }}
     >
-      <Icon id="Bars3" width={35} height={30} strokeWidth={0.01} className="text-primary"/>
+      {displayMenu.value
+        ? (
+          <Icon
+            id="Close"
+            width={26}
+            height={26}
+            strokeWidth={0.01}
+            className="text-white"
+          />
+        )
+        : (
+          <Icon
+            id="Bars3"
+            width={35}
+            height={30}
+            strokeWidth={0.01}
+            className="text-primary"
+          />
+        )}
     </Button>
   );
 }
