@@ -29,19 +29,7 @@ const Aside = (
     children: ComponentChildren;
   },
 ) => (
-  <div class="bg-base-100 grid grid-rows-[auto_1fr] h-full divide-y max-w-[100vw] w-full">
-    {
-      /* <div class="flex justify-between items-center">
-      <h1 class="px-4 py-3">
-        <span class="font-medium text-2xl">{title}</span>
-      </h1>
-      {onClose && (
-        <Button class="btn btn-ghost" onClick={onClose}>
-          <Icon id="XMark" size={24} strokeWidth={2} />
-        </Button>
-      )}
-    </div> */
-    }
+  <div class="bg-base-100 flex h-full max-w-[100vw] w-full">
     <Suspense
       fallback={
         <div class="w-screen flex items-center justify-center">

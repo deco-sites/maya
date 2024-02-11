@@ -7,7 +7,7 @@ export default function MenuButton() {
 
   return (
     <Button
-      class="btn-ghost bg-transparent hover:bg-transparent p-0 m-0 min-h-fit h-auto"
+      class={`btn-ghost bg-transparent hover:bg-transparent p-0 m-0 min-h-fit h-auto ${displayMenu.value ? `text-white`:`text-primary`}`}
       aria-label="open menu"
       onClick={() => {
         displayMenu.value = !displayMenu.value;
@@ -19,8 +19,7 @@ export default function MenuButton() {
             id="Close"
             width={26}
             height={26}
-            strokeWidth={0.01}
-            className="text-white"
+            strokeWidth={3}
           />
         )
         : (
@@ -29,7 +28,6 @@ export default function MenuButton() {
             width={35}
             height={30}
             strokeWidth={0.01}
-            className="text-primary"
           />
         )}
     </Button>
