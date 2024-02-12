@@ -39,6 +39,12 @@
     @apply border-l border-transparent duration-200 whitespace-pre-line text-center;
     @apply flex flex-col items-center justify-start gap-8 py-10 px-8 lg:px-12;
   }
+
+  .highligh-text {
+    color: transparent !important;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #2D4BE0;
+  }
 }
 
 .group:disabled .group-disabled\:animate-progress {
