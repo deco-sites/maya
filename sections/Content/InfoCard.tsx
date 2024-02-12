@@ -56,9 +56,9 @@ export default function InfoCard({
   },
 }: Props) {
   return (
-    <div className="px-[8.33%] mx-auto w-full py-8 2xl:py-36 bg-primary-content">
+    <div className="px-[8.33%] mx-auto w-full py-20 2xl:py-36 bg-primary-content">
       <div className="flex flex-col justify-center items-center gap-36">
-        <div className="flex gap-36 items-start justify-between text-3xl">
+        <div className="flex gap-24 2xl:gap-36 items-start justify-between text-3xl">
           <div className="flex flex-col gap-20 flex-1">
             <Text variant="heading-2" className="text-white max-w-lg">
               {supTitle}
@@ -70,14 +70,14 @@ export default function InfoCard({
                   variant="heading-1"
                   className={`${
                     inEmphasis ? "highligh-text-variant" : ""
-                  } text-white text-[130px] even:text-[180px]`}
+                  } text-white text-[94px] even:text-[130px] 2xl:text-[130px] 2xl:even:text-[180px]`}
                 >
                   {title} {" "}
                 </Text>
               ))}
             </h2>
           </div>
-          <ul className="list-custom-increment flex flex-col gap-20 flex-1">
+          <ul className="list-custom-increment flex flex-col gap-10 2xl:gap-20 flex-1">
             {phrases.map(({ phrase }) => (
               <Text
                 key={phrase}

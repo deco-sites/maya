@@ -63,11 +63,11 @@
   .list-custom-increment-item::before {
     content: "0" counter(counter-highlighted);
     line-height: 1;
-    @apply  highligh-text-variant font-bison text-[100px] font-black tracking-wider 
+    @apply  highligh-text-variant font-bison text-[82px] 2xl:text-[100px] font-black tracking-wider 
   }
 
   .list-custom-increment-item * {
-    @apply !text-4xl !leading-[45px]
+    @apply !text-2xl !leading-8 2xl:!text-4xl 2xl:!leading-[45px]
   }
   .list-custom-increment-item div {
     margin-top: 4px;
