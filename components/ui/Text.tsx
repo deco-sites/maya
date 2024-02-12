@@ -8,7 +8,8 @@ const variants = {
 
   "heading-1": "font-bison text-[11.25rem] text-primary uppercase",
   "heading-2": "font-manrope text-xl 2xl:text-3xl 2xl:leading-10 text-black",
-  "content-1": "font-manrope text-4xl leading-[45px] text-primary",
+  "content-1":
+    "font-manrope text-2xl 2xl:text-4xl 2xl:leading-[45px] text-primary",
   "menu": "font-bison font-bold text-[5rem] text-white",
   "body": "font-manrope text-2xl leading-9 text-black",
 };

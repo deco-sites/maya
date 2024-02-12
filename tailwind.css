@@ -72,6 +72,16 @@
   .list-custom-increment-item div {
     margin-top: 4px;
   }
+  
+  .cover-grid {
+    object-position: top 10% right 0
+  }
+  
+  @media screen and (min-width:1536px){
+    .cover-grid {
+      object-position: top 20% right 0
+    }
+  }
 }
 
 .group:disabled .group-disabled\:animate-progress {

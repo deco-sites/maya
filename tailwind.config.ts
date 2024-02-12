@@ -7,6 +7,7 @@ export default {
   theme: {
     container: { center: true },
     extend: {
+      objectPosition: {},
       animation: {
         sliding: "sliding 30s linear infinite",
       },
