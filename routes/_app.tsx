@@ -30,6 +30,15 @@ export default defineApp(async (_req, ctx) => {
         {/* Web Manifest */}
         <link rel="manifest" href={asset("/site.webmanifest")} />
 
+        {/* Preload Second Font */}
+        <link
+          rel="preload"
+          href={asset("/fonts/Bison-Bold.woff2")}
+          as="font"
+          type="font/woff2"
+          crossOrigin="false"
+        />
+
         {/* Local Second Font */}
         <style
           dangerouslySetInnerHTML={{
