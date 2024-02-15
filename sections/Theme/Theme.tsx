@@ -118,6 +118,13 @@ export interface Miscellaneous {
   "--tab-radius": string;
 }
 
+export interface OtherVariableColor {
+  /** @description Use css variable naming like the example: --bg-teste  */
+  label: string;
+  /** @format color */
+  value: string;
+}
+
 export interface Props {
   /**
    * @description Set the prefers-color-scheme media query. To support dark mode, create two instances of this block and set this option to light/dark in each instance
@@ -127,6 +134,8 @@ export interface Props {
   mainColors?: ThemeColors;
   /** @description These will be auto-generated to a readable color if not set */
   complementaryColors?: ComplementaryColors;
+  /** @title  Custom Colors properties */
+  otherVariablesColors?: OtherVariableColor[];
   buttonStyle?: Button;
   otherStyles?: Miscellaneous;
   font?: Font;
@@ -227,6 +236,12 @@ const defaultTheme = {
   "--tab-radius": "0.5rem", // border radius of tabs
 };
 
+const toOtherVariables = (
+  items: OtherVariableColor[],
+) => {
+  return items.map(({ label, value }) => [label, value]);
+};
+
 /**
  * This section merges the DESIGN_SYTEM variable with incoming props into a css sheet with variables, i.e.
  * this function transforms props into
@@ -243,6 +258,7 @@ function Section({
   otherStyles,
   font,
   colorScheme,
+  otherVariablesColors = [],
 }: Props) {
   const theme = {
     ...defaultTheme,
@@ -254,6 +270,7 @@ function Section({
 
   const variables = [
     ...toVariables(theme),
+    ...toOtherVariables(otherVariablesColors),
     [
       "--font-family",
       font?.family ||
