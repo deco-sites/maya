@@ -83,7 +83,7 @@ export default function BigTitle({
               </p>
             )}
             {bottomText && (
-              <p className="font-manrope text-3xl leading-10 text-[var(--color-main)] font-semibold uppercase text-center">
+              <p className="font-manrope text-3xl leading-10 text-[var(--color-main)] font-semibold uppercase text-center mb-14 2xl:mb-0">
                 {bottomText}
               </p>
             )}
