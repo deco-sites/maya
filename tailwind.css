@@ -43,7 +43,7 @@
   .highligh-text {
     color: transparent !important;
     -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #2D4BE0;
+    -webkit-text-stroke-color: var(--color-main,#2D4BE0);
   }
   .highligh-text-variant {
     color: transparent !important;

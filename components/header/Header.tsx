@@ -87,10 +87,13 @@ function Header({
           menu={{ items, logo: logo.variant, langText }}
           platform={platform}
         >
-          <div class="bg-base-100 w-full z-50 ">
+          <div
+            class="bg-[var(--bg-main)] w-full z-50"
+            style={{ marginBottom: "-1px" }}
+          >
             {alerts && alerts.length > 0 && <Alert alerts={alerts} />}
             <Navbar
-              logo={logo.default}
+              logo={logo}
               langText={langText}
             />
           </div>

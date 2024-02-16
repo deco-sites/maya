@@ -28,7 +28,7 @@ function Menu({ items, langText, logo }: Props) {
           </a>
         )}
         <div className="ml-auto flex items-center gap-8">
-          <Text variant="caption">
+          <Text variant="caption" className="text-secondary">
             {langText}
           </Text>
           <MenuButton />

@@ -2,10 +2,10 @@ import { JSX } from "preact";
 import { forwardRef, HTMLAttributes } from "preact/compat";
 
 const variants = {
-  "caption": "font-bison font-bold text-3xl text-secondary",
+  "caption": "font-bison font-bold text-3xl",
   "heading":
     "font-bison text-[9.85rem] 2xl:text-[13.75rem] text-primary uppercase",
-  "heading-1": "font-bison text-[11.25rem] text-primary uppercase",
+  "heading-1": "font-bison text-[11.25rem] text-[var(--color-main)] uppercase",
   "heading-2": "font-manrope text-xl 2xl:text-3xl 2xl:leading-10 text-black",
   "heading-3": "font-bison text-7xl 2xl:text-[100px] font-bold",
   "content-1":

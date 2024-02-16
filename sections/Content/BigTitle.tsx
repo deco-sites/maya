@@ -11,7 +11,15 @@ export interface Props {
    * @title Main Title
    */
   titleWords?: Title[];
+  /**
+   * @title Title line height
+   * @default long
+   */
+  lineHeight?: "short" | "long";
   showIconDown?: boolean;
+  /** @format textarea */
+  descriptionText?: string;
+  bottomText?: string;
 }
 
 export default function BigTitle({
@@ -31,14 +39,22 @@ export default function BigTitle({
     },
   ],
   showIconDown = true,
+  descriptionText = "",
+  bottomText = "",
+  lineHeight = "long",
 }: Props) {
+  const currentLineHeight = lineHeight === "long"
+    ? "leading-none"
+    : "leading-[0.8]";
   return (
-    <div className="px-[8.33%] mx-auto w-full py-8 2xl:py-36">
+    <div className="px-[8.33%] mx-auto w-full py-8 2xl:py-36 bg-[var(--bg-main)]">
       <div className="flex flex-col gap-16 items-center justify-center">
         <span className="font-manrope font-semibold uppercase text-3xl tracking-wider text-primary">
           {supTitle}
         </span>
-        <h1 className="block leading-none text-center mx-auto max-w-4xl">
+        <h1
+          className={`block  text-center mx-auto max-w-6xl ${currentLineHeight}`}
+        >
           {titleWords.map(({ title, inEmphasis }) => (
             <Text
               key={title}
@@ -58,6 +74,20 @@ export default function BigTitle({
             strokeWidth={1}
             className="text-primary"
           />
+        )}
+        {(!!descriptionText || !!bottomText) && (
+          <div className="max-w-7xl mx-auto flex flex-col items-center justify-center gap-16">
+            {descriptionText && (
+              <p className="font-manrope text-2xl leading-9 text-[var(--color-main)] text-center">
+                {descriptionText}
+              </p>
+            )}
+            {bottomText && (
+              <p className="font-manrope text-3xl leading-10 text-[var(--color-main)] font-semibold uppercase text-center">
+                {bottomText}
+              </p>
+            )}
+          </div>
         )}
       </div>
     </div>

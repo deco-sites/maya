@@ -8,7 +8,7 @@ export default function MenuButton() {
   return (
     <Button
       class={`btn-ghost bg-transparent hover:bg-transparent p-0 m-0 min-h-fit h-auto ${
-        displayMenu.value ? `text-white` : `text-primary`
+        displayMenu.value ? `text-white` : `text-[var(--color-main)]`
       }`}
       aria-label={displayMenu.value ? "Close menu" : "open menu"}
       title={displayMenu.value ? "Close menu" : "open menu"}
