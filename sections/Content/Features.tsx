@@ -1,13 +1,10 @@
-import Icon, { AvailableIcons } from "$store/components/ui/Icon.tsx";
+import Text from "$store/components/ui/Text.tsx";
+import Icon from "$store/components/ui/Icon.tsx";
 
 /**
  * @titleBy title
  */
 export interface Card {
-  icon?: AvailableIcons;
-  /**
-   * @format html
-   */
   title: string;
   text: string;
 }
@@ -15,41 +12,45 @@ export interface Card {
 export interface Props {
   title?: string;
   cards: Card[];
+  showIconRight?: boolean;
 }
 
-function FeatureCard({ icon, title, text }: Card) {
+function FeatureCard({ title, text }: Card) {
   return (
-    <div class="feature-card group group-hover:-translate-y-3">
-      {icon && (
-        <div class="p-6 rounded-full bg-white text-[#1A1A1A]">
-          <Icon id={icon} size={48} />
-        </div>
+    <div class="feature-card">
+      {title && (
+        <Text variant="heading-3" className="text-primary">
+          {title}
+        </Text>
       )}
-      <div class="space-y-4 text-center">
-        {title && (
-          <div
-            class="text-2xl font-semibold leading-[110%]"
-            dangerouslySetInnerHTML={{ __html: title }}
-          />
-        )}
-        <p class="leading-[120%]" dangerouslySetInnerHTML={{ __html: text }} />
-      </div>
+      <Text variant="body" className="mt-auto">
+        {text}
+      </Text>
     </div>
   );
 }
 
-export default function Features({ title, cards }: Props) {
+export default function Features({ title, cards, showIconRight }: Props) {
   return (
-    <section class="relative bg-white text-black py-20 max-w-screen">
-      <div class="mx-6 lg:container lg:mx-auto flex justify-center items-center flex-col gap-20">
+    <section class="relative mx-auto w-full py-20 2xl:py-36 pl-24">
+      <div class="flex justify-center items-center flex-col gap-16 2xl:gap-16">
         {title && (
-          <h2 class="font-medium text-[36px] lg:text-[72px] leading-[100%] text-center max-w-4xl z-10">
+          <Text variant="heading-3" className="text-primary">
             {title}
-          </h2>
+          </Text>
         )}
-        <div class="features">
+        <div class="features scrollbar">
           {cards?.map((card) => <FeatureCard {...card} />)}
         </div>
+        {showIconRight && (
+          <Icon
+            id="ArrowRight"
+            width={246}
+            height={43}
+            strokeWidth={1}
+            className="text-primary ml-auto mr-28"
+          />
+        )}
       </div>
     </section>
   );
