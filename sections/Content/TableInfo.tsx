@@ -154,6 +154,27 @@ const Content = ({ name, description, content }: ContentCollapse) => {
             <p className="font-manrope text-xl leading-8 text-white">
               {content.longDescription}
             </p>
+            <div className="flex flex-col mt-14 gap-4">
+              <span className="font-manrope text-xl font-bold text-white leading-8">
+                Founders
+              </span>
+              <div className="flex flex-wrap gap-12">
+                {content.founders.map(({ image, name: founderName }) => (
+                  <div className="flex gap-3 items-center">
+                    <Image
+                      src={image}
+                      alt={founderName}
+                      width={100}
+                      height={100}
+                      loading="lazy"
+                    />
+                    <p className="font-manrope text-xl leading-8 text-white max-w-28 tracking-wider">
+                      {founderName}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </details>
