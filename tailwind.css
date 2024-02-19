@@ -82,6 +82,38 @@
       object-position: top 20% right 0
     }
   }
+
+  .collapse-table[open] {
+    @apply bg-primary-content
+  }
+
+  .collapse-table[open] .collapse-text {
+    @apply text-white
+  }
+
+  .collapse-table[open] .short-description {
+    opacity: 0;
+  }
+
+  .collapse-icon {
+    @apply absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer
+  }
+
+  .collapse-icon[data-plus] {
+    z-index: 2;
+    opacity: 1;
+  }
+  .collapse-icon[data-minus] {
+    z-index: 1;
+    opacity: 0;
+  }
+
+  .collapse-table[open] .collapse-icon[data-plus] {
+    opacity: 0;
+  }
+  .collapse-table[open] .collapse-icon[data-minus] {
+    opacity: 1;
+  }
 }
 
 .group:disabled .group-disabled\:animate-progress {
@@ -122,5 +154,36 @@
     background-color: #000000;
     border-radius: 10px;
     border: 3px solid #ffffff;
+  }
+
+  /* Chrome, Edge and Safari */
+  .scrollbar-variant::-webkit-scrollbar {
+    height: 22px;
+    width: 22px;
+  }
+  .scrollbar-variant::-webkit-scrollbar-track {
+    border-radius: 20px;
+    background-color: #FFFFFF;
+  }
+
+  .scrollbar-variant::-webkit-scrollbar-track:hover {
+    background-color: #FFFFFF;
+  }
+
+  .scrollbar-variant::-webkit-scrollbar-track:active {
+    background-color: #FFFFFF;
+  }
+
+  .scrollbar-variant::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: #222933;
+  }
+
+  .scrollbar-variant::-webkit-scrollbar-thumb:hover {
+    background-color: #222933;
+  }
+
+  .scrollbar-variant::-webkit-scrollbar-thumb:active {
+    background-color: #222933;
   }
 }

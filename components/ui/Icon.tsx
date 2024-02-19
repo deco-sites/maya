@@ -30,6 +30,8 @@ export type AvailableIcons =
   | "Phone"
   | "Pix"
   | "Plus"
+  | "PlusCircle"
+  | "MinusCircle"
   | "QuestionMarkCircle"
   | "Return"
   | "Ruler"

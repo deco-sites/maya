@@ -122,4 +122,12 @@
 		<path d="M8.7 13.3l6.6 3.4"></path>
     </symbol>
 
+	<symbol fill="none" viewBox="0 0 74 73" id="PlusCircle" xmlns="http://www.w3.org/2000/svg">
+		<path d="M72.885 36.403c0 19.966-16.258 36.154-36.317 36.154S.25 56.369.25 36.403C.25 16.437 16.509.25 36.568.25c20.059 0 36.317 16.187 36.317 36.153Z" stroke="currentColor" stroke-width=".5"/>
+		<path stroke="currentColor" d="M37 19v35M54 37H19"/>
+	</symbol>
+	<symbol fill="none" viewBox="0 0 74 73" id="MinusCircle" xmlns="http://www.w3.org/2000/svg">
+		<path d="M72.885 36.403c0 19.966-16.258 36.154-36.317 36.154S.25 56.369.25 36.403C.25 16.437 16.509.25 36.568.25c20.059 0 36.317 16.187 36.317 36.153Z" stroke="#fff" stroke-width=".5"/>
+		<path stroke="#fff" d="M54 37H19"/>
+	</symbol>
 </svg>
