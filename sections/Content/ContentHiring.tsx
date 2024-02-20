@@ -10,10 +10,7 @@ export default function ContentHiring(
   { title = "Our founders are hiring", imageShowcase = "" }: Props,
 ) {
   return (
-    <div
-      className="mx-auto my-28 2xl:my-40 bg-accent-content"
-      style={{ width: "83.23%" }}
-    >
+    <div className="mx-auto my-28 2xl:my-40 bg-accent-content w-[83.23%]">
       <div className="px-24 2xl:px-32 py-14 2xl:py-20 flex justify-center 
         items-center gap-6 2xl:gap-9">
         <h3 className="text-white font-bison font-semibold text-[85px] 
