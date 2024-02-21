@@ -1,7 +1,19 @@
 import { asset } from "$fresh/runtime.ts";
 import type { JSX } from "preact";
 
+export type Graphics =
+  | "Grafismo1"
+  | "Grafismo2"
+  | "Grafismo3"
+  | "Grafismo4"
+  | "Grafismo5"
+  | "Grafismo6"
+  | "Grafismo7"
+  | "Grafismo8"
+  | "Grafismo9";
+
 export type AvailableIcons =
+  | "Logo"
   | "ArrowsPointingOut"
   | "ArrowDown"
   | "ArrowRight"
@@ -51,7 +63,8 @@ export type AvailableIcons =
   | "AlertSuccess"
   | "AlertWarning"
   | "AlertError"
-  | "share";
+  | "share"
+  | Graphics;
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**
