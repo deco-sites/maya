@@ -128,6 +128,7 @@ function LeftVariant(props: Variant1) {
             width={399.83}
             height={399.83}
             className="w-full"
+            loading="lazy"
           />
           <div className="absolute top-1/2 -translate-y-1/2 right-0 translate-x-1/2 flex flex-col">
             {props.title.map(({ title, inEmphasis }) => (
