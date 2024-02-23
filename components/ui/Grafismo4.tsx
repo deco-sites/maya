@@ -8,7 +8,7 @@ const Grafismo4 = (props: JSX.SVGAttributes<SVGSVGElement>) => (
   >
     <defs>
       <style>
-        {".cls-1{fill:none;stroke:#2d4be0;stroke-miterlimit:10;stroke-width:4px}.cls-2{fill:#2d4be0}"}
+        {".cls-1{fill:none;stroke:currentColor;stroke-miterlimit:10;stroke-width:4px}.cls-2{fill:currentColor}"}
       </style>
     </defs>
     <g id="Camada_2" data-name="Camada 2">
