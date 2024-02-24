@@ -23,7 +23,7 @@ export default function ContentGraphic(
       <div className="flex bg-white w-full min-h-[621.8145833333333px] 2xl:min-h-[874px]">
         <div className="w-2/5 bg-primary-content flex justify-center items-center py-16 2xl:py-24 px-11 2xl:px-16">
           <Grafismo
-            id={graphics}
+            id={graphics ?? "Grafismo4"}
             width={365.6895833333333}
             height={438.96979166666665}
             className="text-white"

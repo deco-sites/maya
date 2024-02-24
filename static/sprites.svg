@@ -429,4 +429,7 @@
 			stroke="#fff" stroke-width=".5" />
 		<path stroke="#fff" d="M54 37H19" />
 	</symbol>
+	<symbol style="width:1em;height:1em;vertical-align:middle;fill:currentColor;overflow:hidden" viewBox="0 0 1024 1024" id="Reload" xmlns="http://www.w3.org/2000/svg">
+		<path d="M144 528c0-212.064 168.672-384 376.736-384 115.456 0 218.784 52.928 287.872 136.256L880 207.488v192H691.616l72.416-73.792C706.432 253.856 618.848 208 520.736 208c-173.376 0-313.92 143.264-313.92 320s140.544 320 313.92 320c108.992 0 204.992-56.576 261.28-142.496l52.256 35.52C766.72 844.096 651.52 912 520.736 912 312.672 912 144 740.064 144 528z" fill="#000"/>
+	</symbol>
 </svg>
