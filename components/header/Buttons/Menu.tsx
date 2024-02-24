@@ -23,6 +23,7 @@ export default function MenuButton() {
             width={26}
             height={26}
             strokeWidth={3}
+            className="w-[18px] h-[18px] 2xl:w-[26px] 2xl:h-[26px]"
           />
         )
         : (
@@ -30,6 +31,7 @@ export default function MenuButton() {
             id="Bars3"
             width={35}
             height={30}
+            className="w-6 h-5 2xl:w-[35px] 2xl:h-[30px]"
             strokeWidth={0.01}
           />
         )}

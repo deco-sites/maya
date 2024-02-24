@@ -12,8 +12,8 @@ export interface Props {
 
 function Menu({ items, langText, logo }: Props) {
   return (
-    <div class="w-full flex flex-col h-full bg-primary-content overflow-y-auto gap-3">
-      <div class="flex justify-between items-center w-full gap-2 px-[8.33%] mx-auto py-16">
+    <div class="w-full flex flex-col h-full bg-primary-content overflow-y-auto 2xl:gap-3 pb-10">
+      <div class="flex justify-between items-center gap-2 w-[83.23%] mx-auto py-16">
         {logo && (
           <a
             href="/"
@@ -24,24 +24,26 @@ function Menu({ items, langText, logo }: Props) {
               alt={logo.alt}
               width={logo.width || 100}
               height={logo.height || 13}
+              className="w-[199px] h-7 2xl:w-[280px] 2xl:h-10"
             />
           </a>
         )}
-        <div className="ml-auto flex items-center gap-8">
-          <Text variant="caption" className="text-secondary">
+        <div className="ml-auto flex items-center gap-5 2xl:gap-8">
+          <Text variant="caption" className="text-secondary ">
             {langText}
           </Text>
           <MenuButton />
         </div>
       </div>
-      <ul class="px-4 flex-grow flex flex-col gap-6 items-center">
+      <ul class="px-4 flex-grow flex flex-col gap-4 2xl:gap-[22px] items-center">
         {items.map((item) => (
-          <li className="contents">
-            <a class="" href={item.url}>
-              <Text variant="menu" class="leading-[90px]">
+          <li>
+            {/* <Text variant="menu"> */}
+              <a class="font-bison font-bold text-[56px] 2xl:text-[80px] 
+              text-white leading-[80px] 2xl:leading-[113.76px]" href={item.url}>
                 {item.name}
-              </Text>
-            </a>
+              </a>
+            {/* </Text> */}
           </li>
         ))}
       </ul>

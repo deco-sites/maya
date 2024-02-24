@@ -32,7 +32,7 @@ function Navbar({
 
   return (
     <>
-      <div class="flex justify-between items-center w-full gap-2 px-[8.33%] mx-auto py-16">
+      <div class="flex justify-between items-center gap-2 w-[83.23%] mx-auto py-16">
         {logo && (
           <a
             href="/"
@@ -43,10 +43,11 @@ function Navbar({
               alt={currentLogo.alt}
               width={currentLogo.width || 280}
               height={currentLogo.height || 40}
+              className="w-[199px] h-7 2xl:w-[280px] 2xl:h-10"
             />
           </a>
         )}
-        <div className="ml-auto flex items-center gap-8">
+        <div className="ml-auto flex items-center gap-5 2xl:gap-8">
           <Text variant="caption" className="text-[var(--color-lang-menu)]">
             {langText}
           </Text>

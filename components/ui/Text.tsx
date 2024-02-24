@@ -2,7 +2,7 @@ import { JSX } from "preact";
 import { forwardRef, HTMLAttributes } from "preact/compat";
 
 const variants = {
-  "caption": "font-bison font-bold text-3xl",
+  "caption": "font-bison font-bold text-xl 2xl:text-3xl",
   "heading":
     "font-bison text-[9.85rem] 2xl:text-[13.75rem] text-primary uppercase",
   "heading-1": "font-bison text-[11.25rem] text-[var(--color-main)] uppercase",
@@ -10,7 +10,7 @@ const variants = {
   "heading-3": "font-bison text-7xl 2xl:text-[100px] font-bold",
   "content-1":
     "font-manrope text-2xl 2xl:text-4xl 2xl:leading-[45px] text-primary",
-  "menu": "font-bison font-bold text-[5rem] text-white",
+  "menu": "font-bison font-bold text-[56px] 2xl:text-[80px] text-white leading-[80px] 2xl:leading-[113.76px]",
   "body": "font-manrope text-2xl leading-9 text-black",
 };
 type Variants = keyof typeof variants;
