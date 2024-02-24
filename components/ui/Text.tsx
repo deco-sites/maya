@@ -10,7 +10,6 @@ const variants = {
   "heading-3": "font-bison text-7xl 2xl:text-[100px] font-bold",
   "content-1":
     "font-manrope text-2xl 2xl:text-4xl 2xl:leading-[45px] text-primary",
-  "menu": "font-bison font-bold text-[56px] 2xl:text-[80px] text-white leading-[80px] 2xl:leading-[113.76px]",
   "body": "font-manrope text-2xl leading-9 text-black",
 };
 type Variants = keyof typeof variants;

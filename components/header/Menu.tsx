@@ -38,12 +38,13 @@ function Menu({ items, langText, logo }: Props) {
       <ul class="px-4 flex-grow flex flex-col gap-4 2xl:gap-[22px] items-center">
         {items.map((item) => (
           <li>
-            {/* <Text variant="menu"> */}
-              <a class="font-bison font-bold text-[56px] 2xl:text-[80px] 
-              text-white leading-[80px] 2xl:leading-[113.76px]" href={item.url}>
-                {item.name}
-              </a>
-            {/* </Text> */}
+            <a
+              class="font-bison font-bold text-[56px] 2xl:text-[80px] 
+              text-white leading-[80px] 2xl:leading-[113.76px]"
+              href={item.url}
+            >
+              {item.name}
+            </a>
           </li>
         ))}
       </ul>
