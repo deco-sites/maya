@@ -72,12 +72,11 @@ export default function HeroTopics({
           ))}
         </div>
         <a
-          className="btn btn-active btn-link font-manrope font-bold leading-9 uppercase text-2xl tracking-widest"
+          className="btn btn-active btn-link font-manrope font-bold uppercase tracking-widest 
+          leading-6 2xl:leading-9 text-lg 2xl:text-2xl  underline-offset-[8px] 
+          2xl:underline-offset-[12px]"
           href={callToAction.href}
           title={callToAction.title}
-          style={{
-            textUnderlineOffset: "12px",
-          }}
         >
           {callToAction.title}
         </a>

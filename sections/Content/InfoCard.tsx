@@ -56,8 +56,8 @@ export default function InfoCard({
   },
 }: Props) {
   return (
-    <div className="px-[8.33%] mx-auto w-full py-20 2xl:py-36 bg-primary-content">
-      <div className="flex flex-col justify-center items-center gap-36">
+    <div className="px-[8.33%] mx-auto w-full bg-primary-content pt-36 pb-24 2xl:pt-52 2xl:pb-36">
+      <div className="flex flex-col justify-center items-center gap-24 2xl:gap-36">
         <div className="flex gap-24 2xl:gap-36 items-start justify-between text-3xl">
           <div className="flex flex-col gap-20 flex-1">
             <Text variant="heading-2" className="text-white max-w-lg">
@@ -65,15 +65,15 @@ export default function InfoCard({
             </Text>
             <h2 style={{ lineHeight: "0.9" }}>
               {titleWords.map(({ title, inEmphasis }) => (
-                <Text
+                <span
                   key={title}
-                  variant="heading-1"
                   className={`${
                     inEmphasis ? "highligh-text-variant" : ""
-                  } text-white text-[94px] even:text-[130px] 2xl:text-[130px] 2xl:even:text-[180px]`}
+                  } text-white text-[94px] even:text-[130px] 2xl:text-[130px] 2xl:even:text-[180px] 
+                  uppercase font-bison`}
                 >
                   {title} {" "}
-                </Text>
+                </span>
               ))}
             </h2>
           </div>
@@ -93,12 +93,11 @@ export default function InfoCard({
         </div>
         <div>
           <a
-            className="btn btn-active btn-link text-white font-manrope font-bold leading-9 uppercase text-2xl tracking-widest"
+            className="btn btn-active btn-link text-white font-manrope font-bold uppercase tracking-widest
+            leading-6 2xl:leading-9 text-lg 2xl:text-2xl  underline-offset-[8px] 
+            2xl:underline-offset-[12px]"
             href={callToAction.href}
             title={callToAction.title}
-            style={{
-              textUnderlineOffset: "12px",
-            }}
           >
             {callToAction.title}
           </a>

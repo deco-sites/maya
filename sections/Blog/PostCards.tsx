@@ -100,13 +100,11 @@ export default function PostCards(
                   {title}
                 </span>
                 <a
-                  className="btn btn-active btn-link font-manrope font-bold leading-9 uppercase  
-                    text-xs 2xl:text-lg  tracking-widest px-0 mr-auto mt-auto"
+                  className="btn btn-active btn-link font-manrope font-bold uppercase  
+                    text-xs 2xl:text-lg  tracking-widest px-0 mr-auto mt-auto leading-6 2xl:leading-9 underline-offset-[8px] 
+                    2xl:underline-offset-[12px]"
                   href={callToAction.href}
                   title={callToAction.text}
-                  style={{
-                    textUnderlineOffset: "12px",
-                  }}
                 >
                   {callToAction.text}
                 </a>
