@@ -1,7 +1,9 @@
 import Icon from "$store/components/ui/Icon.tsx";
 import { useSignal } from "@preact/signals";
+import Index from "apps/vtex/workflows/events.ts";
 // import { invoke } from "$store/runtime.ts";
 import type { JSX } from "preact";
+import { useEffect, useRef, useState } from "preact/hooks";
 
 export interface Props {
   name?: string;
@@ -31,6 +33,100 @@ function InputField(
           2xl:min-h-[78px] font-manrope text-xl text-black outline-1"
         required
       />
+    </div>
+  );
+}
+
+function InputMulti({
+  id,
+  label,
+  placeholder = "",
+}: { id: string; label: string; placeholder?: string }) {
+  const [tags, setTags] = useState<string[]>([]);
+  const inputMultiRef = useRef<HTMLInputElement>(null);
+
+  // deno-lint-ignore no-explicit-any
+  const addTag = (event: any) => {
+    const target = event.target as HTMLInputElement;
+    if (
+      event?.key === "," || event?.code === "Comma" || event.type === "focusout"
+    ) {
+      const tag = target?.value?.replace(/\s+/g, " ");
+      if (tag.length > 1 && !tags.includes(tag)) {
+        setTags((
+          prev,
+        ) => [...prev, ...tag.split(",").filter((string) => !!string)]);
+      }
+      target.value = "";
+    }
+  };
+
+  const removeTag = (index: number) => {
+    setTags((prev) => {
+      return [...prev.filter((currentTag) => currentTag !== prev[index])];
+    });
+  };
+
+  return (
+    <div className="mb-5">
+      <label
+        htmlFor={id}
+        className="font-manrope mb-3 2xl:mb-4 text-xl 2xl:text-3xl leading-7 2xl:leading-10 text-black flex items-baseline gap-1"
+      >
+        {label}{" "}
+        <span className="text-xs">({"Add a comma after each tag"})</span>
+      </label>
+      <div className="tag-box">
+        <ul
+          className="flex border border-black rounded flex-wrap list-none gap-1 px-4 2xl:px-6 py-3 2xl:py-4"
+          onClick={() => {
+            inputMultiRef.current?.focus();
+          }}
+        >
+          {tags.length === 0 && (
+            <li
+              className={` p-2 2xl:p-3 flex gap-2 text-black items-center justify-center cursor-pointer font-manrope ${
+                placeholder ? "" : "bg-[#e4e4e4]"
+              }`}
+            >
+              <Icon
+                id="Plus"
+                width={16}
+                height={16}
+                strokeWidth={3}
+                className="text-black"
+              />
+              {placeholder}
+            </li>
+          )}
+          {tags.map((tag, index) => (
+            <li
+              key={index}
+              className="bg-[#e4e4e4] p-2 2xl:p-3 flex gap-2 text-black items-center justify-center cursor-pointer font-manrope"
+              onClick={() => removeTag(index)}
+            >
+              {tag}
+              <Icon
+                id="Close"
+                width={12}
+                height={12}
+                strokeWidth={3}
+                className="text-black"
+              />
+            </li>
+          ))}
+          <input
+            ref={inputMultiRef}
+            type="string"
+            id={id}
+            className="font-manrope text-xl text-black flex-1 border-none outline-0"
+            onKeyUp={(e) => addTag(e)}
+            onBlur={(e) => addTag(e)}
+            data-value={tags.join(",")}
+            autocomplete="off"
+          />
+        </ul>
+      </div>
     </div>
   );
 }
@@ -71,11 +167,11 @@ export default function Form({
         <InputField type="text" id="name" label={name} />
         <InputField type="email" id="email" label={email} />
         <InputField type="text" id="linkedin" label={linkedin} />
-        <InputField type="text" id="skills" label={skills} />
-        <InputField
-          type="text"
+        <InputMulti id="skills" label={skills} />
+        <InputMulti
           id="insterestedCompanies"
           label={interestedCompanies}
+          placeholder={"Add Record"}
         />
         <div className="mb-5">
           <label

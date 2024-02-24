@@ -1,11 +1,11 @@
-import { Graphics } from "$store/components/ui/Grafismo.tsx";
+import type { Graphics } from "$store/components/ui/Grafismo.tsx";
 import { Grafismo } from "$store/components/ui/Grafismo.tsx";
 
 export interface Props {
   /**
-   * @default Grafismo5
+   * @default Grafismo4
    */
-  graphics: Graphics;
+  graphics?: Graphics;
   title?: string;
   content?: string;
 }
