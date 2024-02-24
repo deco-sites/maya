@@ -45,7 +45,7 @@ export default function HeroTopics({
     "bottom-0 -right-12 2xl:-right-2",
   ];
   return (
-    <div className="max-w-screen-xl mx-auto pt-32 pb-32 2xl:pt-60 2xl:pb-40">
+    <div className="w-[66.67%] 2xl:max-w-screen-xl mx-auto pt-40 pb-28 2xl:pt-60 2xl:pb-40">
       <div className="flex w-full h-full justify-center items-center flex-col gap-5">
         <Text variant="heading-3" className="tracking-wide text-primary">
           {title}
@@ -63,7 +63,7 @@ export default function HeroTopics({
           {topics.map((topic, index) => (
             <span
               key={topic}
-              className={`absolute font-bison font-bold text-4xl 2xl:text-[42px] text-secondary
+              className={`absolute font-bison font-bold text-3xl 2xl:text-[42px] text-secondary
                 text-left uppercase leading-none ${positionTopics?.[index]}`}
               style={{ maxWidth: "154px" }}
             >
