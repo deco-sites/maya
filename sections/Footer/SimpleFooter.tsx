@@ -75,7 +75,7 @@ export default function SimpleFooter({
 }: Props) {
   return (
     <div className="w-full bg-primary-content px-[8.33%]">
-      <div className="w-full 2xl:w-11/12 pt-32 2xl:pt-40 pb-28 flex gap-48">
+      <div className="w-full 2xl:w-11/12 pt-28 2xl:pt-40 pb-20 2xl:pb-28 flex gap-48">
         <div className="flex flex-col justify-between flex-1">
           {logo.src && (
             <a
@@ -87,26 +87,27 @@ export default function SimpleFooter({
                 alt={logo.alt}
                 width={logo.width || 280}
                 height={logo.height || 40}
+                className="w-[199px] h-7 2xl:w-[280px] 2xl:h-10"
               />
             </a>
           )}
-          <span className="font-manrope text-xl text-white">
+          <span className="font-manrope text-sm 2xl:text-xl text-white">
             {copyrightText}
           </span>
         </div>
         <div className="flex flex-col justify-between">
-          <div className="flex flex-col gap-14">
+          <div className="flex flex-col gap-10 2xl:gap-14">
             {extraLinks.length && extraLinks.map((extraLink) => (
               <a
                 href={extraLink.href}
                 title={extraLink.label}
-                className="font-bison font-semibold text-5xl text-white uppercase"
+                className="font-bison font-semibold text-[35px] 2xl:text-5xl text-white uppercase"
               >
                 {extraLink.label}
               </a>
             ))}
           </div>
-          <div className="flex gap-8">
+          <div className="flex gap-[22px] 2xl:gap-8">
             {socialIcons.length && socialIcons.map((socialIcon) => (
               <a
                 href={socialIcon?.href}
@@ -117,18 +118,19 @@ export default function SimpleFooter({
                   alt={socialIcon?.label}
                   width={logo?.width || 36}
                   height={logo?.height || 36}
-                  className="object-contain"
+                  className="object-contain w-6 h-6 2xl:w-9 2xl:h-9"
                 />
               </a>
             ))}
           </div>
         </div>
-        <div className="flex flex-col gap-8">
+        <div className="flex flex-col gap-5 2xl:gap-8">
           {items.length && items.map((item) => (
             <a
               href={item.href}
               title={item.label}
-              className="font-marope text-3xl text-white leading-tight"
+              className="font-marope text-xl 2xl:text-[28px] text-white 
+                leading-[46px] 2xl:leading-[65px]"
             >
               {item.label}
             </a>
