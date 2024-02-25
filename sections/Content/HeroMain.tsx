@@ -10,6 +10,10 @@ export interface Title {
    * @title Highlighted
    */
   inEmphasis?: boolean;
+  /**
+   * @default false
+   */
+  breakLine?: boolean;
 }
 
 export interface Props {
