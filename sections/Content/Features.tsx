@@ -33,13 +33,16 @@ function FeatureCard({ title, text }: Card) {
 export default function Features({ title, cards, showIconRight }: Props) {
   return (
     <section class="relative mx-auto w-full py-20 2xl:py-36 pl-24">
-      <div class="flex justify-center items-center flex-col gap-16 2xl:gap-16">
+      <div class="flex justify-center items-center flex-col ">
         {title && (
-          <Text variant="heading-3" className="text-primary">
+          <Text
+            variant="heading-3"
+            className="text-primary mb-[97px] 2xl:mb-[137px]"
+          >
             {title}
           </Text>
         )}
-        <div class="features scrollbar">
+        <div class="features scrollbar mb-[61px] 2xl:mb-[87px]">
           {cards?.map((card) => <FeatureCard {...card} />)}
         </div>
         {showIconRight && (
