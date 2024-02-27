@@ -158,12 +158,14 @@
 
   /* Chrome, Edge and Safari */
   .scrollbar-variant::-webkit-scrollbar {
-    height: 22px;
-    width: 22px;
+    height: 15.65px;
+    width: 15.65px;
+    @apply 2xl:w-[22px] 2xl:h-[22px]
   }
   .scrollbar-variant::-webkit-scrollbar-track {
-    border-radius: 20px;
+    border-radius: 14.22px;
     background-color: #FFFFFF;
+    @apply 2xl:rounded-[20px]
   }
 
   .scrollbar-variant::-webkit-scrollbar-track:hover {
@@ -175,8 +177,9 @@
   }
 
   .scrollbar-variant::-webkit-scrollbar-thumb {
-    border-radius: 20px;
+    border-radius: 14.22px;
     background-color: #222933;
+    @apply 2xl:rounded-[20px]
   }
 
   .scrollbar-variant::-webkit-scrollbar-thumb:hover {

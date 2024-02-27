@@ -72,35 +72,35 @@ export const SelectOptions = (
 };
 
 const Content = ({ name, description, content }: ContentCollapse) => {
+  const styleTextContent =
+    "font-manrope text-white text-sm 2xl:text-xl leading-[22px] 2xl:leading-8";
   return (
     <div className="border-b border-black">
-      <details className="collapse collapse-table py-6 rounded-none group 
+      <details className="collapse collapse-table py-[18px]  2xl:py-[26px] rounded-none group 
         hover:bg-primary transition-all duration-300">
         <summary className="collapse-title p-0  transition-all">
           <div className="flex items-center">
-            <span class="font-manrope text-3xl leading-10 flex-1 text-black
+            <span class="font-manrope text-xl 2xl:text-3xl leading-7 2xl:leading-10 flex-1 text-black
                group-hover:text-white transition-all collapse-text pl-6">
               {name}
             </span>
             <div
-              className="flex justify-between items-center pr-10"
+              className="flex justify-between items-center pr-7 2xl:pr-10"
               style={{ flex: "3" }}
             >
-              <span class="font-manrope text-xl  leading-8 max-w-lg
+              <span class="font-manrope text-sm 2xl:text-xl leading-[22px] 2xl:leading-8 max-w-lg
                  text-black group-hover:text-white 
                 transition-all duration-300 short-description collapse-text">
                 {description}
               </span>
-              <div
-                className="relative"
-                style={{ width: "73.14px", height: "72.81px" }}
-              >
+              <div className="relative w-[52.03px] h-[51.80px] 2xl:w-[73.14px] 2xl:h-[72.81px]">
                 <Icon
                   id="PlusCircle"
                   width={73.14}
                   height={72.81}
                   data-plus
-                  className="collapse-icon text-black group-hover:text-white collapse-text"
+                  className="collapse-icon text-black group-hover:text-white 
+                    collapse-text w-[52.03px] h-[51.80px] 2xl:w-[73.14px] 2xl:h-[72.81px]"
                   strokeWidth={2}
                 />
                 <Icon
@@ -108,7 +108,8 @@ const Content = ({ name, description, content }: ContentCollapse) => {
                   width={73.14}
                   height={72.81}
                   data-minus
-                  className="collapse-icon text-black group-hover:text-white collapse-text"
+                  className="collapse-icon text-black group-hover:text-white 
+                    collapse-text w-[52.03px] h-[51.80px] 2xl:w-[73.14px] 2xl:h-[72.81px]"
                   strokeWidth={2}
                 />
               </div>
@@ -124,51 +125,52 @@ const Content = ({ name, description, content }: ContentCollapse) => {
             className="w-full"
             loading="lazy"
           />
-          <div className="flex flex-col px-16 ">
-            <div className="flex justify-between gap-6 mt-9 mb-14">
+          <div className="flex flex-col px-11 2xl:px-16 ">
+            <div className="flex justify-between gap-4 2xl:gap-6  mt-6 2xl:mt-9  mb-10 2xl:mb-14">
               <div className="flex flex-col">
-                <span className="font-manrope text-xl font-bold text-white leading-8">
+                <span className={`font-bold ${styleTextContent}`}>
                   Sector
                 </span>
-                <span className="font-manrope text-xl text-white leading-8">
+                <span className={`${styleTextContent}`}>
                   {content.sector.map(({ label }) => label).join(", ")}
                 </span>
               </div>
               <div className="flex flex-col">
-                <span className="font-manrope text-xl font-bold text-white leading-8">
+                <span className={`font-bold ${styleTextContent}`}>
                   Website
                 </span>
-                <span className="font-manrope text-xl text-white leading-8">
+                <span className={` ${styleTextContent}`}>
                   {content.website}
                 </span>
               </div>
               <div className="flex flex-col">
-                <span className="font-manrope text-xl font-bold text-white leading-8">
+                <span className={`font-bold ${styleTextContent}`}>
                   Co-Invertors
                 </span>
-                <span className="font-manrope text-xl text-white leading-8">
+                <span className={` ${styleTextContent}`}>
                   {content.coInvestors}
                 </span>
               </div>
             </div>
-            <p className="font-manrope text-xl leading-8 text-white">
+            <p className={` ${styleTextContent}`}>
               {content.longDescription}
             </p>
-            <div className="flex flex-col mt-14 gap-4">
-              <span className="font-manrope text-xl font-bold text-white leading-8">
+            <div className="flex flex-col mt-10 2xl:mt-14 gap-3 2xl:gap-4">
+              <span className="font-manrope font-bold text-white text-sm 2xl:text-xl leading-[22px] 2xl:leading-8">
                 Founders
               </span>
-              <div className="flex flex-wrap gap-12">
+              <div className="flex flex-wrap gap-[34px] 2xl:gap-12">
                 {content.founders.map(({ image, name: founderName }) => (
-                  <div className="flex gap-3 items-center">
+                  <div className="flex gap-2 2xl:gap-3 items-center">
                     <Image
                       src={image}
                       alt={founderName}
                       width={100}
                       height={100}
                       loading="lazy"
+                      className="w-[71.14px] h-[71.14px] 2xl:w-[100px] 2xl:h-[100px]"
                     />
-                    <p className="font-manrope text-xl leading-8 text-white max-w-28 tracking-wider">
+                    <p className="font-manrope text-sm 2xl:text-xl leading-[22px] 2xl:leading-8 text-white max-w-28 tracking-wider">
                       {founderName}
                     </p>
                   </div>
@@ -187,8 +189,8 @@ export default function TableInfoCompanys(
 ) {
   return (
     <div className="bg-secondary-content">
-      <div className="flex flex-col py-32 max-w-[66.67%] mx-auto w-full">
-        <div className="flex justify-between border-b-2 border-primary items-end py-8">
+      <div className="flex flex-col pt-[91px] 2xl:pt-32 pb-28 2xl:pb-[158px] max-w-[66.67%] mx-auto w-full">
+        <div className="flex justify-between border-b-2 border-primary items-end py-[22px] 2xl:py-8">
           <h2 className="block">
             {titleWords.map(({ title, inEmphasis }) => (
               <Text
@@ -200,24 +202,24 @@ export default function TableInfoCompanys(
               </Text>
             ))}
           </h2>
-          <div className="flex gap-6 ">
+          <div className="flex gap-4 2xl:gap-6 ">
             <SelectOptions name="Country" options={filteredBy.country} />
             <SelectOptions name="Sector" options={filteredBy.sector} />
           </div>
         </div>
         <div className="flex flex-col">
           <div className="flex items-center border-b border-black">
-            <span class="font-manrope font-bold text-base leading-10 flex-1 text-black tracking-widest uppercase">
+            <span class="font-manrope font-bold text-xs 2xl:text-base leading-7  2xl:leading-10 flex-1 text-black tracking-widest uppercase">
               Company name
             </span>
             <span
-              class="font-manrope font-bold text-base leading-10   text-black tracking-widest uppercase"
+              class="font-manrope font-bold text-xs 2xl:text-base leading-7  2xl:leading-10  text-black tracking-widest uppercase"
               style={{ flex: "3" }}
             >
               Short Description
             </span>
           </div>
-          <div className="flex flex-col max-h-[500px] overflow-y-auto scrollbar-variant">
+          <div className="flex flex-col max-h-[355px] 2xl:max-h-[500px] overflow-y-auto scrollbar-variant">
             {contents.map((contentProp) => <Content {...contentProp} />)}
           </div>
         </div>
