@@ -78,7 +78,9 @@ export default function HeroTopics({
             <span
               key={topic}
               className={`absolute font-bison font-bold  text-sm sm:text-3xl 2xl:text-[42px] text-secondary
-                text-left uppercase leading-none ${positionTopics?.[index]} max-w-14 lg:max-w-[154px]`}
+                text-left uppercase leading-none ${
+                positionTopics?.[index]
+              } max-w-14 lg:max-w-[154px]`}
               style={{ maxWidth: "" }}
             >
               {topic}
