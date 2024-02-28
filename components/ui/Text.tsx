@@ -8,7 +8,7 @@ const variants = {
   "heading-1":
     "font-bison text-9xl 2xl:text-[180px] text-[var(--color-main)] uppercase tracking-wide leading-[112px] 2xl:leading-[158.76px]",
   "heading-2": "font-manrope text-xl 2xl:text-3xl 2xl:leading-10 text-black",
-  "heading-3": "font-bison text-7xl 2xl:text-[100px] font-bold",
+  "heading-3": "font-bison text-[34px] lg:text-7xl 2xl:text-[100px] font-bold",
   "content-1":
     "font-manrope text-2xl 2xl:text-4xl 2xl:leading-[45px] text-primary",
   "body":
