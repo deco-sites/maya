@@ -48,9 +48,5 @@ const grafismoComponents = {
 export function Grafismo({ id, ...props }: Props) {
   const GrafismoComponent = grafismoComponents?.[id] || Grafismo4;
 
-  return (
-    // <Suspense fallback={<div>Carregando...</div>}>
-    <GrafismoComponent {...props} />
-    // </Suspense>
-  );
+  return <GrafismoComponent {...props} />;
 }
