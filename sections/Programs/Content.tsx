@@ -232,6 +232,7 @@ export default function Content(
               id={blockCounter.graphics}
               width={274.6229166666667}
               height={398.4166666666667}
+              className="text-primary"
             />
           </div>
           <div className="w-full flex items-center justify-evenly">

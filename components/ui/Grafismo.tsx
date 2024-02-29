@@ -22,15 +22,15 @@ interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   size?: number;
 }
 
-const Grafismo1 = lazy(() => import("$store/components/ui/Grafismo1.tsx"));
-const Grafismo2 = lazy(() => import("$store/components/ui/Grafismo2.tsx"));
-const Grafismo3 = lazy(() => import("$store/components/ui/Grafismo3.tsx"));
-const Grafismo4 = lazy(() => import("$store/components/ui/Grafismo4.tsx"));
-const Grafismo5 = lazy(() => import("$store/components/ui/Grafismo5.tsx"));
-const Grafismo6 = lazy(() => import("$store/components/ui/Grafismo6.tsx"));
-const Grafismo7 = lazy(() => import("$store/components/ui/Grafismo7.tsx"));
-const Grafismo8 = lazy(() => import("$store/components/ui/Grafismo8.tsx"));
-const Grafismo9 = lazy(() => import("$store/components/ui/Grafismo9.tsx"));
+import Grafismo1 from "$store/components/ui/Grafismo1.tsx";
+import Grafismo2 from "$store/components/ui/Grafismo2.tsx";
+import Grafismo3 from "$store/components/ui/Grafismo3.tsx";
+import Grafismo4 from "$store/components/ui/Grafismo4.tsx";
+import Grafismo5 from "$store/components/ui/Grafismo5.tsx";
+import Grafismo6 from "$store/components/ui/Grafismo6.tsx";
+import Grafismo7 from "$store/components/ui/Grafismo7.tsx";
+import Grafismo8 from "$store/components/ui/Grafismo8.tsx";
+import Grafismo9 from "$store/components/ui/Grafismo9.tsx";
 
 // Crie um objeto que mapeia os IDs para os componentes
 const grafismoComponents = {
