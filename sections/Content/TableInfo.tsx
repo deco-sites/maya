@@ -4,6 +4,7 @@ import type { SectionProps } from "deco/types.ts";
 import Text from "$store/components/ui/Text.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 import Image from "apps/website/components/Image.tsx";
+import { SelectOptions } from "$store/components/ui/SelectOptions.tsx";
 
 interface FilteredBy {
   [key: string]: Option[];
@@ -54,22 +55,13 @@ export interface Props {
    */
   filteredBy?: FilteredBy[];
   contents?: ContentCollapse[];
+  /**
+   * @hide
+   */
+  filtersActive?: {
+    [key: string]: string;
+  };
 }
-
-export const SelectOptions = (
-  { options, name }: { options: Option[]; name: string },
-) => {
-  return (
-    <select class="block focus:border-primary focus:primary text-primary h-8 text-base uppercase font-bold tracking-widest bg-secondary-content">
-      <option disabled selected className="text-base">{name}</option>
-      {options.map((option) => (
-        <option value={option.value} className="text-base capitalize">
-          {option.label}
-        </option>
-      ))}
-    </select>
-  );
-};
 
 const Content = ({ name, description, content }: ContentCollapse) => {
   const styleTextContent =
@@ -185,7 +177,9 @@ const Content = ({ name, description, content }: ContentCollapse) => {
 };
 
 export default function TableInfoCompanys(
-  { titleWords, filteredBy, contents }: SectionProps<ReturnType<typeof loader>>,
+  { titleWords, filteredBy, contents, filtersActive }: SectionProps<
+    ReturnType<typeof loader>
+  >,
 ) {
   return (
     <div className="bg-secondary-content">
@@ -202,9 +196,19 @@ export default function TableInfoCompanys(
               </Text>
             ))}
           </h2>
-          <div className="flex gap-4 2xl:gap-6 ">
-            <SelectOptions name="Country" options={filteredBy.country} />
-            <SelectOptions name="Sector" options={filteredBy.sector} />
+          <div className="flex gap-4 2xl:gap-6 w-[35%]">
+            <SelectOptions
+              name="Country"
+              options={filteredBy.country}
+              currentFiltersActive={filtersActive}
+              filterBy="country"
+            />
+            <SelectOptions
+              name="Sector"
+              options={filteredBy.sector}
+              currentFiltersActive={filtersActive}
+              filterBy="sector"
+            />
           </div>
         </div>
         <div className="flex flex-col">
@@ -316,6 +320,9 @@ const DEFAULT_PROPS = {
 };
 
 export const loader = (props: Props, req: Request) => {
+  const countryParamValue = new URL(req.url)?.searchParams?.get("country");
+  const sectorParamValue = new URL(req.url)?.searchParams?.get("sector");
+
   const data = { ...DEFAULT_PROPS, ...props };
   const dataModified = {
     ...data,
@@ -363,5 +370,46 @@ export const loader = (props: Props, req: Request) => {
     },
   );
 
-  return { ...dataModified, filteredBy };
+  const checkFilter = (filter: string | null) => {
+    return filter ? JSON.stringify(filteredBy).includes(filter) : false;
+  };
+
+  const contentsModified = dataModified.contents.filter(({ content }) => {
+    const hasCountryFilter = checkFilter(countryParamValue);
+    const hasSectorFilter = checkFilter(sectorParamValue);
+
+    if (hasCountryFilter && hasSectorFilter) {
+      return (
+        content.country.value === countryParamValue ||
+        content.sector.some((sector) => sector.value === sectorParamValue)
+      );
+    }
+
+    if (hasCountryFilter) {
+      return content.country.value === countryParamValue;
+    }
+
+    if (hasSectorFilter) {
+      return content.sector.some((sector) => sector.value === sectorParamValue);
+    }
+
+    return true;
+  });
+
+  const filtersActive: { [key: string]: string } = {};
+
+  if (sectorParamValue) {
+    filtersActive.sector = sectorParamValue;
+  }
+
+  if (countryParamValue) {
+    filtersActive.country = countryParamValue;
+  }
+
+  return {
+    ...dataModified,
+    contents: contentsModified,
+    filteredBy,
+    filtersActive,
+  };
 };
