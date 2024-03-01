@@ -1,5 +1,6 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
+import Icon from "deco-sites/maya/components/ui/Icon.tsx";
 
 export type Item = {
   label: string;
@@ -15,12 +16,6 @@ export type SocialItem = {
 };
 
 export interface Props {
-  logo?: {
-    src: ImageWidget;
-    alt?: string;
-    width?: number;
-    height?: number;
-  };
   copyrightText?: string;
   extraLinks?: Item[];
   socialIcons?: SocialItem[];
@@ -28,12 +23,6 @@ export interface Props {
 }
 
 export default function SimpleFooter({
-  logo = {
-    src: "",
-    alt: "Maya Capital Logo",
-    width: 280,
-    height: 40,
-  },
   copyrightText = "© Maya Capital 2024",
   extraLinks = [
     {
@@ -77,20 +66,17 @@ export default function SimpleFooter({
     <div className="w-full bg-primary-content px-[8.33%]">
       <div className="w-full 2xl:w-11/12 pt-28 2xl:pt-40 pb-20 2xl:pb-28 flex gap-48">
         <div className="flex flex-col justify-between flex-1">
-          {logo.src && (
-            <a
-              href="/"
-              aria-label="logo"
-            >
-              <Image
-                src={logo.src}
-                alt={logo.alt}
-                width={logo.width || 280}
-                height={logo.height || 40}
-                className="w-[199px] h-7 2xl:w-[280px] 2xl:h-10"
-              />
-            </a>
-          )}
+          <a
+            href="/"
+            aria-label="logo"
+          >
+            <Icon
+              id="Logo"
+              width={280}
+              height={40}
+              className="w-[199px] h-7 2xl:w-[280px] 2xl:h-10 text-white"
+            />
+          </a>
           <span className="font-manrope text-sm 2xl:text-xl text-white">
             {copyrightText}
           </span>
@@ -116,8 +102,8 @@ export default function SimpleFooter({
                 <Image
                   src={socialIcon?.image}
                   alt={socialIcon?.label}
-                  width={logo?.width || 36}
-                  height={logo?.height || 36}
+                  width={36}
+                  height={36}
                   className="object-contain w-6 h-6 2xl:w-9 2xl:h-9"
                 />
               </a>
