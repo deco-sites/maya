@@ -43,18 +43,34 @@ export default function HeroMain({
     <div className="w-[83.23%] mx-auto pt-8 pb-24 2xl:py-36">
       <div className="flex w-full relative flex-col gap-14 2xl:gap-36">
         <h1 className="block" style={{ lineHeight: "1", width: "99%" }}>
-          {titleWords.map(({ title, inEmphasis }) => (
+          {titleWords.map(({ title, inEmphasis }, index) => (
             <Text
               key={title}
               variant="heading"
-              className={inEmphasis ? "highligh-text" : ""}
+              className={`${inEmphasis ? "highligh-text" : ""}`}
             >
-              {title} {" "}
+              {title.split(" ").map((word, wordIndex) => {
+                return (
+                  <span
+                    className="opacity-0 transition-all ease-out duration-[1.2s]"
+                    data-replace='{ "opacity-0": "opacity-100"}'
+                    style={{
+                      transitionDelay: `${index * 0.1 + wordIndex * 0.1 + 1}s`,
+                    }}
+                  >
+                    {word}
+                  </span>
+                );
+              })} {" "}
             </Text>
           ))}
           <Text
             variant="heading-2"
-            className="float-right max-w-sm 2xl:max-w-xl  mt-14"
+            className="float-right max-w-sm 2xl:max-w-xl  mt-14 opacity-0 transition-all ease-out"
+            data-replace='{ "opacity-0": "opacity-100"}'
+            style={{
+              transitionDelay: "1.4s",
+            }}
           >
             {description}
           </Text>
@@ -64,7 +80,11 @@ export default function HeroMain({
           width={69.37}
           height={94.37}
           strokeWidth={1}
-          className="text-primary w-12 h-[66px] 2xl:w-[69.37px] 2xl:h-[94.37px]"
+          className="text-primary w-12 h-[66px] 2xl:w-[69.37px] 2xl:h-[94.37px] opacity-0 transition-all ease-out"
+          data-replace='{ "opacity-0": "opacity-100"}'
+          style={{
+            transitionDelay: "1.4s",
+          }}
         />
       </div>
     </div>

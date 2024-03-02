@@ -2,6 +2,7 @@ import { asset, Head } from "$fresh/runtime.ts";
 import { defineApp } from "$fresh/server.ts";
 import Theme from "$store/sections/Theme/Theme.tsx";
 import { Context } from "deco/deco.ts";
+import { scriptAsDataURI } from "apps/utils/dataURI.ts";
 
 const sw = () =>
   addEventListener("load", () =>
@@ -67,6 +68,39 @@ export default defineApp(async (_req, ctx) => {
       <script
         type="module"
         dangerouslySetInnerHTML={{ __html: `(${sw})();` }}
+      />
+      {/* Include script for dynamic animations by replace-this */}
+      <script
+        // defer
+        src={scriptAsDataURI(
+          () => {
+            addEventListener("DOMContentLoaded", function () {
+              const observer = new IntersectionObserver(function (entries) {
+                entries.forEach((entry) => {
+                  if (entry.isIntersecting) {
+                    replaceClasses(entry.target as HTMLElement);
+                    observer.unobserve(entry.target); // Desconectar o observador após a primeira interseção
+                  }
+                });
+              }, { threshold: 0.50 });
+
+              const replacers = document.querySelectorAll("[data-replace]");
+              replacers.forEach((replacer) => {
+                observer.observe(replacer);
+              });
+            });
+
+            function replaceClasses(element: HTMLElement) {
+              const replaceClasses = JSON.parse(
+                (element.dataset?.replace ?? "").replace(/'/g, '"'),
+              );
+              Object.keys(replaceClasses)?.forEach((key) => {
+                element.classList.remove(key);
+                element.classList.add(replaceClasses[key]);
+              });
+            }
+          },
+        )}
       />
     </>
   );
