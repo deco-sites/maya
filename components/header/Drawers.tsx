@@ -1,5 +1,4 @@
 import type { Props as MenuProps } from "$store/components/header/Menu.tsx";
-import Drawer from "$store/components/ui/Drawer.tsx";
 import Modal from "$store/components/ui/Modal.tsx";
 import { useUI } from "$store/sdk/useUI.ts";
 import type { ComponentChildren } from "preact";

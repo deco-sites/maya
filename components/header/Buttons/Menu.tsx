@@ -18,13 +18,15 @@ export default function MenuButton() {
     >
       {displayMenu.value
         ? (
-          <Icon
-            id="Close"
-            width={26}
-            height={26}
-            strokeWidth={3}
-            className="w-[18px] h-[18px] 2xl:w-[26px] 2xl:h-[26px]"
-          />
+          <div className="w-6 h-5 2xl:w-[35px] 2xl:h-[30px] flex items-center justify-center">
+            <Icon
+              id="Close"
+              width={26}
+              height={26}
+              strokeWidth={3}
+              className="w-[18px] h-[18px] 2xl:w-[26px] 2xl:h-[26px]"
+            />
+          </div>
         )
         : (
           <Icon
