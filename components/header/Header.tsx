@@ -1,5 +1,4 @@
 import Drawers from "$store/islands/Header/Drawers.tsx";
-import { usePlatform } from "$store/sdk/usePlatform.tsx";
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
 import Alert from "./Alert.tsx";
 import Navbar from "./Navbar.tsx";
@@ -45,7 +44,6 @@ function Header({
   ],
   langText = "EN",
 }: Props) {
-  const platform = usePlatform();
   const items = navItems ?? [];
 
   return (
@@ -53,7 +51,6 @@ function Header({
       <header>
         <Drawers
           menu={{ items, langText }}
-          platform={platform}
         >
           <div
             class="bg-[var(--bg-main)] w-full z-50"

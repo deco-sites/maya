@@ -1,7 +1,7 @@
 import type { Props as MenuProps } from "$store/components/header/Menu.tsx";
 import Drawer from "$store/components/ui/Drawer.tsx";
+import Modal from "$store/components/ui/Modal.tsx";
 import { useUI } from "$store/sdk/useUI.ts";
-import { usePlatform } from "$store/sdk/usePlatform.tsx";
 import type { ComponentChildren } from "preact";
 import { lazy, Suspense } from "preact/compat";
 
@@ -9,12 +9,10 @@ const Menu = lazy(() => import("$store/components/header/Menu.tsx"));
 
 export interface Props {
   menu: MenuProps;
-  // searchbar?: SearchbarProps;
   /**
    * @ignore_gen true
    */
   children?: ComponentChildren;
-  platform: ReturnType<typeof usePlatform>;
 }
 
 const Aside = (
@@ -35,24 +33,22 @@ const Aside = (
   </div>
 );
 
-function Drawers({ menu, children, platform }: Props) {
+function Drawers({ menu, children }: Props) {
   const { displayMenu } = useUI();
 
   return (
     <>
-      <Drawer
+      <Modal
+        loading="lazy"
         open={displayMenu.value}
-        onClose={() => {
-          displayMenu.value = false;
-        }}
-        aside={
-          <Aside>
-            {displayMenu.value && <Menu {...menu} />}
-          </Aside>
-        }
+        onClose={() => displayMenu.value = false}
+        classModalBackdrop="hidden"
       >
-        {children}
-      </Drawer>
+        <Aside>
+          {displayMenu.value && <Menu {...menu} />}
+        </Aside>
+      </Modal>
+      {children}
     </>
   );
 }
