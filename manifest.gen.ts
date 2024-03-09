@@ -4,8 +4,7 @@
 
 import * as $$$$$$$$$$$0 from "./apps/decohub.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
-import * as $$$0 from "./loaders/Layouts/ProductCard.tsx";
-import * as $$$1 from "./loaders/List/Sections.tsx";
+import * as $$$0 from "./loaders/List/Sections.tsx";
 import * as $$$$$$0 from "./sections/Animation/Animation.tsx";
 import * as $$$$$$1 from "./sections/Blog/PostCards.tsx";
 import * as $$$$$$2 from "./sections/Category/CategoryBanner.tsx";
@@ -51,26 +50,16 @@ import * as $$$$$$41 from "./sections/Miscellaneous/CampaignTimer.tsx";
 import * as $$$$$$42 from "./sections/Miscellaneous/CookieConsent.tsx";
 import * as $$$$$$43 from "./sections/Miscellaneous/Slide.tsx";
 import * as $$$$$$44 from "./sections/Newsletter/Newsletter.tsx";
-import * as $$$$$$45 from "./sections/Product/ImageGalleryFrontBack.tsx";
-import * as $$$$$$46 from "./sections/Product/ImageGallerySlider.tsx";
-import * as $$$$$$47 from "./sections/Product/NotFound.tsx";
-import * as $$$$$$48 from "./sections/Product/NotFoundChallenge.tsx";
-import * as $$$$$$49 from "./sections/Product/ProductInfo.tsx";
-import * as $$$$$$50 from "./sections/Product/ProductShelf.tsx";
-import * as $$$$$$51 from "./sections/Product/ProductShelfTabbed.tsx";
-import * as $$$$$$52 from "./sections/Product/SearchResult.tsx";
-import * as $$$$$$53 from "./sections/Product/ShelfWithImage.tsx";
-import * as $$$$$$54 from "./sections/Product/Wishlist.tsx";
-import * as $$$$$$55 from "./sections/Programs/Content.tsx";
-import * as $$$$$$56 from "./sections/Programs/Programs.tsx";
-import * as $$$$$$57 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$58 from "./sections/Social/WhatsApp.tsx";
-import * as $$$$$$59 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$45 from "./sections/Product/NotFound.tsx";
+import * as $$$$$$46 from "./sections/Programs/Content.tsx";
+import * as $$$$$$47 from "./sections/Programs/Programs.tsx";
+import * as $$$$$$48 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$49 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$50 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "loaders": {
-    "deco-sites/maya/loaders/Layouts/ProductCard.tsx": $$$0,
-    "deco-sites/maya/loaders/List/Sections.tsx": $$$1,
+    "deco-sites/maya/loaders/List/Sections.tsx": $$$0,
   },
   "sections": {
     "deco-sites/maya/sections/Animation/Animation.tsx": $$$$$$0,
@@ -118,21 +107,12 @@ const manifest = {
     "deco-sites/maya/sections/Miscellaneous/CookieConsent.tsx": $$$$$$42,
     "deco-sites/maya/sections/Miscellaneous/Slide.tsx": $$$$$$43,
     "deco-sites/maya/sections/Newsletter/Newsletter.tsx": $$$$$$44,
-    "deco-sites/maya/sections/Product/ImageGalleryFrontBack.tsx": $$$$$$45,
-    "deco-sites/maya/sections/Product/ImageGallerySlider.tsx": $$$$$$46,
-    "deco-sites/maya/sections/Product/NotFound.tsx": $$$$$$47,
-    "deco-sites/maya/sections/Product/NotFoundChallenge.tsx": $$$$$$48,
-    "deco-sites/maya/sections/Product/ProductInfo.tsx": $$$$$$49,
-    "deco-sites/maya/sections/Product/ProductShelf.tsx": $$$$$$50,
-    "deco-sites/maya/sections/Product/ProductShelfTabbed.tsx": $$$$$$51,
-    "deco-sites/maya/sections/Product/SearchResult.tsx": $$$$$$52,
-    "deco-sites/maya/sections/Product/ShelfWithImage.tsx": $$$$$$53,
-    "deco-sites/maya/sections/Product/Wishlist.tsx": $$$$$$54,
-    "deco-sites/maya/sections/Programs/Content.tsx": $$$$$$55,
-    "deco-sites/maya/sections/Programs/Programs.tsx": $$$$$$56,
-    "deco-sites/maya/sections/Social/InstagramPosts.tsx": $$$$$$57,
-    "deco-sites/maya/sections/Social/WhatsApp.tsx": $$$$$$58,
-    "deco-sites/maya/sections/Theme/Theme.tsx": $$$$$$59,
+    "deco-sites/maya/sections/Product/NotFound.tsx": $$$$$$45,
+    "deco-sites/maya/sections/Programs/Content.tsx": $$$$$$46,
+    "deco-sites/maya/sections/Programs/Programs.tsx": $$$$$$47,
+    "deco-sites/maya/sections/Social/InstagramPosts.tsx": $$$$$$48,
+    "deco-sites/maya/sections/Social/WhatsApp.tsx": $$$$$$49,
+    "deco-sites/maya/sections/Theme/Theme.tsx": $$$$$$50,
   },
   "apps": {
     "deco-sites/maya/apps/decohub.ts": $$$$$$$$$$$0,
