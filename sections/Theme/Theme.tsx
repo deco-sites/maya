@@ -121,7 +121,7 @@ export interface Miscellaneous {
 export interface OtherVariableColor {
   /** @description Use css variable naming like the example: --bg-teste  */
   label: string;
-  /** @format color */
+  /** @format color-input */
   value: string;
 }
 
