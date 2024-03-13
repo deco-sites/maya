@@ -60,7 +60,10 @@ export default function InfoCard({
       <div className="w-[63.43%] lg:w-full mx-auto  flex flex-col justify-center items-center gap-10 lg:gap-24 2xl:gap-36">
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-24 2xl:gap-36 items-start justify-between">
           <div className="flex flex-col gap-7 lg:gap-20 flex-1">
-            <Text variant="heading-2" className="text-[9px] text-white max-w-lg">
+            <Text
+              variant="heading-2"
+              className="text-[9px] text-white max-w-lg"
+            >
               {supTitle}
             </Text>
             <h2 style={{ lineHeight: "0.9" }}>
@@ -77,7 +80,7 @@ export default function InfoCard({
               ))}
             </h2>
           </div>
-          <ul className="list-custom-increment flex flex-col gap-5 lg:gap-10 2xl:gap-20 flex-1">
+          <div className="list-custom-increment flex flex-col gap-5 lg:gap-10 2xl:gap-20 flex-1">
             {phrases.map(({ phrase }) => (
               <Text
                 key={phrase}
@@ -89,7 +92,7 @@ export default function InfoCard({
                 }}
               />
             ))}
-          </ul>
+          </div>
         </div>
         <div>
           <a

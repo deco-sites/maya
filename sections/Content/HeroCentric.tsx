@@ -65,8 +65,8 @@ export default function HeroCentric({
   },
 }: Props) {
   return (
-    <div className="w-full relative pt-60 2xl:pt-96 pb-36 bg-secondary-content">
-      <div className="absolute left-0 top-0 w-full h-full pl-9">
+    <div className="w-full relative pt-[182px] pb-20 lg:pt-60 2xl:pt-96 lg:pb-36 bg-secondary-content">
+      <div className="absolute left-0 top-0 w-full h-full lg:pl-9">
         <Image
           loading="lazy"
           src={imageBackground}
@@ -76,35 +76,35 @@ export default function HeroCentric({
           className="w-full h-full object-contain cover-grid"
         />
       </div>
-      <div className="flex flex-col items-center justify-center w-full gap-14 2xl:gap-36 z-10 relative">
-        <div className="flex items-center gap-5">
-          <span className="font-bison font-bold text-[80px] 2xl:text-[100px] 2xl:leading-[120px] text-primary uppercase">
+      <div className="flex flex-col items-center justify-center w-full gap-[120px] lg:gap-14 2xl:gap-36 z-10 relative">
+        <div className="flex items-center gap-3 lg:gap-5">
+          <span className="font-bison font-bold text-[32px] lg:text-[80px] 2xl:text-[100px] 2xl:leading-[120px] text-primary uppercase">
             {titleWords[0]}
           </span>
           <span
             data-before={titleWords[1]}
             className="flex items-center justify-center
-           before w-[300px] h-[300px] 2xl:w-[451px] 2xl:h-[451px] 
+           before w-[140px] h-[140px] lg:w-[300px] lg:h-[300px] 2xl:w-[451px] 2xl:h-[451px] 
             rounded-full bg-primary-content before:content-[attr(data-before)] 
-            font-bold before:text-[114px] before:2xl:text-[160px] before:2xl:leading-[120px] 
+            font-bold before:text-[51.85px] before:lg:text-[114px] before:2xl:text-[160px] before:2xl:leading-[120px] 
             before:text-secondary-content before:font-bison before:z-10 
             before:uppercase"
           >
           </span>
-          <span className="font-bison text-[80px] font-bold 2xl:text-[100px] 2xl:leading-[120px] text-primary uppercase">
+          <span className="font-bison text-[32px] lg:text-[80px] font-bold 2xl:text-[100px] 2xl:leading-[120px] text-primary uppercase">
             {titleWords[2]}
           </span>
         </div>
-        <div className="flex flex-col gap-10 2xl:gap-14">
+        <div className="flex flex-col gap-5 lg:gap-10 2xl:gap-14">
           <Text
             variant="content-1"
-            className="text-center max-w-2xl 2xl:max-w-4xl"
+            className="text-center max-w-[244px] lg:max-w-2xl 2xl:max-w-4xl"
           >
             {description}
           </Text>
           <a
             className="btn btn-active btn-link font-manrope font-bold uppercase tracking-widest 
-            leading-6 2xl:leading-9 text-lg 2xl:text-2xl  underline-offset-[8px] 
+            text-[8px] lg:leading-6 2xl:leading-9 lg:text-lg 2xl:text-2xl  underline-offset-[8px] 
             2xl:underline-offset-[12px]"
             href={callToAction.href}
             title={callToAction.title}

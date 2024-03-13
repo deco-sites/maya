@@ -44,7 +44,10 @@ export default function HeroMain({
   return (
     <div className="w-full lg:w-[83.23%] mx-auto pt-3 pb-16 lg:pt-8 lg:pb-24 2xl:py-36">
       <div className="w-[63.43%] lg:w-full mx-auto flex relative flex-col gap-10 lg:gap-14 2xl:gap-36">
-        <h1 className="max-w-[90%] lg:max-w-fit flex flex-col gap-10 lg:block lg:gap-0" style={{ lineHeight: "1", width: "99%" }}>
+        <h1
+          className="max-w-[90%] lg:max-w-fit flex flex-col gap-10 lg:block lg:gap-0"
+          style={{ lineHeight: "1", width: "99%" }}
+        >
           <div className="block lg:contents">
             {titleWords.map(({ title, inEmphasis }, index) => {
               let cumulativeDelay = index * delay;

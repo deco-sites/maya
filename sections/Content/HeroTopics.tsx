@@ -77,7 +77,7 @@ export default function HeroTopics({
           {topics.map((topic, index) => (
             <span
               key={topic}
-              className={`absolute font-bison font-bold  text-sm sm:text-3xl 2xl:text-[42px] text-secondary
+              className={`absolute font-bison font-bold  text-sm lg:text-3xl 2xl:text-[42px] text-secondary
                 text-left uppercase leading-none ${
                 positionTopics?.[index]
               } max-w-14 lg:max-w-[154px]`}
