@@ -32,26 +32,28 @@ export default function ListThesis({
   ],
 }: Props) {
   return (
-    <div className="px-[8.33%] mx-auto w-full pt-32 2xl:pt-[187px] pb-[170px] 2xl:pb-60 bg-secondary-content">
-      <div className="flex flex-col items-center justify-center gap-[91px] 2xl:gap-32">
+    <div className="px-[8.33%] mx-auto w-full pt-[60px] pb-20 lg:pt-32 2xl:pt-[187px] lg:pb-[170px] 2xl:pb-60 bg-secondary-content">
+      <div className="flex flex-col items-center justify-center gap-7 lg:gap-[91px] 2xl:gap-32">
         <Text variant="heading-3" className="text-primary">
           {title}
         </Text>
         <div className="flex flex-col divide-y-2 divide-white">
           {items.map((item, index) => (
-            <div className="flex items-start py-8 2xl:py-11 gap-10 2xl:gap-36">
+            <div className="flex items-start py-6 lg:py-8 2xl:py-11 gap-10 2xl:gap-36">
               <span
-                className="highligh-text font-bison font-black text-[142px] 2xl:text-[200px] leading-[80px] 2xl:leading-[160px]"
+                className="highligh-text font-bison font-black text-[65px] lg:text-[142px] 2xl:text-[200px] leading-[0.85] lg:leading-[80px] 2xl:leading-[160px]"
                 style={{ "-webkit-text-stroke-color": "#2D4BE0 !important" }}
               >
                 {index + 1}
               </span>
-              <span className="font-bison font-bold text-[56px] 2xl:text-[80px] leading-[56px] 2xl:leading-[80px] text-primary flex-1">
-                {item.name}
-              </span>
-              <Text variant="body" style={{ flex: "2" }}>
-                {item.text}
-              </Text>
+              <div class="flex flex-col gap-2 lg:contents">
+                <span className="font-bison font-bold text-[25px] leading-none lg:text-[56px] 2xl:text-[80px] lg:leading-[56px] 2xl:leading-[80px] text-primary flex-1 max-w-[50%] lg:max-w-min">
+                  {item.name}
+                </span>
+                <Text variant="body" style={{ flex: "2" }}>
+                  {item.text}
+                </Text>
+              </div>
             </div>
           ))}
         </div>
