@@ -30,14 +30,14 @@
 
 @layer components {
   .features {
-    @apply flex items-center justify-start gap-5 pb-3;    
+    @apply flex items-stretch justify-start gap-5 pb-3;    
     @apply relative max-w-full mx-auto overflow-x-auto;
   }
 
   .feature-card {
-    @apply w-[377.07px] h-[411px] min-w-[377.07px] min-h-[411px]  2xl:w-[530px] 2xl:h-[579px] 2xl:min-w-[530px] 2xl:min-h-[579px];
+    @apply min-w-[171.06px] min-h-[187.64px] lg:w-[377.07px] lg:h-[411px] lg:min-w-[377.07px] lg:min-h-[411px]  2xl:w-[530px] 2xl:h-[579px] 2xl:min-w-[530px] 2xl:min-h-[579px];
     @apply border border-primary;
-    @apply flex flex-col items-start justify-start gap-8 py-14 2xl:py-20 px-8;
+    @apply flex flex-col items-start justify-start gap-2 lg:gap-8 lg:py-14 2xl:py-20 px-6 lg:px-8 py-6;
   }
 
   .highligh-text {

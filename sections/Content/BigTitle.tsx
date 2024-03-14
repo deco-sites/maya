@@ -98,7 +98,7 @@ export default function BigTitle({
             )}
             {bottomText && (
               <p className="font-manrope text-[9px] lg:text-xl 2xl:text-3xl lg:leading-[28px] 2xl:leading-10 
-                text-[var(--color-main)] font-semibold uppercase text-center tracking-widest max-w-[50%] lg:max-w-min">
+                text-[var(--color-main)] font-semibold uppercase text-center tracking-widest max-w-[50%] lg:max-w-full">
                 {bottomText}
               </p>
             )}

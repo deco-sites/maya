@@ -39,7 +39,7 @@ export default function ListThesis({
         </Text>
         <div className="flex flex-col divide-y-2 divide-white">
           {items.map((item, index) => (
-            <div className="flex items-start py-6 lg:py-8 2xl:py-11 gap-10 2xl:gap-36">
+            <div className="flex items-start py-6 lg:py-8 2xl:py-11 gap-10 2xl:gap-24">
               <span
                 className="highligh-text font-bison font-black text-[65px] lg:text-[142px] 2xl:text-[200px] leading-[0.85] lg:leading-[80px] 2xl:leading-[160px]"
                 style={{ "-webkit-text-stroke-color": "#2D4BE0 !important" }}
@@ -47,7 +47,7 @@ export default function ListThesis({
                 {index + 1}
               </span>
               <div class="flex flex-col gap-2 lg:contents">
-                <span className="font-bison font-bold text-[25px] leading-none lg:text-[56px] 2xl:text-[80px] lg:leading-[56px] 2xl:leading-[80px] text-primary flex-1 max-w-[50%] lg:max-w-min">
+                <span className="font-bison font-bold text-[25px] leading-none lg:text-[56px] 2xl:text-[80px] lg:leading-[56px] 2xl:leading-[80px] text-primary flex-1 max-w-[50%] lg:max-w-full">
                   {item.name}
                 </span>
                 <Text variant="body" style={{ flex: "2" }}>
