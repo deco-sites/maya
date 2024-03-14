@@ -198,4 +198,12 @@
   .scrollbar-variant::-webkit-scrollbar-thumb:active {
     background-color: #222933;
   }
+
+  .flex-three-cols {
+    flex: 1 1 30%
+  }
+
+  .flex-two-cols {
+    flex: 1 1 40%;
+  }
 }
