@@ -25,14 +25,14 @@ export const SelectOptions = (
   // const open = useSignal(false);
 
   return (
-    <div class="max-w-md mx-auto space-y-6 w-full" // onBlur={() => {
+    <div class="max-w-md lg:mx-auto space-y-6 w-fit lg:w-full" // onBlur={() => {
       //   open.value = false;
       // }}
     >
       <div class="dropdown-menu relative">
         <label
           htmlFor={`dropdown-toggle-${name}`}
-          class="flex border-2 border-transparent focus:border-2 focus:border-primary focus:primary text-primary py-3 2xl:py-4 text-xs 2xl:text-base uppercase font-bold tracking-widest bg-secondary-content font-manrope items-center gap-3 w-full justify-between transition-all"
+          class="flex border-2 border-transparent focus:border-2 focus:border-primary focus:primary text-primary py-3 2xl:py-4 text-[5.19px] lg:text-xs 2xl:text-base uppercase font-bold tracking-widest bg-secondary-content font-manrope items-center gap-3 w-full justify-between transition-all"
         >
           {name}
           <Icon
@@ -74,7 +74,7 @@ export const SelectOptions = (
                       })
                     }
                   >
-                    <div class="text-accent-content text-base font-manrope">
+                    <div class="text-accent-content text-[5.19px] lg:text-base font-manrope">
                       {option.label}
                     </div>
                   </button>

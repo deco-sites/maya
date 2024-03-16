@@ -167,9 +167,9 @@
 
   /* Chrome, Edge and Safari */
   .scrollbar-variant::-webkit-scrollbar {
-    height: 15.65px;
-    width: 15.65px;
-    @apply 2xl:w-[22px] 2xl:h-[22px]
+    height: 7.13px;
+    width: 7.13px;
+    @apply  lg:w-[15.65px] lg:h-[15.65px] 2xl:w-[22px] 2xl:h-[22px]
   }
   .scrollbar-variant::-webkit-scrollbar-track {
     border-radius: 14.22px;

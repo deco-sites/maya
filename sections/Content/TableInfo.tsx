@@ -27,7 +27,8 @@ export interface Founder {
 
 export interface Content {
   image: {
-    src: ImageWidget;
+    desktop: ImageWidget;
+    mobile: ImageWidget;
     alt?: string;
   };
   sector: Option[];
@@ -65,27 +66,47 @@ export interface Props {
 
 const Content = ({ name, description, content }: ContentCollapse) => {
   const styleTextContent =
-    "font-manrope text-white text-sm 2xl:text-xl leading-[22px] 2xl:leading-8";
+    "font-manrope text-white text-[9px] lg:text-sm 2xl:text-xl lg:leading-[22px] 2xl:leading-8";
   return (
     <div className="border-b border-black">
-      <details className="collapse collapse-table py-[18px]  2xl:py-[26px] rounded-none group 
+      <details className="collapse collapse-table py-2 lg:py-[18px]  2xl:py-[26px] rounded-none group 
         hover:bg-primary transition-all duration-300">
-        <summary className="collapse-title p-0  transition-all">
+        <summary className="min-h-fit collapse-title p-0  transition-all">
           <div className="flex items-center">
-            <span class="font-manrope text-xl 2xl:text-3xl leading-7 2xl:leading-10 flex-1 text-black
-               group-hover:text-white transition-all collapse-text pl-6">
+            <span class="font-manrope text-[9px] lg:text-xl 2xl:text-3xl leading-3 lg:leading-7 2xl:leading-10 flex-1 text-black
+               group-hover:text-white transition-all collapse-text pl-1 lg:pl-6">
               {name}
             </span>
             <div
-              className="flex justify-between items-center pr-7 2xl:pr-10"
+              className="flex justify-between items-center lg:pr-7 pr-3 2xl:pr-10 gap-6 lg:gap-0"
               style={{ flex: "3" }}
             >
-              <span class="font-manrope text-sm 2xl:text-xl leading-[22px] 2xl:leading-8 max-w-lg
+              <span class="font-manrope text-[6.48px] lg:text-sm 2xl:text-xl leading-none lg:leading-[22px] 2xl:leading-8 max-w-lg
                  text-black group-hover:text-white 
                 transition-all duration-300 short-description collapse-text">
                 {description}
               </span>
-              <div className="relative w-[52.03px] h-[51.80px] 2xl:w-[73.14px] 2xl:h-[72.81px]">
+              <div className="relative min-w-[23.7px] min-h-6 lg:hidden">
+                <Icon
+                  id="PlusCircle"
+                  width={22}
+                  height={22}
+                  data-plus
+                  className="collapse-icon text-black group-hover:text-white 
+                    collapse-text"
+                  strokeWidth={2}
+                />
+                <Icon
+                  id="MinusCircle"
+                  width={22}
+                  height={22}
+                  data-minus
+                  className="collapse-icon text-black group-hover:text-white 
+                    collapse-text"
+                  strokeWidth={2}
+                />
+              </div>
+              <div className="hidden lg:block relative w-[52.03px] h-[51.80px] 2xl:w-[73.14px] 2xl:h-[72.81px]">
                 <Icon
                   id="PlusCircle"
                   width={73.14}
@@ -110,15 +131,23 @@ const Content = ({ name, description, content }: ContentCollapse) => {
         </summary>
         <div className="collapse-content flex flex-col">
           <Image
-            src={content.image.src}
+            src={content.image?.mobile ?? ""}
+            alt={content.image.alt ?? name}
+            width={253}
+            height={58}
+            className="w-full lg:hidden"
+            loading="lazy"
+          />
+          <Image
+            src={content.image?.desktop ?? ""}
             alt={content.image.alt ?? name}
             width={1280}
             height={290}
-            className="w-full"
+            className="w-full hidden lg:block"
             loading="lazy"
           />
-          <div className="flex flex-col px-11 2xl:px-16 ">
-            <div className="flex justify-between gap-4 2xl:gap-6  mt-6 2xl:mt-9  mb-10 2xl:mb-14">
+          <div className="flex flex-col px-3 lg:px-11 2xl:px-16 ">
+            <div className="flex justify-between gap-4 2xl:gap-6  mt-2 lg:mt-6 2xl:mt-9  mb-3 lg:mb-10 2xl:mb-14">
               <div className="flex flex-col">
                 <span className={`font-bold ${styleTextContent}`}>
                   Sector
@@ -147,22 +176,30 @@ const Content = ({ name, description, content }: ContentCollapse) => {
             <p className={` ${styleTextContent}`}>
               {content.longDescription}
             </p>
-            <div className="flex flex-col mt-10 2xl:mt-14 gap-3 2xl:gap-4">
-              <span className="font-manrope font-bold text-white text-sm 2xl:text-xl leading-[22px] 2xl:leading-8">
+            <div className="flex flex-col mt-3 lg:mt-10 2xl:mt-14 gap-1 lg:gap-3 2xl:gap-4">
+              <span className="font-manrope font-bold text-white text-[9px] lg:text-sm 2xl:text-xl lg:leading-[22px] 2xl:leading-8">
                 Founders
               </span>
-              <div className="flex flex-wrap gap-[34px] 2xl:gap-12">
+              <div className="flex flex-wrap gap-3 lg:gap-[34px] 2xl:gap-12">
                 {content.founders.map(({ image, name: founderName }) => (
-                  <div className="flex gap-2 2xl:gap-3 items-center">
+                  <div className="flex gap-2 2xl:gap-3 items-center w-2/5 lg:w-auto">
+                    <Image
+                      src={image}
+                      alt={founderName}
+                      width={40}
+                      height={40}
+                      loading="lazy"
+                      className="lg:hidden"
+                    />
                     <Image
                       src={image}
                       alt={founderName}
                       width={100}
                       height={100}
                       loading="lazy"
-                      className="w-[71.14px] h-[71.14px] 2xl:w-[100px] 2xl:h-[100px]"
+                      className="w-[71.14px] h-[71.14px] 2xl:w-[100px] 2xl:h-[100px] hidden lg:block"
                     />
-                    <p className="font-manrope text-sm 2xl:text-xl leading-[22px] 2xl:leading-8 text-white max-w-28 tracking-wider">
+                    <p className="font-manrope text-[9px] lg:text-sm 2xl:text-xl lg:leading-[22px] 2xl:leading-8 text-white max-w-16 lg:max-w-28 tracking-wider">
                       {founderName}
                     </p>
                   </div>
@@ -183,8 +220,9 @@ export default function TableInfoCompanys(
 ) {
   return (
     <div className="bg-secondary-content">
-      <div className="flex flex-col pt-[91px] 2xl:pt-32 pb-28 2xl:pb-[158px] max-w-[66.67%] mx-auto w-full">
-        <div className="flex justify-between border-b-2 border-primary items-end py-[22px] 2xl:py-8">
+      <div className="px-[8.33%] lg:px-0 flex flex-col pt-[50px] lg:pt-[91px] 
+        2xl:pt-32 pb-10 lg:pb-28 2xl:pb-[158px] lg:max-w-[66.67%] mx-auto w-full">
+        <div className="flex flex-col items-center justify-center lg:flex-row lg:justify-between border-b lg:border-b-2 border-primary lg:items-end pb-1 lg:py-[22px] 2xl:py-8 gap-6 lg:gap-0">
           <h2 className="block">
             {titleWords.map(({ title, inEmphasis }) => (
               <Text
@@ -196,7 +234,7 @@ export default function TableInfoCompanys(
               </Text>
             ))}
           </h2>
-          <div className="flex gap-4 2xl:gap-6 w-[35%]">
+          <div className="flex gap-2 lg:gap-4 2xl:gap-6 w-full justify-end lg:w-[35%]">
             <SelectOptions
               name="Country"
               options={filteredBy.country}
@@ -212,18 +250,18 @@ export default function TableInfoCompanys(
           </div>
         </div>
         <div className="flex flex-col">
-          <div className="flex items-center border-b border-black">
-            <span class="font-manrope font-bold text-xs 2xl:text-base leading-7  2xl:leading-10 flex-1 text-black tracking-widest uppercase">
+          <div className="py-1 lg:py-0 flex items-center border-b border-black">
+            <span class="font-manrope font-bold text-[5.19px] lg:text-xs 2xl:text-base lg:leading-7  2xl:leading-10 flex-1 text-black tracking-widest uppercase">
               Company name
             </span>
             <span
-              class="font-manrope font-bold text-xs 2xl:text-base leading-7  2xl:leading-10  text-black tracking-widest uppercase"
+              class="font-manrope font-bold text-[5.19px] lg:text-xs 2xl:text-base lg:leading-7  2xl:leading-10  text-black tracking-widest uppercase"
               style={{ flex: "3" }}
             >
               Short Description
             </span>
           </div>
-          <div className="flex flex-col max-h-[355px] 2xl:max-h-[500px] overflow-y-auto scrollbar-variant">
+          <div className="flex flex-col max-h-96 lg:max-h-[355px] 2xl:max-h-[500px] overflow-y-auto scrollbar-variant">
             {contents.map((contentProp) => <Content {...contentProp} />)}
           </div>
         </div>
@@ -270,7 +308,9 @@ const DEFAULT_PROPS = {
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       content: {
         image: {
-          src:
+          desktop:
+            "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/cc66e76b-1f1c-434a-97cf-2d3a4f22c9f8",
+          mobile:
             "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/cc66e76b-1f1c-434a-97cf-2d3a4f22c9f8",
           alt: "Company Alice",
         },
