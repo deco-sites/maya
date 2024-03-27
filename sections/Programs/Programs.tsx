@@ -27,17 +27,17 @@ export default function Programs(
   { filterBy, sections }: SectionProps<ReturnType<typeof loader>>,
 ) {
   return (
-    <div className="mt-24 2xl:mt-36 mb-36 2xl:mb-52">
-      <div className="w-full mx-auto mb-24 2xl:mb-60">
-        <div className="flex flex-col items-center gap-28 2xl:gap-40">
-          <div className="flex gap-5 2xl:gap-[30px] items-center">
+    <div className="lg:mt-24 2xl:mt-36 mb-11 lg:mb-36 2xl:mb-52">
+      <div className="lg:w-full mx-auto mb-11 lg:mb-24 2xl:mb-60">
+        <div className="flex flex-col items-center gap-2 lg:gap-28 2xl:gap-40">
+          <div className="flex gap-2 lg:gap-5 2xl:gap-[30px] items-center">
             {filterBy?.map((filter) => {
               const style = filter.active
                 ? "bg-primary text-white"
                 : "bg-transparent text-primary";
               return (
                 <button
-                  className={`appearance-none flex justify-center items-center uppercase tracking-wider text-base 2xl:text-2xl px-10 2xl:px-14 py-5 2xl:py-7 rounded-md min-h-16 2xl:min-h-[91px] border border-primary font-bold ${style}`}
+                  className={`appearance-none flex justify-center items-center uppercase tracking-wider text-[8px] lg:text-base 2xl:text-2xl px-4 lg:px-10 2xl:px-14 py-2 lg:py-5 2xl:py-7 rounded-md min-h-7 lg:min-h-16 2xl:min-h-[91px] border border-primary font-bold ${style}`}
                   {...usePartialSection({ href: `?filter=${filter.value}` })}
                 >
                   {filter.label}
@@ -47,7 +47,7 @@ export default function Programs(
           </div>
         </div>
       </div>
-      <div className="flex flex-col gap-20 2xl:gap-28">
+      <div className="flex flex-col gap-10 lg:gap-20 2xl:gap-28">
         {sections?.map(({ Component, props }, index) => (
           <div key={index} className="contents">
             <Component {...props} />
