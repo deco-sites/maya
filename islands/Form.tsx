@@ -22,15 +22,15 @@ function InputField(
     <div className="mb-5">
       <label
         htmlFor={id}
-        className="font-manrope block mb-3 2xl:mb-4 text-xl 2xl:text-3xl leading-7 2xl:leading-10 text-black"
+        className="font-manrope block mb-1 lg:mb-3 2xl:mb-4 text-[9px] lg:text-xl 2xl:text-3xl lg:leading-7 2xl:leading-10 text-black"
       >
         {label}
       </label>
       <input
         type={type}
         id={id}
-        className="border border-black rounded w-full min-h-[55px] 
-          2xl:min-h-[78px] font-manrope text-xl text-black outline-1"
+        className="border border-black rounded w-full min-h-6 lg:min-h-[55px] 
+          2xl:min-h-[78px] font-manrope  text-[9px] lg:text-xl text-black outline-1"
         required
       />
     </div>
@@ -71,21 +71,23 @@ function InputMulti({
     <div className="mb-5">
       <label
         htmlFor={id}
-        className="font-manrope mb-3 2xl:mb-4 text-xl 2xl:text-3xl leading-7 2xl:leading-10 text-black flex items-baseline gap-1"
+        className="font-manrope  mb-1 lg:mb-3 2xl:mb-4 text-[9px] lg:text-xl 2xl:text-3xl lg:leading-7 2xl:leading-10 text-black flex items-baseline gap-1"
       >
         {label}{" "}
-        <span className="text-xs">({"Add a comma after each tag"})</span>
+        <span className="text-[8px] lg:text-xs">
+          ({"Add a comma after each tag"})
+        </span>
       </label>
       <div className="tag-box">
         <ul
-          className="flex border border-black rounded flex-wrap list-none gap-1 px-4 2xl:px-6 py-3 2xl:py-4"
+          className="flex border border-black rounded flex-wrap list-none gap-1 px-1 lg:px-4 2xl:px-6 py-1 lg:py-3 2xl:py-4"
           onClick={() => {
             inputMultiRef.current?.focus();
           }}
         >
           {tags.length === 0 && (
             <li
-              className={` p-2 2xl:p-3 flex gap-2 text-black items-center justify-center cursor-pointer font-manrope ${
+              className={`p-1 lg:p-2 2xl:p-3 flex gap-2 text-black items-center justify-center cursor-pointer font-manrope text-[8px] lg:text-xs 2xl:text-body ${
                 placeholder ? "" : "bg-[#e4e4e4]"
               }`}
             >
@@ -94,7 +96,7 @@ function InputMulti({
                 width={16}
                 height={16}
                 strokeWidth={3}
-                className="text-black"
+                className="text-black w-2 h-2 lg:w-auto lg:h-auto"
               />
               {placeholder}
             </li>
@@ -102,7 +104,7 @@ function InputMulti({
           {tags.map((tag, index) => (
             <li
               key={index}
-              className="bg-[#e4e4e4] p-2 2xl:p-3 flex gap-2 text-black items-center justify-center cursor-pointer font-manrope"
+              className="bg-[#e4e4e4] p-1 lg:p-2 2xl:p-3 flex gap-2 text-black items-center justify-center cursor-pointer font-manrope text-[8px] lg:text-body"
               onClick={() => removeTag(index)}
             >
               {tag}
@@ -111,7 +113,7 @@ function InputMulti({
                 width={12}
                 height={12}
                 strokeWidth={3}
-                className="text-black"
+                className="text-black w-2 h-2 lg:w-auto lg:h-auto"
               />
             </li>
           ))}
@@ -119,7 +121,7 @@ function InputMulti({
             ref={inputMultiRef}
             type="string"
             id={id}
-            className="font-manrope text-xl text-black flex-1 border-none outline-0"
+            className="font-manrope text-[9px] lg:text-xl text-black flex-1 border-none outline-0"
             onKeyUp={(e) => addTag(e)}
             onBlur={(e) => addTag(e)}
             data-value={tags.join(",")}
@@ -176,35 +178,35 @@ export default function Form({
         <div className="mb-5">
           <label
             htmlFor="additionalInterests"
-            className="font-manrope block mb-3 2xl:mb-4 text-xl 2xl:text-3xl leading-7 2xl:leading-10 text-black w-3/5"
+            className="font-manrope block mb-1 lg:mb-3 2xl:mb-4 text-[9px] lg:text-xl 2xl:text-3xl lg:leading-7 2xl:leading-10 text-black w-3/5"
           >
             {additionalInterests}
           </label>
           <textarea
             id="additionalInterests"
-            className="border-black rounded w-full min-h-36 2xl:min-h-60 border outline-1 font-manrope text-xl text-black"
+            className="border-black rounded w-full min-h-36 2xl:min-h-60 border outline-1 font-manrope text-[9px] lg:text-xl text-black"
             required
           />
         </div>
 
-        <div class="flex flex-wrap gap-3 justify-between items-center">
+        <div class="flex flex-wrap gap-3 lg:gap-3 justify-start lg:justify-between items-center">
           <button
             type="submit"
-            class="font-manrope appearance-none flex justify-center items-center uppercase tracking-wider text-base 2xl:text-2xl px-10 2xl:px-14 py-5 2xl:py-7 rounded-md min-h-16 2xl:min-h-[91px] border border-primary font-bold bg-primary text-white"
+            class="font-manrope appearance-none flex justify-center items-center uppercase tracking-wider text-[8px] lg:text-base 2xl:text-2xl lg:px-10 2xl:px-14 py-2 lg:py-5 2xl:py-7 rounded-md min-h-7 lg:min-h-16 2xl:min-h-[91px] border border-primary font-bold bg-primary text-white min-w-20"
             disabled={loading}
           >
             {button}
           </button>
           <button
             type="button"
-            class="appearance-none flex justify-center items-center text-base 2xl:text-xl font-manrope text-black gap-2 2xl:gap-3"
+            class="appearance-none flex flex-row-reverse lg:flex-row justify-center items-center text-[8px] lg:text-base 2xl:text-xl font-manrope text-black gap-1 lg:gap-2 2xl:gap-3"
             disabled={loading}
           >
             <Icon
               id="Reload"
               width={24}
               height={24}
-              className="w-5 h-5 2xl:w-6 2xl:h-6"
+              className="w-2 h-2 lg:w-5 lg:h-5 2xl:w-6 2xl:h-6"
             />
             Clear form
           </button>
