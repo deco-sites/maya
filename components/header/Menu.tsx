@@ -2,10 +2,17 @@ import type { SiteNavigationElement } from "apps/commerce/types.ts";
 import Text from "$store/components/ui/Text.tsx";
 import MenuButton from "./Buttons/Menu.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
+import type { Lang } from "./Header.tsx";
+import { usePartialSection } from "deco/hooks/usePartialSection.ts";
+
+interface LangsPartition {
+  activeLang: Lang | null;
+  inactiveLangs: Lang[];
+}
 
 export interface Props {
   items: SiteNavigationElement[];
-  langText: string;
+  langText: Lang[];
 }
 
 const animationMenu = `
@@ -43,6 +50,18 @@ const animationMenu = `
 `;
 
 function Menu({ items, langText }: Props) {
+  const { activeLang, inactiveLangs } = langText?.reduce(
+    (partition: LangsPartition, lang: Lang) => {
+      if (lang.active) {
+        partition.activeLang = lang;
+      } else {
+        partition.inactiveLangs.push(lang);
+      }
+      return partition;
+    },
+    { activeLang: null, inactiveLangs: [] },
+  );
+
   return (
     <div class="w-full flex flex-col h-full bg-primary-content overflow-y-auto 2xl:gap-3 pb-10 max-h-dvh max-h-screen">
       <style
@@ -68,8 +87,35 @@ function Menu({ items, langText }: Props) {
         </a>
         <div className="ml-auto flex items-center gap-3 lg:gap-5 2xl:gap-8">
           <Text variant="caption" className="text-secondary ">
-            {langText}
+            {activeLang?.label ?? "EN"}
           </Text>
+          {
+            /* <div className="dropdown dropdown-hover">
+            <div tabIndex={0} role="button" className="">
+              <Text variant="caption" className="text-secondary ">
+                {activeLang?.label ?? "EN"}
+              </Text>
+            </div>
+            <div
+              tabIndex={0}
+              className="dropdown-content z-[1] menu bg-secondary-content  p-0 items-start"
+            >
+              {inactiveLangs.map(({ label, value }) => (
+                <button
+                  className={`appearance-none border-none`}
+                  {...usePartialSection({ href: `?language=${value}` })}
+                  style={{
+                    width: "max-content",
+                  }}
+                >
+                  <Text variant="caption" className="text-secondary ">
+                    {label}
+                  </Text>
+                </button>
+              ))}
+            </div>
+          </div> */
+          }
           <MenuButton />
         </div>
       </div>

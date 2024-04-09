@@ -1,12 +1,37 @@
 import { MenuButton } from "$store/islands/Header/Buttons.tsx";
 import Text from "deco-sites/maya/components/ui/Text.tsx";
 import Icon from "deco-sites/maya/components/ui/Icon.tsx";
+import type { Lang } from "./Header.tsx";
+import { usePartialSection } from "deco/hooks/usePartialSection.ts";
+
+interface LangsPartition {
+  activeLang: Lang | null;
+  inactiveLangs: Lang[];
+}
 
 function Navbar({
-  langText = "EN",
+  langText = [
+    {
+      label: "EN",
+      value: "en",
+      active: true,
+    },
+  ],
 }: {
-  langText: string;
+  langText: Lang[];
 }) {
+  const { activeLang, inactiveLangs } = langText.reduce(
+    (partition: LangsPartition, lang: Lang) => {
+      if (lang.active) {
+        partition.activeLang = lang;
+      } else {
+        partition.inactiveLangs.push(lang);
+      }
+      return partition;
+    },
+    { activeLang: null, inactiveLangs: [] },
+  );
+
   return (
     <>
       <div class="flex justify-between items-center gap-2 w-[83.23%] mx-auto py-14 lg:py-16">
@@ -28,9 +53,35 @@ function Navbar({
           />
         </a>
         <div className="ml-auto flex items-center gap-3 lg:gap-5 2xl:gap-8">
-          <Text variant="caption" className="text-[var(--color-lang-menu)]">
-            {langText}
-          </Text>
+          <div className="dropdown dropdown-hover">
+            <div tabIndex={0} role="button" className="">
+              <Text variant="caption" className="text-[var(--color-lang-menu)]">
+                {activeLang?.label ?? "EN"}
+              </Text>
+            </div>
+            <div
+              tabIndex={0}
+              className="dropdown-content z-[1] menu bg-secondary-content  p-0 items-start"
+            >
+              {inactiveLangs.map(({ label, value }) => (
+                <button
+                  className={`appearance-none border-none`}
+                  {...usePartialSection({ href: `?language=${value}` })}
+                  style={{
+                    width: "max-content",
+                  }}
+                >
+                  <Text
+                    variant="caption"
+                    className="text-[var(--color-lang-menu)]"
+                  >
+                    {label}
+                  </Text>
+                </button>
+              ))}
+            </div>
+          </div>
+
           <MenuButton />
         </div>
       </div>

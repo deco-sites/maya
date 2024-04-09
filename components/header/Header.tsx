@@ -1,10 +1,21 @@
 import Drawers from "$store/islands/Header/Drawers.tsx";
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
-import Alert from "./Alert.tsx";
 import Navbar from "./Navbar.tsx";
+import type { SectionProps } from "deco/types.ts";
+import { getCookies, setCookie } from "std/http/cookie.ts";
+import { AppContext } from "apps/website/mod.ts";
+// import { AppContext } from "deco-sites/maya/apps/site.ts";
+
+export interface Lang {
+  label: string;
+  value: string;
+  /**
+   * @hide
+   */
+  active?: boolean;
+}
 
 export interface Props {
-  alerts?: string[];
   /**
    * @title Navigation items
    * @description Navigation items used both on mobile and desktop menus
@@ -12,14 +23,12 @@ export interface Props {
   navItems?: SiteNavigationElement[] | null;
 
   /**
-   * @title Language Text
-   * @default EN
+   * @title Language Options
    */
-  langText?: string;
+  langText?: Lang[];
 }
 
 function Header({
-  alerts,
   navItems = [
     {
       "@type": "SiteNavigationElement",
@@ -42,8 +51,15 @@ function Header({
       url: "/",
     },
   ],
-  langText = "EN",
-}: Props) {
+  langText = [
+    {
+      label: "EN",
+      value: "en",
+      active: false,
+    },
+  ],
+}: SectionProps<ReturnType<typeof loader>>) {
+  // }: Props) {
   const items = navItems ?? [];
 
   return (
@@ -56,7 +72,6 @@ function Header({
             class="bg-[var(--bg-main)] w-full z-50"
             style={{ marginBottom: "-1px" }}
           >
-            {alerts && alerts.length > 0 && <Alert alerts={alerts} />}
             <Navbar
               langText={langText}
             />
@@ -66,5 +81,30 @@ function Header({
     </>
   );
 }
+
+const TEN_DAYS_MS = 10 * 24 * 3600 * 1_000;
+
+export const loader = (props: Props, req: Request, ctx: AppContext) => {
+  const cookies = getCookies(req.headers);
+  const currentCookieLang = cookies?.["language"] ?? "en";
+  const langParamValue = new URL(req.url)?.searchParams?.get("language");
+  if (langParamValue) {
+    setCookie(ctx.response.headers, {
+      name: "language",
+      value: langParamValue,
+      path: "/",
+      expires: new Date(Date.now() + TEN_DAYS_MS),
+    });
+  }
+
+  const currentLang = langParamValue ?? currentCookieLang;
+
+  const langText = props?.langText?.map((item) => ({
+    ...item,
+    active: item.value === currentLang,
+  }));
+
+  return { ...props, langText };
+};
 
 export default Header;
