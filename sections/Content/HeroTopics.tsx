@@ -51,8 +51,11 @@ export default function HeroTopics({
     "bottom-0 translate-x-1/2 sm:translate-x-0 right-0 lg:-right-12 2xl:-right-2",
   ];
   return (
-    <div className="w-[79.73%] sm:w-[66.67%] 2xl:max-w-screen-xl mx-auto py-14 
-     lg:pt-40 lg:pb-28 2xl:pt-60 2xl:pb-40">
+    <div
+      className="w-[79.73%] sm:w-[66.67%] 2xl:max-w-screen-xl mx-auto py-14 
+     lg:pt-40 lg:pb-28 2xl:pt-60 2xl:pb-40 opacity-0 duration-1000 transition-all"
+      data-replace='{"opacity-0": "opacity-100" }'
+    >
       <div className="flex w-full h-full justify-center items-center flex-col gap-10 sm:gap-5 ">
         <Text variant="heading-3" className="tracking-wide text-primary">
           {title}
@@ -72,7 +75,7 @@ export default function HeroTopics({
             alt={image.alt}
             width={1280}
             height={627}
-            className="hidden sm:block lg:w-3/4 mx-auto 2xl:w-full h-full object-contain"
+            className="hidden sm:block mx-auto 2xl:w-full h-full object-contain"
           />
           {topics.map((topic, index) => (
             <span

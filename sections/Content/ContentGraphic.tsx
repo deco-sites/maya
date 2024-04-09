@@ -19,7 +19,10 @@ export default function ContentGraphic(
   }: Props,
 ) {
   return (
-    <div className="w-full lg:w-[83.23%] mx-auto flex flex-col mb-12 lg:mb-20 2xl:mb-44">
+    <div
+      className="w-full lg:w-[83.23%] mx-auto flex flex-col mb-12 lg:mb-20 2xl:mb-44 opacity-0 duration-1000 transition-all"
+      data-replace='{"opacity-0": "opacity-100" }'
+    >
       <div className="flex bg-white w-full min-h-80 lg:min-h-[621.8145833333333px] 2xl:min-h-[874px]">
         <div className="w-2/5 bg-primary-content flex justify-center items-center lg:py-16 2xl:py-24 px-5 lg:px-11 2xl:px-16">
           <Grafismo

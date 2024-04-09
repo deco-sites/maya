@@ -29,8 +29,9 @@ export default function PeopleCards({ cards = [] }: Props) {
         {cards.map(({ name, image, jobPosition, socialAction }) => (
           <div
             key={name}
-            className="flex flex-col  gap-2 lg:max-w-[30%] flex-two-cols lg:flex-three-cols"
+            className="flex flex-col  gap-2 lg:max-w-[30%] flex-two-cols lg:flex-three-cols opacity-0 duration-1000 transition-all"
             // style={{ flex: "1 1 30%" }}
+            data-replace='{"opacity-0": "opacity-100" }'
           >
             <Image
               loading="lazy"

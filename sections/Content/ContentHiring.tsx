@@ -12,7 +12,10 @@ export default function ContentHiring(
   if (!imageShowcase) return null;
 
   return (
-    <div className="mx-auto my-14 lg:my-28 2xl:my-40 bg-accent-content w-[83.23%]">
+    <div
+      className="mx-auto my-14 lg:my-28 2xl:my-40 bg-accent-content w-[83.23%] opacity-0 duration-1000 transition-all"
+      data-replace='{"opacity-0": "opacity-100" }'
+    >
       <div className="px-1 lg:px-24 2xl:px-32 pt-7 pb-3 lg:py-14 2xl:py-20 flex flex-col sm:flex-row justify-center 
         items-center gap-5 lg:gap-6 2xl:gap-9">
         <h3 className="text-white font-bison font-semibold text-4xl lg:text-[85px] 

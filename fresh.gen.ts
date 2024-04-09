@@ -9,6 +9,7 @@ import * as $Header_Drawers from "./islands/Header/Drawers.tsx";
 import * as $Newsletter from "./islands/Newsletter.tsx";
 import * as $ShippingSimulation from "./islands/ShippingSimulation.tsx";
 import * as $SliderJS from "./islands/SliderJS.tsx";
+import * as $TailwindAnimationConfig from "./islands/TailwindAnimationConfig.tsx";
 import { type Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -22,6 +23,7 @@ const manifest = {
     "./islands/Newsletter.tsx": $Newsletter,
     "./islands/ShippingSimulation.tsx": $ShippingSimulation,
     "./islands/SliderJS.tsx": $SliderJS,
+    "./islands/TailwindAnimationConfig.tsx": $TailwindAnimationConfig,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;

@@ -32,7 +32,10 @@ export default function ListThesis({
   ],
 }: Props) {
   return (
-    <div className="px-[8.33%] mx-auto w-full pt-[60px] pb-20 lg:pt-32 2xl:pt-[187px] lg:pb-[170px] 2xl:pb-60 bg-secondary-content">
+    <div
+      className="px-[8.33%] mx-auto w-full pt-[60px] pb-20 lg:pt-32 2xl:pt-[187px] lg:pb-[170px] 2xl:pb-60 bg-secondary-content opacity-0 duration-1000 transition-all"
+      data-replace='{"opacity-0": "opacity-100" }'
+    >
       <div className="flex flex-col items-center justify-center gap-7 lg:gap-[91px] 2xl:gap-32">
         <Text variant="heading-3" className="text-primary">
           {title}

@@ -35,7 +35,10 @@ function FeatureCard({ title, text }: Card) {
 
 export default function Features({ title, cards, showIconRight }: Props) {
   return (
-    <section class="relative mx-auto w-full py-20 2xl:py-36 lg:pl-24">
+    <section
+      class="relative mx-auto w-full py-20 2xl:py-36 lg:pl-24 opacity-0 duration-1000 transition-all"
+      data-replace='{"opacity-0": "opacity-100" }'
+    >
       <div class="flex justify-center items-center flex-col ">
         {title && (
           <Text

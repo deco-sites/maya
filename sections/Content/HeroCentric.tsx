@@ -65,7 +65,10 @@ export default function HeroCentric({
   },
 }: Props) {
   return (
-    <div className="w-full relative pt-[182px] pb-20 lg:pt-60 2xl:pt-96 lg:pb-36 bg-secondary-content">
+    <div
+      className="w-full relative pt-[182px] pb-20 lg:pt-60 2xl:pt-96 lg:pb-36 bg-secondary-content opacity-0 duration-1000 transition-all"
+      data-replace='{"opacity-0": "opacity-100" }'
+    >
       <div className="absolute left-0 top-0 w-full h-full lg:pl-9">
         <Image
           loading="lazy"

@@ -219,7 +219,10 @@ export default function TableInfoCompanys(
   >,
 ) {
   return (
-    <div className="bg-secondary-content">
+    <div
+      className="bg-secondary-content opacity-0 duration-1000 transition-all"
+      data-replace='{"opacity-0": "opacity-100" }'
+    >
       <div className="px-[8.33%] lg:px-0 flex flex-col pt-[50px] lg:pt-[91px] 
         2xl:pt-32 pb-10 lg:pb-28 2xl:pb-[158px] lg:max-w-[66.67%] mx-auto w-full">
         <div className="flex flex-col items-center justify-center lg:flex-row lg:justify-between border-b lg:border-b-2 border-primary lg:items-end pb-1 lg:py-[22px] 2xl:py-8 gap-6 lg:gap-0">

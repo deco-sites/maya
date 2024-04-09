@@ -56,7 +56,10 @@ export default function InfoCard({
   },
 }: Props) {
   return (
-    <div className="lg:px-[8.33%] mx-auto w-full bg-primary-content pt-[89px] pb-[67px] lg:pt-36 lg:pb-24 2xl:pt-52 2xl:pb-36">
+    <div
+      className="lg:px-[8.33%] mx-auto w-full bg-primary-content pt-[89px] pb-[67px] lg:pt-36 lg:pb-24 2xl:pt-52 2xl:pb-36 opacity-0 duration-1000 transition-all"
+      data-replace='{"opacity-0": "opacity-100" }'
+    >
       <div className="w-[63.43%] lg:w-full mx-auto  flex flex-col justify-center items-center gap-10 lg:gap-24 2xl:gap-36">
         <div className="flex flex-col lg:flex-row gap-10 lg:gap-24 2xl:gap-36 items-start justify-between">
           <div className="flex flex-col gap-7 lg:gap-20 flex-1">
