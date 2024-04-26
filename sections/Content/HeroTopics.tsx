@@ -1,7 +1,5 @@
-import { Picture, Source } from "apps/website/components/Picture.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Text from "$store/components/ui/Text.tsx";
-import Image from "apps/website/components/Image.tsx";
 
 export interface Props {
   title?: string;
@@ -61,30 +59,32 @@ export default function HeroTopics({
           {title}
         </Text>
         <div className="relative mx-auto 2xl:w-auto">
-          <Image
-            loading="lazy"
-            src={image.desktop}
-            alt={image.alt}
-            width={250}
-            height={122.4609375}
-            className=" w-full sm:hidden mx-auto h-full object-contain"
-          />
-          <Image
-            loading="lazy"
-            src={image.desktop}
-            alt={image.alt}
-            width={1280}
-            height={627}
-            className="hidden sm:block mx-auto 2xl:w-full h-full object-contain"
-          />
+          <div className="mx-auto 2xl:w-full h-full flex justify-center items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              id="Layer_1"
+              data-name="Layer 1"
+              version="1.1"
+              viewBox="0 0 2040 1080"
+              class="infinity fill-none w-[250px] h-[122px] lg:w-full lg:h-[448px] lg:scale-110"
+              data-replace='{"infinity-animation": "active" }'
+              preserveAspectRatio="xMidYMid meet"
+            >
+              <path
+                class="cls-1"
+                d="M988.9,517.3l-206.5-206.5c-126.5-126.5-331.7-126.5-458.3,0-126.5,126.5-126.5,331.7,0,458.3,126.5,126.5,331.7,126.5,458.3,0l457.5-457.7c126.5-126.5,331.7-126.5,458.3,0,126.5,126.5,126.5,331.7,0,458.3-126.5,126.5-331.7,126.5-458.3,0l-207-207"
+              />
+            </svg>
+          </div>
           {topics.map((topic, index) => (
             <span
               key={topic}
               className={`absolute font-bison font-bold  text-sm lg:text-3xl 2xl:text-[42px] text-secondary
-                text-left uppercase leading-none ${
+                text-left uppercase leading-none duration-300 opacity-0 transition-all ${
                 positionTopics?.[index]
               } max-w-14 lg:max-w-[154px]`}
-              style={{ maxWidth: "" }}
+              style={{ maxWidth: "", transitionDelay: `${0.2 * index + 1}s` }}
+              data-replace='{"opacity-0": "opacity-100" }'
             >
               {topic}
             </span>

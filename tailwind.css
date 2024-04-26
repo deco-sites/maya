@@ -206,4 +206,22 @@
   .flex-two-cols {
     flex: 1 1 40%;
   }
+
+  .cls-1 {
+    fill: none;
+    stroke: #2d4be0;
+    stroke-miterlimit: 10;
+    stroke-width: 5px;
+  }
+
+  svg.infinity .cls-1 {
+    stroke-dashoffset: 4288.37158203125px;
+    stroke-dasharray: 4288.37158203125px;
+    -webkit-transition: stroke-dashoffset 1.7s ease-in-out 0.2s;
+            transition: stroke-dashoffset 1.7s ease-in-out 0.2s;
+  }
+  
+  svg.infinity.active .cls-1 {
+    stroke-dashoffset: 0;
+  }
 }
