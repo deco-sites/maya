@@ -1,9 +1,10 @@
 import Icon from "$store/components/ui/Icon.tsx";
 import { useSignal } from "@preact/signals";
-import Index from "apps/vtex/workflows/events.ts";
-// import { invoke } from "$store/runtime.ts";
 import type { JSX } from "preact";
-import { useEffect, useRef, useState } from "preact/hooks";
+import { useRef, useState } from "preact/hooks";
+import { invoke } from "../runtime.ts";
+import { render } from "apps/resend/utils/reactEmail.ts";
+import { StripeWelcomeEmail } from "deco-sites/maya/mail/contact.tsx";
 
 export interface Props {
   name?: string;
@@ -31,7 +32,7 @@ function InputField(
         id={id}
         className="border border-black rounded w-full min-h-6 lg:min-h-[55px] 
           2xl:min-h-[78px] font-manrope  text-[9px] lg:text-xl text-black outline-1"
-        required
+        // required
       />
     </div>
   );
@@ -154,7 +155,15 @@ export default function Form({
       // const email =
       //   (e.currentTarget.elements.namedItem("email") as RadioNodeList)?.value;
       await console.log(e.currentTarget.elements);
-      // await invoke.vtex.actions.newsletter.subscribe({ email });
+      await invoke.resend.actions.submitEmail({
+        payload: {
+          to: "mw.marcowilliam@gmail.com",
+          html: render(<StripeWelcomeEmail />, {
+            pretty: true,
+          }),
+          subject: "Formulário de contato | Maya - deco",
+        },
+      });
     } finally {
       loading.value = false;
     }
@@ -185,7 +194,7 @@ export default function Form({
           <textarea
             id="additionalInterests"
             className="border-black rounded w-full min-h-36 2xl:min-h-60 border outline-1 font-manrope text-[9px] lg:text-xl text-black"
-            required
+            // required
           />
         </div>
 
