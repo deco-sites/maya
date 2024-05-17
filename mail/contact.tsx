@@ -3,6 +3,7 @@ import {
   Button,
   Container,
   Head,
+  Heading,
   Hr,
   Html,
   Img,
@@ -12,78 +13,92 @@ import {
   Text,
 } from "apps/resend/utils/reactEmail.ts";
 
-export const StripeWelcomeEmail = () => (
+interface Props {
+  name: string;
+  email: string;
+  linkedin: string;
+  skills?: string;
+  insterestedCompanies?: string;
+  additionalInterests?: string;
+}
+
+export const ContactEmailTemplate = ({
+  name,
+  email,
+  linkedin,
+  skills,
+  insterestedCompanies,
+  additionalInterests,
+}: Props) => (
   <Html>
     <Head />
-    <Preview>You're now ready to make live transactions with Stripe!</Preview>
+    <Preview>
+      Email com dados preenchidos no formulário da página
+      https://maya.deco.site/career
+    </Preview>
     <Body style={main}>
       <Container style={container}>
         <Section style={box}>
           <Img
-            src={`https://react-email-demo-ndjnn09xj-resend.vercel.app/static/stripe-logo.png`}
-            width="49"
-            height="21"
-            alt="Stripe"
+            src={`https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/ce106e89-e920-43e4-bc2f-530da75d149e`}
+            width="246"
+            height="45"
+            alt="Maya"
           />
           <Hr style={hr} />
+          <Heading style={title}>
+            Nome
+          </Heading>
           <Text style={paragraph}>
-            Thanks for submitting your account information. You're now ready to
-            make live transactions with Stripe!
+            {name}
           </Text>
-          <Text style={paragraph}>
-            You can view your payments and a variety of other information about
-            your account right from your dashboard.
-          </Text>
-          <Button style={button} href="https://dashboard.stripe.com/login">
-            View your Stripe Dashboard
-          </Button>
           <Hr style={hr} />
+          <Heading style={title}>
+            Email
+          </Heading>
           <Text style={paragraph}>
-            If you haven't finished your integration, you might find our{" "}
-            <Link style={anchor} href="https://stripe.com/docs">
-              docs
-            </Link>{" "}
-            handy.
+            {email}
           </Text>
+          <Hr style={hr} />
+          <Heading style={title}>
+            Linkedin
+          </Heading>
           <Text style={paragraph}>
-            Once you're ready to start accepting payments, you'll just need to
-            use your live{" "}
-            <Link
-              style={anchor}
-              href="https://dashboard.stripe.com/login?redirect=%2Fapikeys"
-            >
-              API keys
-            </Link>{" "}
-            instead of your test API keys. Your account can simultaneously be
-            used for both test and live requests, so you can continue testing
-            while accepting live payments. Check out our{" "}
-            <Link style={anchor} href="https://stripe.com/docs/dashboard">
-              tutorial about account basics
-            </Link>
-            .
+            {linkedin}
           </Text>
+          <Hr style={hr} />
+          {!!skills && (
+            <>
+              <Heading style={title}>
+                Skills
+              </Heading>
+              <Text style={paragraph}>
+                {skills}
+              </Text>
+              <Hr style={hr} />
+            </>
+          )}
+          {!!insterestedCompanies && (
+            <>
+              <Heading style={title}>
+                Insterested Companies
+              </Heading>
+              <Text style={paragraph}>
+                {insterestedCompanies}
+              </Text>
+              <Hr style={hr} />
+            </>
+          )}
+
+          <Heading style={title}>
+            Additional Interests
+          </Heading>
           <Text style={paragraph}>
-            Finally, we've put together a{" "}
-            <Link
-              style={anchor}
-              href="https://stripe.com/docs/checklist/website"
-            >
-              quick checklist
-            </Link>{" "}
-            to ensure your website conforms to card network standards.
+            {additionalInterests}
           </Text>
-          <Text style={paragraph}>
-            We'll be here to help you with any step along the way. You can find
-            answers to most questions and get in touch with us on our{" "}
-            <Link style={anchor} href="https://support.stripe.com/">
-              support site
-            </Link>
-            .
-          </Text>
-          <Text style={paragraph}>— The Stripe team</Text>
           <Hr style={hr} />
           <Text style={footer}>
-            Stripe, 354 Oyster Point Blvd, South San Francisco, CA 94080
+            Maya, Deco site
           </Text>
         </Section>
       </Container>
@@ -111,6 +126,14 @@ const box = {
 const hr = {
   borderColor: "#e6ebf1",
   margin: "20px 0",
+};
+
+const title = {
+  color: "#525f7f",
+  fontSize: "18px",
+  lineHeight: "24px",
+  fontWeight: "bold",
+  textAlign: "left" as const,
 };
 
 const paragraph = {

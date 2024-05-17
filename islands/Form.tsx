@@ -4,7 +4,7 @@ import type { JSX } from "preact";
 import { useRef, useState } from "preact/hooks";
 import { invoke } from "../runtime.ts";
 import { render } from "apps/resend/utils/reactEmail.ts";
-import { StripeWelcomeEmail } from "deco-sites/maya/mail/contact.tsx";
+import { ContactEmailTemplate } from "deco-sites/maya/mail/contact.tsx";
 
 export interface Props {
   name?: string;
@@ -14,7 +14,17 @@ export interface Props {
   interestedCompanies?: string;
   additionalInterests?: string;
   button?: string;
+  submitedText?: string;
 }
+
+type FormElements = {
+  name: HTMLInputElement;
+  email: HTMLInputElement;
+  linkedin: HTMLInputElement;
+  skills: HTMLDataListElement;
+  insterestedCompanies: HTMLDataListElement;
+  additionalInterests: HTMLInputElement;
+};
 
 function InputField(
   { type, id, label }: { type: string; id: string; label: string },
@@ -32,7 +42,7 @@ function InputField(
         id={id}
         className="border border-black rounded w-full min-h-6 lg:min-h-[55px] 
           2xl:min-h-[78px] font-manrope  text-[9px] lg:text-xl text-black outline-1"
-        // required
+        required
       />
     </div>
   );
@@ -143,8 +153,10 @@ export default function Form({
   additionalInterests =
     "Anything additional you would like to tell us about yourself and/or interests?",
   button = "Submit",
+  submitedText = "Sent! ✅",
 }: Props) {
   const loading = useSignal(false);
+  const submited = useSignal(false);
 
   const handleSubmit: JSX.GenericEventHandler<HTMLFormElement> = async (e) => {
     e.preventDefault();
@@ -154,18 +166,36 @@ export default function Form({
 
       // const email =
       //   (e.currentTarget.elements.namedItem("email") as RadioNodeList)?.value;
-      await console.log(e.currentTarget.elements);
-      await invoke.resend.actions.submitEmail({
-        payload: {
-          to: "mw.marcowilliam@gmail.com",
-          html: render(<StripeWelcomeEmail />, {
-            pretty: true,
-          }),
-          subject: "Formulário de contato | Maya - deco",
-        },
+      const currentForm = e.currentTarget as HTMLFormElement;
+      const {
+        name,
+        email,
+        linkedin,
+        skills,
+        insterestedCompanies,
+        additionalInterests,
+      } = currentForm.elements as unknown as FormElements;
+
+      const payload = {
+        name: name?.value,
+        email: email?.value,
+        linkedin: linkedin?.value,
+        skills: skills?.dataset?.value,
+        insterestedCompanies: insterestedCompanies?.dataset?.value,
+        additionalInterests: additionalInterests?.value,
+      };
+
+      console.log(payload);
+      await invoke.resend.actions.emails.send({
+        to: "mw.marcowilliam@gmail.com",
+        html: render(<ContactEmailTemplate {...payload} />, {
+          pretty: true,
+        }),
+        subject: "Formulário de contato | Maya - deco",
       });
     } finally {
       loading.value = false;
+      submited.value = true;
     }
   };
 
@@ -174,6 +204,7 @@ export default function Form({
       <form
         class="form-control"
         onSubmit={handleSubmit}
+        name="contact"
       >
         <InputField type="text" id="name" label={name} />
         <InputField type="email" id="email" label={email} />
@@ -194,7 +225,7 @@ export default function Form({
           <textarea
             id="additionalInterests"
             className="border-black rounded w-full min-h-36 2xl:min-h-60 border outline-1 font-manrope text-[9px] lg:text-xl text-black"
-            // required
+            required
           />
         </div>
 
@@ -202,14 +233,15 @@ export default function Form({
           <button
             type="submit"
             class="font-manrope appearance-none flex justify-center items-center uppercase tracking-wider text-[8px] lg:text-base 2xl:text-2xl lg:px-10 2xl:px-14 py-2 lg:py-5 2xl:py-7 rounded-md min-h-7 lg:min-h-16 2xl:min-h-[91px] border border-primary font-bold bg-primary text-white min-w-20"
-            disabled={loading}
+            disabled={loading.value || submited.value}
           >
-            {button}
+            {submited.value ? submitedText : button}
           </button>
-          <button
+          <label
+            htmlFor="ClearForm"
             type="button"
             class="appearance-none flex flex-row-reverse lg:flex-row justify-center items-center text-[8px] lg:text-base 2xl:text-xl font-manrope text-black gap-1 lg:gap-2 2xl:gap-3"
-            disabled={loading}
+            disabled={loading.value}
           >
             <Icon
               id="Reload"
@@ -217,8 +249,15 @@ export default function Form({
               height={24}
               className="w-2 h-2 lg:w-5 lg:h-5 2xl:w-6 2xl:h-6"
             />
-            Clear form
-          </button>
+
+            <input
+              id="ClearForm"
+              type="reset"
+              value="Clear form"
+              class="text-[8px] lg:text-base 2xl:text-xl font-manrope text-black"
+            />
+            {/* Clear form */}
+          </label>
         </div>
       </form>
     </div>
