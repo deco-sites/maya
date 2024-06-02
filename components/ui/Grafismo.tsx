@@ -1,5 +1,5 @@
 import type { JSX } from "preact";
-import { lazy, Suspense } from "preact/compat";
+// import { lazy, Suspense } from "preact/compat";
 
 export type Graphics =
   | "Grafismo1"

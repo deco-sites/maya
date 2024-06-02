@@ -1,13 +1,13 @@
 import {
   Body,
-  Button,
+  // Button,
   Container,
   Head,
   Heading,
   Hr,
   Html,
   Img,
-  Link,
+  // Link,
   Preview,
   Section,
   Text,
@@ -143,22 +143,22 @@ const paragraph = {
   textAlign: "left" as const,
 };
 
-const anchor = {
-  color: "#556cd6",
-};
+// const anchor = {
+//   color: "#556cd6",
+// };
 
-const button = {
-  backgroundColor: "#656ee8",
-  borderRadius: "5px",
-  color: "#fff",
-  fontSize: "16px",
-  fontWeight: "bold",
-  textDecoration: "none",
-  textAlign: "center" as const,
-  display: "block",
-  width: "100%",
-  padding: "10px",
-};
+// const button = {
+//   backgroundColor: "#656ee8",
+//   borderRadius: "5px",
+//   color: "#fff",
+//   fontSize: "16px",
+//   fontWeight: "bold",
+//   textDecoration: "none",
+//   textAlign: "center" as const,
+//   display: "block",
+//   width: "100%",
+//   padding: "10px",
+// };
 
 const footer = {
   color: "#8898aa",

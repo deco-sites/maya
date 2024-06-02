@@ -3,7 +3,6 @@ import Text from "$store/components/ui/Text.tsx";
 import MenuButton from "./Buttons/Menu.tsx";
 import Icon from "$store/components/ui/Icon.tsx";
 import type { Lang } from "./Header.tsx";
-import { usePartialSection } from "deco/hooks/usePartialSection.ts";
 
 interface LangsPartition {
   activeLang: Lang | null;
@@ -50,7 +49,7 @@ const animationMenu = `
 `;
 
 function Menu({ items, langText }: Props) {
-  const { activeLang, inactiveLangs } = langText?.reduce(
+  const { activeLang } = langText?.reduce(
     (partition: LangsPartition, lang: Lang) => {
       if (lang.active) {
         partition.activeLang = lang;

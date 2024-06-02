@@ -2,7 +2,6 @@ import { MenuButton } from "$store/islands/Header/Buttons.tsx";
 import Text from "deco-sites/maya/components/ui/Text.tsx";
 import Icon from "deco-sites/maya/components/ui/Icon.tsx";
 import type { Lang } from "./Header.tsx";
-import { usePartialSection } from "deco/hooks/usePartialSection.ts";
 
 interface LangsPartition {
   activeLang: Lang | null;
@@ -64,9 +63,9 @@ function Navbar({
               className="dropdown-content z-[1] menu bg-secondary-content  p-0 items-start"
             >
               {inactiveLangs.map(({ label, value }) => (
-                <button
+                <a
                   className={`appearance-none border-none`}
-                  {...usePartialSection({ href: `?language=${value}` })}
+                  href={`?language=${value}`}
                   style={{
                     width: "max-content",
                   }}
@@ -77,7 +76,7 @@ function Navbar({
                   >
                     {label}
                   </Text>
-                </button>
+                </a>
               ))}
             </div>
           </div>
