@@ -13,7 +13,7 @@ export function TailwindAnimationConfig() {
           );
           for (const key in replaceData) {
             element.classList.remove(key);
-            element.classList.add(replaceData[key]);
+            element.classList.add(...(replaceData[key].split(" ")));
           }
         }
       } catch (error) {
