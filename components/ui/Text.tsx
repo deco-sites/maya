@@ -14,6 +14,8 @@ const variants = {
   "heading-3": "font-bison text-[32px] lg:text-7xl 2xl:text-[100px] font-bold",
   "content-1":
     "font-manrope text-xs lg:text-2xl 2xl:text-4xl 2xl:leading-[45px] text-primary",
+  "content-2":
+    "font-manrope text-xs lg:text-base 2xl:text-2xl 2xl:leading-[45px] text-primary",
   "body":
     "font-manrope lg:leading-6 2xl:leading-9 text-[8px] lg:text-lg 2xl:text-2xl text-black",
 };
