@@ -4,7 +4,7 @@ import type { JSX } from "preact";
 import { useRef, useState } from "preact/hooks";
 import { invoke } from "../runtime.ts";
 import { render } from "apps/resend/utils/reactEmail.ts";
-import { ContactEmailTemplate } from "deco-sites/maya/mail/contact.tsx";
+import { ContactEmailTemplate } from "site/mail/contact.tsx";
 
 export interface Props {
   name?: string;

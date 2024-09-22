@@ -4,7 +4,7 @@ import Navbar from "./Navbar.tsx";
 import type { SectionProps } from "deco/types.ts";
 import { getCookies, setCookie } from "std/http/cookie.ts";
 import { AppContext } from "apps/website/mod.ts";
-// import { AppContext } from "deco-sites/maya/apps/site.ts";
+// import { AppContext } from "site/apps/site.ts";
 
 export interface Lang {
   label: string;

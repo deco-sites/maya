@@ -3,7 +3,7 @@ import type { FilterBy } from "./Programs.tsx";
 import type { Graphics } from "$store/components/ui/Grafismo.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import { Grafismo } from "deco-sites/maya/components/ui/Grafismo.tsx";
+import { Grafismo } from "site/components/ui/Grafismo.tsx";
 
 /** @title Variant Default */
 export interface Default {
