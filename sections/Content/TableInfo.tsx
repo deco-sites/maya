@@ -1,9 +1,9 @@
-import { Title } from "$store/sections/Content/HeroMain.tsx";
+import { Title } from "site/sections/Content/HeroMain.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
-import Text from "$store/components/ui/Text.tsx";
-import Icon from "$store/components/ui/Icon.tsx";
+import Text from "site/components/ui/Text.tsx";
+import Icon from "site/components/ui/Icon.tsx";
 import Image from "apps/website/components/Image.tsx";
-import { SelectOptions } from "$store/components/ui/SelectOptions.tsx";
+import { SelectOptions } from "site/components/ui/SelectOptions.tsx";
 import { type SectionProps } from "@deco/deco";
 interface FilteredBy {
   [key: string]: Option[];

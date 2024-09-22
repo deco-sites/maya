@@ -1,6 +1,5 @@
 {
   "imports": {
-    "$store/": "./",
     "site/": "./",
     "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.101.14/",
     "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.59.12/",

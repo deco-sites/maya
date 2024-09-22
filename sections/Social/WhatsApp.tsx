@@ -1,1 +1,1 @@
-export { default } from "$store/components/ui/WhatsApp.tsx";
+export { default } from "site/components/ui/WhatsApp.tsx";

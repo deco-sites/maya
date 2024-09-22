@@ -1,5 +1,5 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
-import Text from "$store/components/ui/Text.tsx";
+import Text from "site/components/ui/Text.tsx";
 
 export interface Props {
   title?: string;

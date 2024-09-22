@@ -1,5 +1,5 @@
-import { Title } from "$store/sections/Content/HeroMain.tsx";
-import Text from "$store/components/ui/Text.tsx";
+import { Title } from "site/sections/Content/HeroMain.tsx";
+import Text from "site/components/ui/Text.tsx";
 import { HTMLWidget as HTML } from "apps/admin/widgets.ts";
 
 /**

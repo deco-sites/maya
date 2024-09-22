@@ -1,5 +1,5 @@
-import type { Graphics } from "$store/components/ui/Grafismo.tsx";
-import { Grafismo } from "$store/components/ui/Grafismo.tsx";
+import type { Graphics } from "site/components/ui/Grafismo.tsx";
+import { Grafismo } from "site/components/ui/Grafismo.tsx";
 
 export interface Props {
   /**

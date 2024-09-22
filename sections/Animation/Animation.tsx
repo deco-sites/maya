@@ -1,4 +1,4 @@
-import { useId } from "$store/sdk/useId.ts";
+import { useId } from "site/sdk/useId.ts";
 import { type Section } from "@deco/deco/blocks";
 const animationClasses = {
   "fade-in": "animate-fade-in",

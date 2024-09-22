@@ -1,4 +1,4 @@
-import Icon from "$store/components/ui/Icon.tsx";
+import Icon from "site/components/ui/Icon.tsx";
 import { useSignal } from "@preact/signals";
 // import type { JSX } from "preact";
 import { useRef, useState } from "preact/hooks";

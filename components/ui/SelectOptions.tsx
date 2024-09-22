@@ -1,5 +1,5 @@
 // import { useSignal } from "@preact/signals";
-import Icon from "$store/components/ui/Icon.tsx";
+import Icon from "site/components/ui/Icon.tsx";
 import { usePartialSection } from "@deco/deco/hooks";
 export interface Option {
   label: string;

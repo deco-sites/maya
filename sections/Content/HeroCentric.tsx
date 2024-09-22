@@ -1,6 +1,6 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import Text from "$store/components/ui/Text.tsx";
+import Text from "site/components/ui/Text.tsx";
 import { shuffle } from "site/sdk/shuffle.tsx";
 
 export interface Props {

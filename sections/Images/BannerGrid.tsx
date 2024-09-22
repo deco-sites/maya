@@ -1,1 +1,1 @@
-export { default } from "$store/components/ui/BannerGrid.tsx";
+export { default } from "site/components/ui/BannerGrid.tsx";

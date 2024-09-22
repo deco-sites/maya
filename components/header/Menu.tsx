@@ -1,7 +1,7 @@
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
-import Text from "$store/components/ui/Text.tsx";
+import Text from "site/components/ui/Text.tsx";
 import MenuButton from "./Buttons/Menu.tsx";
-import Icon from "$store/components/ui/Icon.tsx";
+import Icon from "site/components/ui/Icon.tsx";
 import type { Lang } from "./Header.tsx";
 
 interface LangsPartition {

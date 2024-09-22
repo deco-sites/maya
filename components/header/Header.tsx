@@ -1,4 +1,4 @@
-import Drawers from "$store/islands/Header/Drawers.tsx";
+import Drawers from "site/islands/Header/Drawers.tsx";
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
 import Navbar from "./Navbar.tsx";
 import { getCookies, setCookie } from "std/http/cookie.ts";
