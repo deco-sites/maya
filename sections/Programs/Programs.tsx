@@ -1,7 +1,6 @@
-import type { Section } from "deco/blocks/section.ts";
-import type { SectionProps } from "deco/types.ts";
-import { usePartialSection } from "deco/hooks/usePartialSection.ts";
-
+import { type Section } from "@deco/deco/blocks";
+import { type SectionProps } from "@deco/deco";
+import { usePartialSection } from "@deco/deco/hooks";
 export interface FilterBy {
   label: string;
   value: string;
@@ -10,7 +9,6 @@ export interface FilterBy {
    */
   active?: boolean;
 }
-
 export interface Props {
   /**
    * @title Filter by
@@ -22,7 +20,6 @@ export interface Props {
    */
   sections?: Section[];
 }
-
 export default function Programs(
   { filterBy, sections }: SectionProps<ReturnType<typeof loader>>,
 ) {
@@ -60,29 +57,24 @@ export default function Programs(
     </div>
   );
 }
-
 export const loader = (
   { filterBy = [], sections = [] }: Props,
   req: Request,
 ) => {
   const filterParamValue = new URL(req.url)?.searchParams?.get("filter");
-
   const enableToFilter = filterParamValue &&
     JSON.stringify(filterBy).includes(filterParamValue);
-
   const currentSections = enableToFilter
     ? sections.filter((section) =>
       section.props.type.value === filterParamValue
     )
     : sections;
-
   const currentFilterBy = enableToFilter
     ? filterBy.map((filter) => ({
       ...filter,
       active: filter.value === filterParamValue,
     }))
     : filterBy;
-
   return {
     sections: currentSections,
     filterBy: [

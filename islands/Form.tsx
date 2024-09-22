@@ -1,6 +1,6 @@
 import Icon from "$store/components/ui/Icon.tsx";
 import { useSignal } from "@preact/signals";
-import type { JSX } from "preact";
+// import type { JSX } from "preact";
 import { useRef, useState } from "preact/hooks";
 import { invoke } from "../runtime.ts";
 import { render } from "apps/resend/utils/reactEmail.ts";
@@ -158,7 +158,7 @@ export default function Form({
   const loading = useSignal(false);
   const submited = useSignal(false);
 
-  const handleSubmit: JSX.GenericEventHandler<HTMLFormElement> = async (e) => {
+  const handleSubmit = async (e: SubmitEvent) => {
     e.preventDefault();
 
     try {

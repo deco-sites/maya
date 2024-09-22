@@ -1,8 +1,7 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
-import type { SectionProps } from "deco/types.ts";
 import Image from "apps/website/components/Image.tsx";
-import { usePartialSection } from "deco/hooks/usePartialSection.ts";
-
+import { type SectionProps } from "@deco/deco";
+import { usePartialSection } from "@deco/deco/hooks";
 export interface FilterBy {
   label: string;
   value: string;
@@ -11,7 +10,6 @@ export interface FilterBy {
    */
   active?: boolean;
 }
-
 export interface CallToAction {
   /**
    * @default Read more
@@ -19,7 +17,6 @@ export interface CallToAction {
   text: string;
   href: string;
 }
-
 /**@title {{title}} - {{#type}}{{label}}{{/type}} */
 export interface Post {
   image: {
@@ -38,7 +35,6 @@ export interface Post {
   title: string;
   callToAction: CallToAction;
 }
-
 export interface Props {
   /**
    * @title Filter by
@@ -47,7 +43,6 @@ export interface Props {
   filterBy?: FilterBy[];
   posts?: Post[];
 }
-
 export default function PostCards(
   { filterBy, posts }: SectionProps<ReturnType<typeof loader>>,
 ) {
@@ -131,24 +126,19 @@ export default function PostCards(
     </div>
   );
 }
-
 export const loader = ({ filterBy = [], posts = [] }: Props, req: Request) => {
   const filterParamValue = new URL(req.url)?.searchParams?.get("filter");
-
   const enableToFilter = filterParamValue &&
     JSON.stringify(filterBy).includes(filterParamValue);
-
   const currentPosts = enableToFilter
     ? posts.filter(({ type }) => type.value === filterParamValue)
     : posts;
-
   const currentFilterBy = enableToFilter
     ? filterBy.map((filter) => ({
       ...filter,
       active: filter.value === filterParamValue,
     }))
     : filterBy;
-
   return {
     posts: currentPosts,
     filterBy: [
