@@ -68,8 +68,8 @@ export default function PostCards(
           {posts?.map(({ title, image, type, date, callToAction }) => (
             <div
               key={title}
-              className="flex flex-col justify-start self-stretch opacity-0 duration-1000 transition-all"
-              data-replace='{"opacity-0": "opacity-100" }'
+              className="flex flex-col justify-start self-stretch opacity-1 duration-1000 transition-all"
+              // data-replace='{"opacity-0": "opacity-100" }'
             >
               <div className="relative">
                 <Image

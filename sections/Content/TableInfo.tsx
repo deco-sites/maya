@@ -123,23 +123,15 @@ const Content = ({ name, description, content }: ContentCollapse) => {
           </div>
         </summary>
         <div className="collapse-content flex flex-col">
-          <Image
-            src={content.image?.mobile ?? ""}
-            alt={content.image.alt ?? name}
-            width={253}
-            height={58}
-            className="w-full lg:hidden"
-            loading="lazy"
-          />
-          <Image
-            src={content.image?.desktop ?? ""}
-            alt={content.image.alt ?? name}
-            width={1280}
-            height={290}
-            className="w-full hidden lg:block"
-            loading="lazy"
-          />
           <div className="flex flex-col px-3 lg:px-11 2xl:px-16 ">
+            <Image
+              src={content.image?.mobile ?? ""}
+              alt={content.image.alt ?? name}
+              width={120}
+              height={30}
+              className="object-contain"
+              loading="lazy"
+            />
             <div className="flex justify-between gap-4 2xl:gap-6  mt-2 lg:mt-6 2xl:mt-9  mb-3 lg:mb-10 2xl:mb-14">
               <div className="flex flex-col">
                 <span className={`font-bold ${styleTextContent}`}>

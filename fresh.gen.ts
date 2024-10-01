@@ -9,7 +9,7 @@ import * as $Header_Drawers from "./islands/Header/Drawers.tsx";
 import * as $ShippingSimulation from "./islands/ShippingSimulation.tsx";
 import * as $SliderJS from "./islands/SliderJS.tsx";
 import * as $TailwindAnimationConfig from "./islands/TailwindAnimationConfig.tsx";
-import { type Manifest } from "$fresh/server.ts";
+import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {

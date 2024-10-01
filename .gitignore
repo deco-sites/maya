@@ -80,3 +80,4 @@ _docker_deps.ts
 .deco/metadata/*
 
 .env
+static/tailwind.css
