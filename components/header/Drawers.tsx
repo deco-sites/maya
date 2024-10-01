@@ -1,10 +1,10 @@
-import type { Props as MenuProps } from "$store/components/header/Menu.tsx";
-import Modal from "$store/components/ui/Modal.tsx";
-import { useUI } from "$store/sdk/useUI.ts";
+import type { Props as MenuProps } from "site/components/header/Menu.tsx";
+import Modal from "site/components/ui/Modal.tsx";
+import { useUI } from "site/sdk/useUI.ts";
 import type { ComponentChildren } from "preact";
 import { lazy, Suspense } from "preact/compat";
 
-const Menu = lazy(() => import("$store/components/header/Menu.tsx"));
+const Menu = lazy(() => import("site/components/header/Menu.tsx"));
 
 export interface Props {
   menu: MenuProps;

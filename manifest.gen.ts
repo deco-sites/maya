@@ -33,94 +33,92 @@ import * as $$$$$$24 from "./sections/Content/RichText.tsx";
 import * as $$$$$$25 from "./sections/Content/Table.tsx";
 import * as $$$$$$26 from "./sections/Content/TableInfo.tsx";
 import * as $$$$$$27 from "./sections/Content/Testimonials.tsx";
-import * as $$$$$$28 from "./sections/Footer/Footer.tsx";
-import * as $$$$$$29 from "./sections/Footer/SimpleFooter.tsx";
-import * as $$$$$$30 from "./sections/Gallery.tsx";
-import * as $$$$$$31 from "./sections/Header/Header.tsx";
-import * as $$$$$$32 from "./sections/Images/BannerGrid.tsx";
-import * as $$$$$$33 from "./sections/Images/Carousel.tsx";
-import * as $$$$$$34 from "./sections/Images/ImageGallery.tsx";
-import * as $$$$$$35 from "./sections/Images/ShoppableBanner.tsx";
-import * as $$$$$$36 from "./sections/Layout/Container.tsx";
-import * as $$$$$$37 from "./sections/Layout/Flex.tsx";
-import * as $$$$$$38 from "./sections/Layout/Grid.tsx";
-import * as $$$$$$39 from "./sections/Layout/GridItem.tsx";
-import * as $$$$$$40 from "./sections/Links/LinkTree.tsx";
-import * as $$$$$$41 from "./sections/Links/Shortcuts.tsx";
-import * as $$$$$$42 from "./sections/Miscellaneous/CampaignTimer.tsx";
-import * as $$$$$$43 from "./sections/Miscellaneous/CookieConsent.tsx";
-import * as $$$$$$44 from "./sections/Miscellaneous/Slide.tsx";
-import * as $$$$$$45 from "./sections/Newsletter/Newsletter.tsx";
-import * as $$$$$$46 from "./sections/Product/NotFound.tsx";
-import * as $$$$$$47 from "./sections/Programs/Content.tsx";
-import * as $$$$$$48 from "./sections/Programs/Programs.tsx";
-import * as $$$$$$49 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$50 from "./sections/Social/WhatsApp.tsx";
-import * as $$$$$$51 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$28 from "./sections/Footer/SimpleFooter.tsx";
+import * as $$$$$$29 from "./sections/Gallery.tsx";
+import * as $$$$$$30 from "./sections/Header/Header.tsx";
+import * as $$$$$$31 from "./sections/Images/BannerGrid.tsx";
+import * as $$$$$$32 from "./sections/Images/Carousel.tsx";
+import * as $$$$$$33 from "./sections/Images/ImageGallery.tsx";
+import * as $$$$$$34 from "./sections/Images/ShoppableBanner.tsx";
+import * as $$$$$$35 from "./sections/Layout/Container.tsx";
+import * as $$$$$$36 from "./sections/Layout/Flex.tsx";
+import * as $$$$$$37 from "./sections/Layout/Grid.tsx";
+import * as $$$$$$38 from "./sections/Layout/GridItem.tsx";
+import * as $$$$$$39 from "./sections/Links/LinkTree.tsx";
+import * as $$$$$$40 from "./sections/Links/Shortcuts.tsx";
+import * as $$$$$$41 from "./sections/Miscellaneous/CampaignTimer.tsx";
+import * as $$$$$$42 from "./sections/Miscellaneous/CookieConsent.tsx";
+import * as $$$$$$43 from "./sections/Miscellaneous/Slide.tsx";
+import * as $$$$$$44 from "./sections/Newsletter/Newsletter.tsx";
+import * as $$$$$$45 from "./sections/Product/NotFound.tsx";
+import * as $$$$$$46 from "./sections/Programs/Content.tsx";
+import * as $$$$$$47 from "./sections/Programs/Programs.tsx";
+import * as $$$$$$48 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$49 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$50 from "./sections/Theme/Theme.tsx";
 
 const manifest = {
   "loaders": {
-    "deco-sites/maya/loaders/List/Sections.tsx": $$$0,
+    "site/loaders/List/Sections.tsx": $$$0,
   },
   "sections": {
-    "deco-sites/maya/sections/Animation/Animation.tsx": $$$$$$0,
-    "deco-sites/maya/sections/Animation/TailwindAnimation.tsx": $$$$$$1,
-    "deco-sites/maya/sections/Blog/PostCards.tsx": $$$$$$2,
-    "deco-sites/maya/sections/Category/CategoryBanner.tsx": $$$$$$3,
-    "deco-sites/maya/sections/Category/CategoryGrid.tsx": $$$$$$4,
-    "deco-sites/maya/sections/Category/CategoryList.tsx": $$$$$$5,
-    "deco-sites/maya/sections/Contact/Contact.tsx": $$$$$$6,
-    "deco-sites/maya/sections/Content/Benefits.tsx": $$$$$$7,
-    "deco-sites/maya/sections/Content/BigTitle.tsx": $$$$$$8,
-    "deco-sites/maya/sections/Content/BlogPosts.tsx": $$$$$$9,
-    "deco-sites/maya/sections/Content/CallToAction.tsx": $$$$$$10,
-    "deco-sites/maya/sections/Content/ContentGraphic.tsx": $$$$$$11,
-    "deco-sites/maya/sections/Content/ContentHiring.tsx": $$$$$$12,
-    "deco-sites/maya/sections/Content/Faq.tsx": $$$$$$13,
-    "deco-sites/maya/sections/Content/Features.tsx": $$$$$$14,
-    "deco-sites/maya/sections/Content/Hero.tsx": $$$$$$15,
-    "deco-sites/maya/sections/Content/HeroCentric.tsx": $$$$$$16,
-    "deco-sites/maya/sections/Content/HeroMain.tsx": $$$$$$17,
-    "deco-sites/maya/sections/Content/HeroTopics.tsx": $$$$$$18,
-    "deco-sites/maya/sections/Content/ImageSection.tsx": $$$$$$19,
-    "deco-sites/maya/sections/Content/InfoCard.tsx": $$$$$$20,
-    "deco-sites/maya/sections/Content/ListThesis.tsx": $$$$$$21,
-    "deco-sites/maya/sections/Content/Logos.tsx": $$$$$$22,
-    "deco-sites/maya/sections/Content/PeopleCard.tsx": $$$$$$23,
-    "deco-sites/maya/sections/Content/RichText.tsx": $$$$$$24,
-    "deco-sites/maya/sections/Content/Table.tsx": $$$$$$25,
-    "deco-sites/maya/sections/Content/TableInfo.tsx": $$$$$$26,
-    "deco-sites/maya/sections/Content/Testimonials.tsx": $$$$$$27,
-    "deco-sites/maya/sections/Footer/Footer.tsx": $$$$$$28,
-    "deco-sites/maya/sections/Footer/SimpleFooter.tsx": $$$$$$29,
-    "deco-sites/maya/sections/Gallery.tsx": $$$$$$30,
-    "deco-sites/maya/sections/Header/Header.tsx": $$$$$$31,
-    "deco-sites/maya/sections/Images/BannerGrid.tsx": $$$$$$32,
-    "deco-sites/maya/sections/Images/Carousel.tsx": $$$$$$33,
-    "deco-sites/maya/sections/Images/ImageGallery.tsx": $$$$$$34,
-    "deco-sites/maya/sections/Images/ShoppableBanner.tsx": $$$$$$35,
-    "deco-sites/maya/sections/Layout/Container.tsx": $$$$$$36,
-    "deco-sites/maya/sections/Layout/Flex.tsx": $$$$$$37,
-    "deco-sites/maya/sections/Layout/Grid.tsx": $$$$$$38,
-    "deco-sites/maya/sections/Layout/GridItem.tsx": $$$$$$39,
-    "deco-sites/maya/sections/Links/LinkTree.tsx": $$$$$$40,
-    "deco-sites/maya/sections/Links/Shortcuts.tsx": $$$$$$41,
-    "deco-sites/maya/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$42,
-    "deco-sites/maya/sections/Miscellaneous/CookieConsent.tsx": $$$$$$43,
-    "deco-sites/maya/sections/Miscellaneous/Slide.tsx": $$$$$$44,
-    "deco-sites/maya/sections/Newsletter/Newsletter.tsx": $$$$$$45,
-    "deco-sites/maya/sections/Product/NotFound.tsx": $$$$$$46,
-    "deco-sites/maya/sections/Programs/Content.tsx": $$$$$$47,
-    "deco-sites/maya/sections/Programs/Programs.tsx": $$$$$$48,
-    "deco-sites/maya/sections/Social/InstagramPosts.tsx": $$$$$$49,
-    "deco-sites/maya/sections/Social/WhatsApp.tsx": $$$$$$50,
-    "deco-sites/maya/sections/Theme/Theme.tsx": $$$$$$51,
+    "site/sections/Animation/Animation.tsx": $$$$$$0,
+    "site/sections/Animation/TailwindAnimation.tsx": $$$$$$1,
+    "site/sections/Blog/PostCards.tsx": $$$$$$2,
+    "site/sections/Category/CategoryBanner.tsx": $$$$$$3,
+    "site/sections/Category/CategoryGrid.tsx": $$$$$$4,
+    "site/sections/Category/CategoryList.tsx": $$$$$$5,
+    "site/sections/Contact/Contact.tsx": $$$$$$6,
+    "site/sections/Content/Benefits.tsx": $$$$$$7,
+    "site/sections/Content/BigTitle.tsx": $$$$$$8,
+    "site/sections/Content/BlogPosts.tsx": $$$$$$9,
+    "site/sections/Content/CallToAction.tsx": $$$$$$10,
+    "site/sections/Content/ContentGraphic.tsx": $$$$$$11,
+    "site/sections/Content/ContentHiring.tsx": $$$$$$12,
+    "site/sections/Content/Faq.tsx": $$$$$$13,
+    "site/sections/Content/Features.tsx": $$$$$$14,
+    "site/sections/Content/Hero.tsx": $$$$$$15,
+    "site/sections/Content/HeroCentric.tsx": $$$$$$16,
+    "site/sections/Content/HeroMain.tsx": $$$$$$17,
+    "site/sections/Content/HeroTopics.tsx": $$$$$$18,
+    "site/sections/Content/ImageSection.tsx": $$$$$$19,
+    "site/sections/Content/InfoCard.tsx": $$$$$$20,
+    "site/sections/Content/ListThesis.tsx": $$$$$$21,
+    "site/sections/Content/Logos.tsx": $$$$$$22,
+    "site/sections/Content/PeopleCard.tsx": $$$$$$23,
+    "site/sections/Content/RichText.tsx": $$$$$$24,
+    "site/sections/Content/Table.tsx": $$$$$$25,
+    "site/sections/Content/TableInfo.tsx": $$$$$$26,
+    "site/sections/Content/Testimonials.tsx": $$$$$$27,
+    "site/sections/Footer/SimpleFooter.tsx": $$$$$$28,
+    "site/sections/Gallery.tsx": $$$$$$29,
+    "site/sections/Header/Header.tsx": $$$$$$30,
+    "site/sections/Images/BannerGrid.tsx": $$$$$$31,
+    "site/sections/Images/Carousel.tsx": $$$$$$32,
+    "site/sections/Images/ImageGallery.tsx": $$$$$$33,
+    "site/sections/Images/ShoppableBanner.tsx": $$$$$$34,
+    "site/sections/Layout/Container.tsx": $$$$$$35,
+    "site/sections/Layout/Flex.tsx": $$$$$$36,
+    "site/sections/Layout/Grid.tsx": $$$$$$37,
+    "site/sections/Layout/GridItem.tsx": $$$$$$38,
+    "site/sections/Links/LinkTree.tsx": $$$$$$39,
+    "site/sections/Links/Shortcuts.tsx": $$$$$$40,
+    "site/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$41,
+    "site/sections/Miscellaneous/CookieConsent.tsx": $$$$$$42,
+    "site/sections/Miscellaneous/Slide.tsx": $$$$$$43,
+    "site/sections/Newsletter/Newsletter.tsx": $$$$$$44,
+    "site/sections/Product/NotFound.tsx": $$$$$$45,
+    "site/sections/Programs/Content.tsx": $$$$$$46,
+    "site/sections/Programs/Programs.tsx": $$$$$$47,
+    "site/sections/Social/InstagramPosts.tsx": $$$$$$48,
+    "site/sections/Social/WhatsApp.tsx": $$$$$$49,
+    "site/sections/Theme/Theme.tsx": $$$$$$50,
   },
   "apps": {
-    "deco-sites/maya/apps/decohub.ts": $$$$$$$$$$$0,
-    "deco-sites/maya/apps/site.ts": $$$$$$$$$$$1,
+    "site/apps/decohub.ts": $$$$$$$$$$$0,
+    "site/apps/site.ts": $$$$$$$$$$$1,
   },
-  "name": "deco-sites/maya",
+  "name": "site",
   "baseUrl": import.meta.url,
 };
 

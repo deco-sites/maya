@@ -1,5 +1,5 @@
-import type { Props as FormProps } from "$store/islands/Form.tsx";
-import Form from "$store/islands/Form.tsx";
+import type { Props as FormProps } from "site/islands/Form.tsx";
+import Form from "site/islands/Form.tsx";
 
 export interface Props {
   title?: string;

@@ -1,8 +1,8 @@
-import Button from "$store/components/ui/Button.tsx";
-import Icon from "$store/components/ui/Icon.tsx";
-import QuantitySelector from "$store/components/ui/QuantitySelector.tsx";
-import { sendEvent } from "$store/sdk/analytics.tsx";
-import { formatPrice } from "$store/sdk/format.ts";
+import Button from "site/components/ui/Button.tsx";
+import Icon from "site/components/ui/Icon.tsx";
+import QuantitySelector from "site/components/ui/QuantitySelector.tsx";
+import { sendEvent } from "site/sdk/analytics.tsx";
+import { formatPrice } from "site/sdk/format.ts";
 import { AnalyticsItem } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
 import { useCallback, useState } from "preact/hooks";

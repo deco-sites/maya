@@ -1,6 +1,6 @@
-import Slider from "$store/components/ui/Slider.tsx";
-import SliderJS from "$store/islands/SliderJS.tsx";
-import { useId } from "$store/sdk/useId.ts";
+import Slider from "site/components/ui/Slider.tsx";
+import SliderJS from "site/islands/SliderJS.tsx";
+import { useId } from "site/sdk/useId.ts";
 
 export interface Props {
   alerts?: string[];

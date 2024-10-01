@@ -1,0 +1,1 @@
+{"apiKey":{"name":"RESEND_API_KEY","encrypted":"f3b0f2cb8e500529ca300eca1d5b89d5747676b99bc52b9838c57fda9fe14b39ca107ecf5333ad906ca256f399ba7ce4","__resolveType":"website/loaders/secret.ts"},"emailTo":["maya@maya.capital"],"apiWrite":{},"emailFrom":{},"__resolveType":"decohub/apps/resend.ts"}

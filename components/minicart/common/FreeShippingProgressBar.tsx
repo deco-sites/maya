@@ -1,5 +1,5 @@
-import Icon from "$store/components/ui/Icon.tsx";
-import { formatPrice } from "$store/sdk/format.ts";
+import Icon from "site/components/ui/Icon.tsx";
+import { formatPrice } from "site/sdk/format.ts";
 
 interface Props {
   total: number;

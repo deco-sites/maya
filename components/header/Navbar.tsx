@@ -1,6 +1,6 @@
-import { MenuButton } from "$store/islands/Header/Buttons.tsx";
-import Text from "deco-sites/maya/components/ui/Text.tsx";
-import Icon from "deco-sites/maya/components/ui/Icon.tsx";
+import { MenuButton } from "site/islands/Header/Buttons.tsx";
+import Text from "site/components/ui/Text.tsx";
+import Icon from "site/components/ui/Icon.tsx";
 import type { Lang } from "./Header.tsx";
 
 interface LangsPartition {

@@ -1,4 +1,4 @@
-import Text from "deco-sites/maya/components/ui/Text.tsx";
+import Text from "site/components/ui/Text.tsx";
 
 /**@title {{name}} */
 export interface Item {

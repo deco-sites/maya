@@ -1,11 +1,10 @@
-import Drawers from "$store/islands/Header/Drawers.tsx";
+import Drawers from "site/islands/Header/Drawers.tsx";
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
 import Navbar from "./Navbar.tsx";
-import type { SectionProps } from "deco/types.ts";
 import { getCookies, setCookie } from "std/http/cookie.ts";
 import { AppContext } from "apps/website/mod.ts";
-// import { AppContext } from "deco-sites/maya/apps/site.ts";
-
+import { type SectionProps } from "@deco/deco";
+// import { AppContext } from "site/apps/site.ts";
 export interface Lang {
   label: string;
   value: string;
@@ -14,20 +13,17 @@ export interface Lang {
    */
   active?: boolean;
 }
-
 export interface Props {
   /**
    * @title Navigation items
    * @description Navigation items used both on mobile and desktop menus
    */
   navItems?: SiteNavigationElement[] | null;
-
   /**
    * @title Language Options
    */
   langText?: Lang[];
 }
-
 function Header({
   navItems = [
     {
@@ -61,29 +57,22 @@ function Header({
 }: SectionProps<ReturnType<typeof loader>>) {
   // }: Props) {
   const items = navItems ?? [];
-
   return (
     <>
       <header>
-        <Drawers
-          menu={{ items, langText }}
-        >
+        <Drawers menu={{ items, langText }}>
           <div
             class="bg-[var(--bg-main)] w-full z-50"
             style={{ marginBottom: "-1px" }}
           >
-            <Navbar
-              langText={langText}
-            />
+            <Navbar langText={langText} />
           </div>
         </Drawers>
       </header>
     </>
   );
 }
-
-const TEN_DAYS_MS = 10 * 24 * 3600 * 1_000;
-
+const TEN_DAYS_MS = 10 * 24 * 3600 * 1000;
 export const loader = (props: Props, req: Request, ctx: AppContext) => {
   const cookies = getCookies(req.headers);
   const currentCookieLang = cookies?.["language"] ?? "en";
@@ -96,15 +85,11 @@ export const loader = (props: Props, req: Request, ctx: AppContext) => {
       expires: new Date(Date.now() + TEN_DAYS_MS),
     });
   }
-
   const currentLang = langParamValue ?? currentCookieLang;
-
   const langText = props?.langText?.map((item) => ({
     ...item,
     active: item.value === currentLang,
   }));
-
   return { ...props, langText };
 };
-
 export default Header;

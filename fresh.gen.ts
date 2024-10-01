@@ -6,11 +6,10 @@ import * as $_app from "./routes/_app.tsx";
 import * as $Form from "./islands/Form.tsx";
 import * as $Header_Buttons from "./islands/Header/Buttons.tsx";
 import * as $Header_Drawers from "./islands/Header/Drawers.tsx";
-import * as $Newsletter from "./islands/Newsletter.tsx";
 import * as $ShippingSimulation from "./islands/ShippingSimulation.tsx";
 import * as $SliderJS from "./islands/SliderJS.tsx";
 import * as $TailwindAnimationConfig from "./islands/TailwindAnimationConfig.tsx";
-import { type Manifest } from "$fresh/server.ts";
+import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
   routes: {
@@ -20,7 +19,6 @@ const manifest = {
     "./islands/Form.tsx": $Form,
     "./islands/Header/Buttons.tsx": $Header_Buttons,
     "./islands/Header/Drawers.tsx": $Header_Drawers,
-    "./islands/Newsletter.tsx": $Newsletter,
     "./islands/ShippingSimulation.tsx": $ShippingSimulation,
     "./islands/SliderJS.tsx": $SliderJS,
     "./islands/TailwindAnimationConfig.tsx": $TailwindAnimationConfig,

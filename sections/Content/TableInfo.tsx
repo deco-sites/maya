@@ -1,15 +1,13 @@
-import { Title } from "$store/sections/Content/HeroMain.tsx";
+import { Title } from "site/sections/Content/HeroMain.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
-import type { SectionProps } from "deco/types.ts";
-import Text from "$store/components/ui/Text.tsx";
-import Icon from "$store/components/ui/Icon.tsx";
+import Text from "site/components/ui/Text.tsx";
+import Icon from "site/components/ui/Icon.tsx";
 import Image from "apps/website/components/Image.tsx";
-import { SelectOptions } from "$store/components/ui/SelectOptions.tsx";
-
+import { SelectOptions } from "site/components/ui/SelectOptions.tsx";
+import { type SectionProps } from "@deco/deco";
 interface FilteredBy {
   [key: string]: Option[];
 }
-
 /** @title {{label}} */
 export interface Option {
   label: string;
@@ -18,13 +16,11 @@ export interface Option {
    */
   value?: string;
 }
-
 /** @title {{name}} */
 export interface Founder {
   name: string;
   image: ImageWidget;
 }
-
 export interface Content {
   image: {
     desktop: ImageWidget;
@@ -41,14 +37,12 @@ export interface Content {
   longDescription: string;
   founders: Founder[];
 }
-
 /** @title {{name}} */
 export interface ContentCollapse {
   name: string;
   description: string;
   content: Content;
 }
-
 export interface Props {
   titleWords?: Title[];
   /**
@@ -63,7 +57,6 @@ export interface Props {
     [key: string]: string;
   };
 }
-
 const Content = ({ name, description, content }: ContentCollapse) => {
   const styleTextContent =
     "font-manrope text-white text-[9px] lg:text-sm 2xl:text-xl lg:leading-[22px] 2xl:leading-8";
@@ -130,23 +123,15 @@ const Content = ({ name, description, content }: ContentCollapse) => {
           </div>
         </summary>
         <div className="collapse-content flex flex-col">
-          <Image
-            src={content.image?.mobile ?? ""}
-            alt={content.image.alt ?? name}
-            width={253}
-            height={58}
-            className="w-full lg:hidden"
-            loading="lazy"
-          />
-          <Image
-            src={content.image?.desktop ?? ""}
-            alt={content.image.alt ?? name}
-            width={1280}
-            height={290}
-            className="w-full hidden lg:block"
-            loading="lazy"
-          />
           <div className="flex flex-col px-3 lg:px-11 2xl:px-16 ">
+            <Image
+              src={content.image?.mobile ?? ""}
+              alt={content.image.alt ?? name}
+              width={120}
+              height={30}
+              className="object-contain"
+              loading="lazy"
+            />
             <div className="flex justify-between gap-4 2xl:gap-6  mt-2 lg:mt-6 2xl:mt-9  mb-3 lg:mb-10 2xl:mb-14">
               <div className="flex flex-col">
                 <span className={`font-bold ${styleTextContent}`}>
@@ -212,7 +197,6 @@ const Content = ({ name, description, content }: ContentCollapse) => {
     </div>
   );
 };
-
 export default function TableInfoCompanys(
   { titleWords, filteredBy, contents, filtersActive }: SectionProps<
     ReturnType<typeof loader>
@@ -272,7 +256,6 @@ export default function TableInfoCompanys(
     </div>
   );
 }
-
 const DEFAULT_PROPS = {
   titleWords: [
     {
@@ -361,11 +344,9 @@ const DEFAULT_PROPS = {
     },
   ],
 };
-
 export const loader = (props: Props, req: Request) => {
   const countryParamValue = new URL(req.url)?.searchParams?.get("country");
   const sectorParamValue = new URL(req.url)?.searchParams?.get("sector");
-
   const data = { ...DEFAULT_PROPS, ...props };
   const dataModified = {
     ...data,
@@ -386,69 +367,54 @@ export const loader = (props: Props, req: Request) => {
       };
     }),
   };
-
-  const filteredBy = dataModified.contents.reduce(
-    (acc: { sector: Option[]; country: Option[] }, currentData) => {
-      const dataSector = currentData.content.sector.filter((currentSector) =>
-        !acc?.["sector"]?.find((sectorInAcc: Option) =>
-          sectorInAcc.value === currentSector.value
-        )
-      ).filter((currentSector) => !!currentSector.value);
-
-      acc["sector"].push(...dataSector);
-
-      const hasInsertedCountry = acc["country"]?.find((accCountry) =>
-        accCountry.value === currentData.content.country?.value
-      );
-
-      if (!hasInsertedCountry) {
-        acc["country"]?.push(currentData.content.country);
-      }
-
-      return acc;
-    },
-    {
-      sector: [],
-      country: [],
-    },
-  );
-
+  const filteredBy = dataModified.contents.reduce((acc: {
+    sector: Option[];
+    country: Option[];
+  }, currentData) => {
+    const dataSector = currentData.content.sector.filter((currentSector) =>
+      !acc?.["sector"]?.find((sectorInAcc: Option) =>
+        sectorInAcc.value === currentSector.value
+      )
+    ).filter((currentSector) => !!currentSector.value);
+    acc["sector"].push(...dataSector);
+    const hasInsertedCountry = acc["country"]?.find((accCountry) =>
+      accCountry.value === currentData.content.country?.value
+    );
+    if (!hasInsertedCountry) {
+      acc["country"]?.push(currentData.content.country);
+    }
+    return acc;
+  }, {
+    sector: [],
+    country: [],
+  });
   const checkFilter = (filter: string | null) => {
     return filter ? JSON.stringify(filteredBy).includes(filter) : false;
   };
-
   const contentsModified = dataModified.contents.filter(({ content }) => {
     const hasCountryFilter = checkFilter(countryParamValue);
     const hasSectorFilter = checkFilter(sectorParamValue);
-
     if (hasCountryFilter && hasSectorFilter) {
-      return (
-        content.country.value === countryParamValue ||
-        content.sector.some((sector) => sector.value === sectorParamValue)
-      );
+      return (content.country.value === countryParamValue ||
+        content.sector.some((sector) => sector.value === sectorParamValue));
     }
-
     if (hasCountryFilter) {
       return content.country.value === countryParamValue;
     }
-
     if (hasSectorFilter) {
       return content.sector.some((sector) => sector.value === sectorParamValue);
     }
-
     return true;
   });
-
-  const filtersActive: { [key: string]: string } = {};
-
+  const filtersActive: {
+    [key: string]: string;
+  } = {};
   if (sectorParamValue) {
     filtersActive.sector = sectorParamValue;
   }
-
   if (countryParamValue) {
     filtersActive.country = countryParamValue;
   }
-
   return {
     ...dataModified,
     contents: contentsModified,

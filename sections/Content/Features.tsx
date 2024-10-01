@@ -1,5 +1,5 @@
-import Text from "$store/components/ui/Text.tsx";
-import Icon from "$store/components/ui/Icon.tsx";
+import Text from "site/components/ui/Text.tsx";
+import Icon from "site/components/ui/Icon.tsx";
 
 /**
  * @titleBy title

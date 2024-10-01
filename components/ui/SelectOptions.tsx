@@ -1,7 +1,6 @@
 // import { useSignal } from "@preact/signals";
-import Icon from "$store/components/ui/Icon.tsx";
-import { usePartialSection } from "deco/hooks/usePartialSection.ts";
-
+import Icon from "site/components/ui/Icon.tsx";
+import { usePartialSection } from "@deco/deco/hooks";
 export interface Option {
   label: string;
   /**
@@ -9,7 +8,6 @@ export interface Option {
    */
   value?: string;
 }
-
 interface Props {
   options: Option[];
   name: string;
@@ -18,16 +16,12 @@ interface Props {
   };
   filterBy: string;
 }
-
 export const SelectOptions = (
   { options, name, currentFiltersActive = {}, filterBy }: Props,
 ) => {
   // const open = useSignal(false);
-
   return (
     <div class="max-w-md lg:mx-auto space-y-6 w-fit lg:w-full" // onBlur={() => {
-      //   open.value = false;
-      // }}
     >
       <div class="dropdown-menu relative">
         <label
@@ -58,7 +52,6 @@ export const SelectOptions = (
                 ...currentFiltersActive,
                 [filterBy]: option.value || "",
               }).toString();
-
               return (
                 <div
                   class={`py-1 px-4 flex items-center w-full hover:bg-secondary-content ${
@@ -67,12 +60,9 @@ export const SelectOptions = (
                 >
                   <button
                     class={`flex-1 flex`}
-                    {
-                      // data-target={urlToFilter}
-                      ...usePartialSection({
-                        href: isSelected ? "?" : `?${urlToFilter}`,
-                      })
-                    }
+                    {...usePartialSection({
+                      href: isSelected ? "?" : `?${urlToFilter}`,
+                    })}
                   >
                     <div class="text-accent-content text-[5.19px] lg:text-base font-manrope">
                       {option.label}
@@ -86,7 +76,6 @@ export const SelectOptions = (
       </div>
     </div>
   );
-
   // return (
   //   <select class="block focus:border-primary focus:primary text-primary h-8 text-base uppercase font-bold tracking-widest bg-secondary-content" onChange={(event) => {
   //     console.log("🔥 event", (event?.target as HTMLOptionElement)?.value)

@@ -1,7 +1,7 @@
-import Button from "$store/components/ui/Button.tsx";
-import { sendEvent } from "$store/sdk/analytics.tsx";
-import { formatPrice } from "$store/sdk/format.ts";
-import { useUI } from "$store/sdk/useUI.ts";
+import Button from "site/components/ui/Button.tsx";
+import { sendEvent } from "site/sdk/analytics.tsx";
+import { formatPrice } from "site/sdk/format.ts";
+import { useUI } from "site/sdk/useUI.ts";
 import { AnalyticsItem } from "apps/commerce/types.ts";
 import CartItem, { Item, Props as ItemProps } from "./CartItem.tsx";
 import Coupon, { Props as CouponProps } from "./Coupon.tsx";
