@@ -103,8 +103,8 @@
               {
                 "date": "2023-10-23",
                 "type": {
-                  "label": "Investiments",
-                  "value": "investiments"
+                  "label": "Investments",
+                  "value": "investments"
                 },
                 "image": {
                   "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/9d4c8ef3-aaa5-4121-be55-5fd238f0b5d6",
@@ -135,8 +135,8 @@
               {
                 "date": "2023-09-06",
                 "type": {
-                  "label": "Investiments",
-                  "value": "investiments"
+                  "label": "Investments",
+                  "value": "investments"
                 },
                 "image": {
                   "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/b5964a9d-e025-4aec-b1ae-49e44dd1ce95",
