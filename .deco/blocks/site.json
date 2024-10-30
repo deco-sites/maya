@@ -1,14 +1,15 @@
 {
   "seo": {
     "type": "website",
-    "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/a5d890ba-e5b8-471e-8b77-7412c1d4fa56",
+    "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maya/55e8ddb1-5814-494e-a04c-3aeabd76d1b1/MAYA_LOGO_CMYK_VERTICAL_DUO-1.jpg",
     "title": "Maya Capital",
     "jsonLDs": [],
     "canonical": "https://fashion.deco.site",
     "noIndexing": false,
-    "description": "Improve your page performance with deco.cx",
-    "titleTemplate": "%s | deco.cx",
-    "descriptionTemplate": "%s | Deco.cx"
+    "description": "MAYA Capital is an early-stage fund that supports bold leaders who are catalyzing change in Latin America.",
+    "titleTemplate": "%s | MAYA Capital",
+    "descriptionTemplate": "%s | MAYA Capital",
+    "favicon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maya/55e8ddb1-5814-494e-a04c-3aeabd76d1b1/MAYA_LOGO_CMYK_VERTICAL_DUO-1.jpg"
   },
   "theme": {
     "__resolveType": "Global Theme"
