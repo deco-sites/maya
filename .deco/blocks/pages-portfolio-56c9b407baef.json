@@ -36,8 +36,8 @@
                 "name": "Alice",
                 "content": {
                   "image": {
-                    "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/b0762df1-7962-47d7-b9bb-601fd950215d",
-                    "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/b0762df1-7962-47d7-b9bb-601fd950215d"
+                    "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maya/e0295dba-cbc6-4d85-89ad-8a61bc53096a/Alice-Logo-preto.png",
+                    "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maya/e0295dba-cbc6-4d85-89ad-8a61bc53096a/Alice-Logo-preto.png"
                   },
                   "sector": [
                     {
