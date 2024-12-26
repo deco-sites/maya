@@ -3,9 +3,12 @@ import { defineApp } from "$fresh/server.ts";
 import Theme from "site/sections/Theme/Theme.tsx";
 import { Context } from "@deco/deco";
 const sw = () =>
-  addEventListener("load", () =>
-    navigator && navigator.serviceWorker &&
-    navigator.serviceWorker.register("/sw.js"));
+  addEventListener(
+    "load",
+    () =>
+      navigator && navigator.serviceWorker &&
+      navigator.serviceWorker.register("/sw.js"),
+  );
 export default defineApp(async (_req, ctx) => {
   const revision = await Context.active().release?.revision();
   return (
@@ -34,6 +37,11 @@ export default defineApp(async (_req, ctx) => {
           as="font"
           type="font/woff2"
           crossOrigin="false"
+        />
+
+        <link
+          rel="icon"
+          href="https://data.decoassets.com/maya/0ee3fafa-abea-48e7-a9d5-e503fa56f53d/5cab9456447a044ec2ee318d_grace-icon-(1).jpg"
         />
 
         {/* Local Second Font */}
