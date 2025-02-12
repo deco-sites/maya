@@ -101,6 +101,22 @@
           {
             "posts": [
               {
+                "date": "2025-02-12",
+                "type": {
+                  "label": "INVESTMENTS",
+                  "value": "INVESTMENTS"
+                },
+                "image": {
+                  "src": "https://data.decoassets.com/maya/98adf092-7afa-468e-961f-a355c7bf5347/phone-computer-graphic-showing-mobile-phone-lifestyle.jpg",
+                  "srcMobile": "https://data.decoassets.com/maya/98adf092-7afa-468e-961f-a355c7bf5347/phone-computer-graphic-showing-mobile-phone-lifestyle.jpg"
+                },
+                "title": "Why We Invested in Tempo",
+                "callToAction": {
+                  "href": "https://mayacapital.medium.com/why-we-invested-in-tempo-fb73e3db772a",
+                  "text": "Read more"
+                }
+              },
+              {
                 "date": "2023-10-23",
                 "type": {
                   "label": "Investments",
@@ -110,11 +126,11 @@
                   "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/9d4c8ef3-aaa5-4121-be55-5fd238f0b5d6",
                   "srcMobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/956c84ae-897b-4986-8651-cdab5f6a30aa"
                 },
-                "title": "Why MAYA Invested in Zenpli",
                 "callToAction": {
                   "href": "#",
                   "text": "Read More"
-                }
+                },
+                "title": "Why MAYA Invested in Zenpli"
               },
               {
                 "date": "2024-11-18",
@@ -126,11 +142,11 @@
                   "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maya/adc8d7a4-482c-4b25-be8c-f912cea8d20d/IMG_7698.jpeg",
                   "srcMobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maya/adc8d7a4-482c-4b25-be8c-f912cea8d20d/IMG_7698.jpeg"
                 },
+                "title": "Why did MAYA invest in Stay?",
                 "callToAction": {
                   "href": "https://mayacapital.medium.com/why-did-maya-invest-in-stay-96b1921083c5",
                   "text": "Read more"
-                },
-                "title": "Why did MAYA invest in Stay?"
+                }
               },
               {
                 "date": "2023-09-06",
