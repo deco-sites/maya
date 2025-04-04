@@ -318,41 +318,6 @@
                 "description": "Solution that amplifies the efficiency of commercial real estate agents, aiming to be the main marketplace platform in the sector."
               },
               {
-                "name": "Cross Commerce",
-                "content": {
-                  "image": {
-                    "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/7c4dd280-bf40-47f9-a5cf-4449e0a10666",
-                    "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/c1308be4-fedb-4918-8ef4-f822c206ae00"
-                  },
-                  "sector": [
-                    {
-                      "label": "E-commerce"
-                    }
-                  ],
-                  "country": {
-                    "label": "Brazil"
-                  },
-                  "website": "www.crosscommercestore.com",
-                  "founders": [
-                    {
-                      "name": "Eduardo Macedo",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/43b24e8d-1ef3-4147-89f0-73fac632d36b"
-                    },
-                    {
-                      "name": "João Montes Vieira",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/74907bbc-37cb-400b-bad1-d5a156c9941c"
-                    },
-                    {
-                      "name": "Renato Marcelino",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/136f21a4-3476-422f-92db-c20a617ea9da"
-                    }
-                  ],
-                  "coInvestors": "GFC, ONEVC, Canary",
-                  "longDescription": "One-stop-shop solution to enable international sellers to scale up cross border sales in Latin American marketplaces."
-                },
-                "description": "One-stop-shop solution to enable international sellers to scale up cross border sales in Latin American marketplaces."
-              },
-              {
                 "name": "Deco",
                 "content": {
                   "image": {
@@ -556,6 +521,107 @@
                   "longDescription": "Restaurant software streamlining food service operations management."
                 },
                 "description": "Restaurant software streamlining food service operations management."
+              },
+              {
+                "name": "Jota!",
+                "content": {
+                  "image": {
+                    "mobile": "https://assets.decocache.com/maya/f56df837-3e17-4b6f-855b-623c2d131e61/jota_logo.jfif",
+                    "desktop": "https://assets.decocache.com/maya/f56df837-3e17-4b6f-855b-623c2d131e61/jota_logo.jfif"
+                  },
+                  "sector": [
+                    {
+                      "label": "FinTech"
+                    }
+                  ],
+                  "country": {
+                    "label": "Brazil"
+                  },
+                  "website": "jota.ai",
+                  "founders": [
+                    {
+                      "name": "Davi Holanda",
+                      "image": "https://assets.decocache.com/maya/f56df837-3e17-4b6f-855b-623c2d131e61/jota_logo.jfif"
+                    },
+                    {
+                      "name": "Vítor Meneguzzi Groterhorst",
+                      "image": "https://assets.decocache.com/maya/f56df837-3e17-4b6f-855b-623c2d131e61/jota_logo.jfif"
+                    },
+                    {
+                      "name": "Oleg Balev",
+                      "image": "https://assets.decocache.com/maya/79334e01-d173-43f7-8986-a85f3beada78/Captura-de-tela-2025-04-01-143201.png"
+                    },
+                    {
+                      "name": "Marcelo Leite",
+                      "image": "https://assets.decocache.com/maya/de78eb93-44cd-4b2c-8781-2d562e91e2c6/Captura-de-tela-2025-04-01-143258.png"
+                    },
+                    {
+                      "name": "Tiago Guilhon",
+                      "image": "https://assets.decocache.com/maya/1d6169f8-1f08-4bc4-b84c-140113068ca1/Captura-de-tela-2025-04-01-143340.png"
+                    },
+                    {
+                      "name": "Diego Bittencourt ",
+                      "image": "https://assets.decocache.com/maya/a3a53730-f0fe-4312-af03-fcc751596bd7/Captura-de-tela-2025-04-01-143538.png"
+                    }
+                  ],
+                  "coInvestors": "HOF Capital, BigBets, Alter Global, Bogari  Capital, Norte Ventures",
+                  "longDescription": "Jota is an AI  Conversational  Platform  automating  finances  for  entrepreneurs"
+                },
+                "description": "Jota is an AI  Conversational  Platform  automating  finances  for  entrepreneurs"
+              },
+              {
+                "name": "Jusfy",
+                "content": {
+                  "image": {
+                    "mobile": "https://assets.decocache.com/maya/43bac154-ef9d-4857-a635-cde6d5935d04/logo-jusfy.svg",
+                    "desktop": "https://assets.decocache.com/maya/43bac154-ef9d-4857-a635-cde6d5935d04/logo-jusfy.svg"
+                  },
+                  "sector": [
+                    {
+                      "label": "LawTech"
+                    }
+                  ],
+                  "country": {
+                    "label": "Brazil"
+                  },
+                  "website": "jusfy.com.br",
+                  "founders": [
+                    {
+                      "name": "Rafael Saccol Bagolin",
+                      "image": "https://data.decoassets.com/maya/22cd0cc3-b0c2-4171-915e-9dac3e9f5c8b/WhatsApp-Image-2025-02-21-at-16.53.36.jpeg"
+                    }
+                  ],
+                  "coInvestors": "Saasholic, FJ Labs, The Legal Tech Fund   ",
+                  "longDescription": "Jusfy is the One-stop-shop for legal professionals by offering them  operation, execution and financial products."
+                },
+                "description": "Jusfy is the One-stop-shop for legal professionals by offering them  operation, execution and financial products."
+              },
+              {
+                "name": "Lerian",
+                "content": {
+                  "image": {
+                    "mobile": "https://assets.decocache.com/maya/92bf75c6-131a-4dc4-8e1e-54415a8166d2/lerian.png",
+                    "desktop": "https://assets.decocache.com/maya/92bf75c6-131a-4dc4-8e1e-54415a8166d2/lerian.png"
+                  },
+                  "sector": [
+                    {
+                      "label": "FinTech"
+                    }
+                  ],
+                  "country": {
+                    "label": "Brazil"
+                  },
+                  "website": "lerian.studio",
+                  "founders": [
+                    {
+                      "name": "Fred Amaral",
+                      "image": "https://assets.decocache.com/maya/bafec18a-f0dc-4a49-a914-ed3ab5283f89/Captura-de-tela-2025-04-01-143846.png"
+                    }
+                  ],
+                  "coInvestors": "Saasholic, FJ Labs, The Legal Tech Fund   ",
+                  "longDescription": "Open-source core banking solutions that enable clients to  offer better services and reduce operational costs."
+                },
+                "description": "Open-source core banking solutions that enable clients to  offer better services and reduce operational costs."
               },
               {
                 "name": "Gupy",
@@ -863,33 +929,6 @@
                 "description": "A new way to handle workplace misconduct."
               },
               {
-                "name": "Sooper",
-                "content": {
-                  "image": {
-                    "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/e1f7f168-e4bd-406b-a5f1-129be0999ad9",
-                    "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/66d7748c-3a16-4589-9c35-c05cd718cc64"
-                  },
-                  "sector": [
-                    {
-                      "label": "E-commerce"
-                    }
-                  ],
-                  "country": {
-                    "label": "Brazil"
-                  },
-                  "website": "https://www.sooper.com.br/",
-                  "founders": [
-                    {
-                      "name": "Rafaela Khouri",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/e358a583-8731-48c8-8a17-af859d1c632f"
-                    }
-                  ],
-                  "coInvestors": "Kaszek, Canary, Verve Capital, Globo Ventures",
-                  "longDescription": "B2B construction materials marketplace that connects retailers, suppliers, distributors and manufacturers."
-                },
-                "description": "B2B construction materials marketplace that connects  retailers, suppliers, distributors and manufacturers."
-              },
-              {
                 "name": "Start",
                 "content": {
                   "image": {
@@ -1090,37 +1129,6 @@
                   "longDescription": "Credit for distributors, agribusinesses and farmers. Through technology and alternative data sources, it transforms a risky and volatile process into a simple and safe experience."
                 },
                 "description": "Credit for distributors, agribusinesses and farmers. Through technology and alternative data sources, it transforms a risky and volatile process into a simple and safe experience."
-              },
-              {
-                "name": "Theia",
-                "content": {
-                  "image": {
-                    "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/d088e131-b9c7-4223-968b-22e9c36af83f",
-                    "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/8b98ffcb-4d84-44e3-b52b-2864fcb1be84"
-                  },
-                  "sector": [
-                    {
-                      "label": "HealthTech"
-                    }
-                  ],
-                  "country": {
-                    "label": "Brazil"
-                  },
-                  "website": "www.theia.com.br",
-                  "founders": [
-                    {
-                      "name": "Flavia Deutsch Gotfryd",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/fc0f1518-b43c-419d-82b2-736bb75d7d23"
-                    },
-                    {
-                      "name": "Paula Crespi",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/c85a8b90-d3d8-488b-adda-f7bf1608f23e"
-                    }
-                  ],
-                  "coInvestors": "GFC, Kinea, ONEVC",
-                  "longDescription": "The mother centric O2O health and care service."
-                },
-                "description": "The mother centric O2O health and care service."
               },
               {
                 "name": "Tivita",
@@ -1366,45 +1374,6 @@
                   "longDescription": "Reselling mobile app transforming anyone into a reseller  in Brazil without any investment."
                 },
                 "description": "Reselling mobile app transforming anyone into a reseller  in Brazil without any investment."
-              },
-              {
-                "name": "Z1",
-                "content": {
-                  "image": {
-                    "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/9be165c1-ea1f-4d8b-9eec-d62e1e2fe86c",
-                    "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/79ede485-ac11-4e3d-92d3-c42f56088ea0"
-                  },
-                  "sector": [
-                    {
-                      "label": "Fintech"
-                    }
-                  ],
-                  "country": {
-                    "label": "Brazil"
-                  },
-                  "website": "www.z1.app",
-                  "founders": [
-                    {
-                      "name": "João Pedro Thompson",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/b1cc646c-e03c-4ebf-8944-12dd0bc1e791"
-                    },
-                    {
-                      "name": "Mateus Craveiro",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/b12c6489-5594-445f-ac09-1e867e4d593c"
-                    },
-                    {
-                      "name": "Sophie Secaf",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/19f703a1-f6cf-43eb-8053-192c9939579d"
-                    },
-                    {
-                      "name": "Thiago Achatz",
-                      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/19527c20-8847-4804-942d-618baa7649f1"
-                    }
-                  ],
-                  "coInvestors": "Kaszek, Homebrew, Clocktower, Mantis Venture, Kevin Efrusy",
-                  "longDescription": "A digital banking app made for teenagers and young adults."
-                },
-                "description": "A digital banking app made for teenagers and young adults."
               },
               {
                 "name": "Zenpli",
