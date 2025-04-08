@@ -53,8 +53,15 @@ function Navbar({
         </a>
         <div className="ml-auto flex items-center gap-3 lg:gap-5 2xl:gap-8">
           <div className="dropdown dropdown-hover">
-            <div tabIndex={0} role="button" className="">
-              <Text variant="caption" className="text-[var(--color-lang-menu)]">
+            <div
+              tabIndex={0}
+              role="button"
+              className="opacity-0 pointer-events-none"
+            >
+              <Text
+                variant="caption"
+                className="text-[var(--color-lang-menu)] text-transparent"
+              >
                 {activeLang?.label ?? "EN"}
               </Text>
             </div>
