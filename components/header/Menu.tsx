@@ -85,7 +85,8 @@ function Menu({ items, langText }: Props) {
           />
         </a>
         <div className="ml-auto flex items-center gap-3 lg:gap-5 2xl:gap-8">
-          <Text variant="caption" className="text-secondary ">
+          <Text variant="caption" className="text-secondary invisible">
+            {/*O invisible deixa a opção invisível no  menu lateral*/}
             {activeLang?.label ?? "EN"}
           </Text>
           {

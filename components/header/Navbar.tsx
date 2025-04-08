@@ -56,11 +56,11 @@ function Navbar({
             <div
               tabIndex={0}
               role="button"
-              className="opacity-0 pointer-events-none"
+              className="opacity-0 pointer-events-none" //Arquivando a seção de troca de Inglês para Português
             >
               <Text
                 variant="caption"
-                className="text-[var(--color-lang-menu)] text-transparent"
+                className="text-[var(--color-lang-menu)]"
               >
                 {activeLang?.label ?? "EN"}
               </Text>
