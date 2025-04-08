@@ -1,1 +1,236 @@
-{"name":"Team","path":"/team","sections":{"variants":[{"rule":{"__resolveType":"website/matchers/always.ts"},"value":[{"font":{"fonts":[{"family":"Manrope","variations":[{"weight":"400"},{"weight":"600"},{"weight":"700"}]}],"__resolveType":"website/loaders/fonts/googleFonts.ts"},"fonts":[{"fontFamily":"Poppins"}],"mainColors":{"neutral":"#f9f9f9","primary":"#2d4be0","warning":"#e08e00","base-100":"#ffffff","tertiary":"#22398d","secondary":"#222933"},"buttonStyle":{"--border-btn":"1px","--rounded-btn":"0","--animation-btn":"0.25s","--btn-text-case":"normal-case","--btn-focus-scale":"0.95"},"otherStyles":{"--tab-border":"1px","--tab-radius":"0.5rem","--rounded-box":"1rem","--rounded-badge":"1.9rem","--animation-input":"0.2s"},"__resolveType":"site/sections/Theme/Theme.tsx","complementaryColors":{"base-200":"#f9fafc","base-content":"#fcc5cd","info-content":"#1b3bd8","primary-content":"#2d4be0","tertiary-content":"#0d131e","secondary-content":"#eaeaea"},"otherVariablesColors":[{"label":"--bg-main","value":"#eaeaea"},{"label":"--color-main","value":"#2d4be0"},{"label":"--bg-page","value":"#eaeaea"},{"label":"--color-lang-menu","value":"#222933"}]},{"supTitle":"Our team","titleWords":[{"title":"WE Are"},{"title":"People","inEmphasis":true},{"title":"Centric"}],"showIconDown":true,"__resolveType":"site/sections/Content/BigTitle.tsx"},{"cards":[{"name":"Lara Lemann","image":{"alt":"Lara Lemann","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/40756972-e6c6-48db-889c-cbc81ea24416"},"jobPosition":"General Partner","socialAction":{"alt":"Go to LinkedIn ","href":"https://www.linkedin.com/in/laralemann/","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/c2abeeff-0541-413b-928c-e6802cb4a7d6"}},{"name":"Monica Saggioro","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/c60367c0-81bf-4564-9e53-4c21779432d1"},"jobPosition":"General Partner","socialAction":{"alt":"Go To Linkedin ","href":"https://www.linkedin.com/in/msaggioro/","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/decfda57-010e-4ddf-9571-e4c86c93ac97"}}],"__resolveType":"site/sections/Content/PeopleCard.tsx"},{"cards":[{"name":"Gabriela Cardozo","image":{"alt":"Go To Linkedin ","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/68e351f5-a924-4fd1-bb40-fe8e3d62feaf"},"jobPosition":"Investments","socialAction":{"alt":"Go to Linkedin ","href":"https://www.linkedin.com/in/gabriela-cardozo-rocha/","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/c2abeeff-0541-413b-928c-e6802cb4a7d6"}},{"name":"Igor Passarin  ","image":{"alt":"Go To Linkedin ","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/378d678e-3827-4f25-b12a-baa8fc5fe71f"},"jobPosition":"Investments","socialAction":{"alt":"Go to Linkedin ","href":"https://www.linkedin.com/in/igor-voelzke-passarin-3a144a131/","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/c2abeeff-0541-413b-928c-e6802cb4a7d6"}},{"name":"Luana Marcondes  ","image":{"alt":"Go To Linkedin ","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/629af41b-350d-4ab2-8eae-7df963b74143"},"jobPosition":"Investments","socialAction":{"alt":"Go to Linkedin ","href":"https://www.linkedin.com/in/luanamarcondes/","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/c2abeeff-0541-413b-928c-e6802cb4a7d6"}},{"name":"Marina Guglielmi","image":{"alt":"Go To Linkedin ","src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/bc54243e-1e29-4819-8f2c-c55be5aaeb1c"},"jobPosition":"Operations Manager","socialAction":{"alt":"Go To Linkedin ","href":"https://www.linkedin.com/in/marina-guglielmi-a1844ba5/","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/c2abeeff-0541-413b-928c-e6802cb4a7d6"}},{"name":"Paloma Licht","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/fb32c519-d896-4bdf-8ff2-9e4650cd1754"},"jobPosition":"Investments","socialAction":{"alt":"Go to LInkedIn","href":"https://www.linkedin.com/in/paloma-licht/","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/170caf6e-a2bf-4c27-9496-6cb6d4f307b7"}},{"name":"Samuel Veloso","image":{"src":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/d4f6c05d-0507-427c-bb11-39eb3a719bc2"},"jobPosition":"Investments","socialAction":{"alt":"Go to LinkedIn","href":"https://www.linkedin.com/in/samuelvelosop/","icon":"https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/bec060f9-bf50-49e3-b096-22cdc9ffe07e"}}],"__resolveType":"site/sections/Content/PeopleCard.tsx"},{"__resolveType":"Global Footer"}]}],"__resolveType":"website/flags/multivariate.ts"},"__resolveType":"website/pages/Page.tsx"}
+{
+  "name": "Team",
+  "path": "/team",
+  "sections": {
+    "variants": [
+      {
+        "rule": {
+          "__resolveType": "website/matchers/always.ts"
+        },
+        "value": [
+          {
+            "font": {
+              "fonts": [
+                {
+                  "family": "Manrope",
+                  "variations": [
+                    {
+                      "weight": "400"
+                    },
+                    {
+                      "weight": "600"
+                    },
+                    {
+                      "weight": "700"
+                    }
+                  ]
+                }
+              ],
+              "__resolveType": "website/loaders/fonts/googleFonts.ts"
+            },
+            "fonts": [
+              {
+                "fontFamily": "Poppins"
+              }
+            ],
+            "mainColors": {
+              "neutral": "#f9f9f9",
+              "primary": "#2d4be0",
+              "warning": "#e08e00",
+              "base-100": "#ffffff",
+              "tertiary": "#22398d",
+              "secondary": "#222933"
+            },
+            "buttonStyle": {
+              "--border-btn": "1px",
+              "--rounded-btn": "0",
+              "--animation-btn": "0.25s",
+              "--btn-text-case": "normal-case",
+              "--btn-focus-scale": "0.95"
+            },
+            "otherStyles": {
+              "--tab-border": "1px",
+              "--tab-radius": "0.5rem",
+              "--rounded-box": "1rem",
+              "--rounded-badge": "1.9rem",
+              "--animation-input": "0.2s"
+            },
+            "__resolveType": "site/sections/Theme/Theme.tsx",
+            "complementaryColors": {
+              "base-200": "#f9fafc",
+              "base-content": "#fcc5cd",
+              "info-content": "#1b3bd8",
+              "primary-content": "#2d4be0",
+              "tertiary-content": "#0d131e",
+              "secondary-content": "#eaeaea"
+            },
+            "otherVariablesColors": [
+              {
+                "label": "--bg-main",
+                "value": "#eaeaea"
+              },
+              {
+                "label": "--color-main",
+                "value": "#2d4be0"
+              },
+              {
+                "label": "--bg-page",
+                "value": "#eaeaea"
+              },
+              {
+                "label": "--color-lang-menu",
+                "value": "#222933"
+              }
+            ]
+          },
+          {
+            "supTitle": "Our team",
+            "titleWords": [
+              {
+                "title": "WE Are"
+              },
+              {
+                "title": "People",
+                "inEmphasis": true
+              },
+              {
+                "title": "Centric"
+              }
+            ],
+            "showIconDown": true,
+            "__resolveType": "site/sections/Content/BigTitle.tsx"
+          },
+          {
+            "cards": [
+              {
+                "name": "Lara Lemann",
+                "image": {
+                  "alt": "Lara Lemann",
+                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/40756972-e6c6-48db-889c-cbc81ea24416"
+                },
+                "jobPosition": "General Partner",
+                "socialAction": {
+                  "alt": "Go to LinkedIn ",
+                  "href": "https://www.linkedin.com/in/laralemann/",
+                  "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/c2abeeff-0541-413b-928c-e6802cb4a7d6"
+                }
+              },
+              {
+                "name": "Monica Saggioro",
+                "image": {
+                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/c60367c0-81bf-4564-9e53-4c21779432d1"
+                },
+                "jobPosition": "General Partner",
+                "socialAction": {
+                  "alt": "Go To Linkedin ",
+                  "href": "https://www.linkedin.com/in/msaggioro/",
+                  "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/decfda57-010e-4ddf-9571-e4c86c93ac97"
+                }
+              }
+            ],
+            "__resolveType": "site/sections/Content/PeopleCard.tsx"
+          },
+          {
+            "cards": [
+              {
+                "name": "Gabriela Cardozo",
+                "image": {
+                  "alt": "Go To Linkedin ",
+                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/68e351f5-a924-4fd1-bb40-fe8e3d62feaf"
+                },
+                "jobPosition": "Investments",
+                "socialAction": {
+                  "alt": "Go to Linkedin ",
+                  "href": "https://www.linkedin.com/in/gabriela-cardozo-rocha/",
+                  "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/c2abeeff-0541-413b-928c-e6802cb4a7d6"
+                }
+              },
+              {
+                "name": "Igor Passarin  ",
+                "image": {
+                  "alt": "Go To Linkedin ",
+                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/378d678e-3827-4f25-b12a-baa8fc5fe71f"
+                },
+                "jobPosition": "Investments",
+                "socialAction": {
+                  "alt": "Go to Linkedin ",
+                  "href": "https://www.linkedin.com/in/igor-voelzke-passarin-3a144a131/",
+                  "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/c2abeeff-0541-413b-928c-e6802cb4a7d6"
+                }
+              },
+              {
+                "name": "Luana Marcondes  ",
+                "image": {
+                  "alt": "Go To Linkedin ",
+                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/629af41b-350d-4ab2-8eae-7df963b74143"
+                },
+                "jobPosition": "Investments",
+                "socialAction": {
+                  "alt": "Go to Linkedin ",
+                  "href": "https://www.linkedin.com/in/luanamarcondes/",
+                  "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/c2abeeff-0541-413b-928c-e6802cb4a7d6"
+                }
+              },
+              {
+                "name": "Luiza Saliba",
+                "image": {
+                  "alt": "Go To Linkedin ",
+                  "src": "https://assets.decocache.com/maya/2cc482da-e83e-47b8-bc02-49fe36fbdc3d/20250325_144529.jpg"
+                },
+                "jobPosition": "Community & Operations",
+                "socialAction": {
+                  "alt": "Go to Linkedin ",
+                  "href": "https://www.linkedin.com/in/saliba196/",
+                  "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/c2abeeff-0541-413b-928c-e6802cb4a7d6"
+                }
+              },
+              {
+                "name": "Marina Guglielmi",
+                "image": {
+                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/bc54243e-1e29-4819-8f2c-c55be5aaeb1c",
+                  "alt": "Go To Linkedin "
+                },
+                "jobPosition": "Operations Manager",
+                "socialAction": {
+                  "alt": "Go To Linkedin ",
+                  "href": "https://www.linkedin.com/in/marina-guglielmi-a1844ba5/",
+                  "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/c2abeeff-0541-413b-928c-e6802cb4a7d6"
+                }
+              },
+              {
+                "name": "Paloma Licht",
+                "image": {
+                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/fb32c519-d896-4bdf-8ff2-9e4650cd1754"
+                },
+                "jobPosition": "Investments",
+                "socialAction": {
+                  "alt": "Go to LInkedIn",
+                  "href": "https://www.linkedin.com/in/paloma-licht/",
+                  "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/170caf6e-a2bf-4c27-9496-6cb6d4f307b7"
+                }
+              },
+              {
+                "name": "Samuel Veloso",
+                "image": {
+                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/d4f6c05d-0507-427c-bb11-39eb3a719bc2"
+                },
+                "jobPosition": "Investments",
+                "socialAction": {
+                  "alt": "Go to LinkedIn",
+                  "href": "https://www.linkedin.com/in/samuelvelosop/",
+                  "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/bec060f9-bf50-49e3-b096-22cdc9ffe07e"
+                }
+              }
+            ],
+            "__resolveType": "site/sections/Content/PeopleCard.tsx"
+          },
+          {
+            "__resolveType": "Global Footer"
+          }
+        ]
+      }
+    ],
+    "__resolveType": "website/flags/multivariate.ts"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
