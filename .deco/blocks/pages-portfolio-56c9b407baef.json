@@ -526,8 +526,8 @@
                 "name": "Jota!",
                 "content": {
                   "image": {
-                    "mobile": "https://assets.decocache.com/maya/f56df837-3e17-4b6f-855b-623c2d131e61/jota_logo.jfif",
-                    "desktop": "https://assets.decocache.com/maya/f56df837-3e17-4b6f-855b-623c2d131e61/jota_logo.jfif"
+                    "mobile": "https://assets.decocache.com/maya/88dab034-2435-495e-b402-e72ab6d5039b/jota.png",
+                    "desktop": "https://assets.decocache.com/maya/88dab034-2435-495e-b402-e72ab6d5039b/jota.png"
                   },
                   "sector": [
                     {
@@ -549,19 +549,19 @@
                     },
                     {
                       "name": "Oleg Balev",
-                      "image": "https://assets.decocache.com/maya/79334e01-d173-43f7-8986-a85f3beada78/Captura-de-tela-2025-04-01-143201.png"
+                      "image": "https://assets.decocache.com/maya/f56df837-3e17-4b6f-855b-623c2d131e61/jota_logo.jfif"
                     },
                     {
                       "name": "Marcelo Leite",
-                      "image": "https://assets.decocache.com/maya/de78eb93-44cd-4b2c-8781-2d562e91e2c6/Captura-de-tela-2025-04-01-143258.png"
+                      "image": "https://assets.decocache.com/maya/f56df837-3e17-4b6f-855b-623c2d131e61/jota_logo.jfif"
                     },
                     {
                       "name": "Tiago Guilhon",
-                      "image": "https://assets.decocache.com/maya/1d6169f8-1f08-4bc4-b84c-140113068ca1/Captura-de-tela-2025-04-01-143340.png"
+                      "image": "https://assets.decocache.com/maya/f56df837-3e17-4b6f-855b-623c2d131e61/jota_logo.jfif"
                     },
                     {
                       "name": "Diego Bittencourt ",
-                      "image": "https://assets.decocache.com/maya/a3a53730-f0fe-4312-af03-fcc751596bd7/Captura-de-tela-2025-04-01-143538.png"
+                      "image": "https://assets.decocache.com/maya/f56df837-3e17-4b6f-855b-623c2d131e61/jota_logo.jfif"
                     }
                   ],
                   "coInvestors": "HOF Capital, BigBets, Alter Global, Bogari  Capital, Norte Ventures",
