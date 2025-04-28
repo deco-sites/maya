@@ -9,6 +9,13 @@
         },
         "value": [
           {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "Global Header"
+            }
+          },
+          {
+            "__resolveType": "site/sections/Theme/Theme.tsx",
             "font": {
               "fonts": [
                 {
@@ -55,7 +62,6 @@
               "--rounded-badge": "1.9rem",
               "--animation-input": "0.2s"
             },
-            "__resolveType": "site/sections/Theme/Theme.tsx",
             "complementaryColors": {
               "base-200": "#f9fafc",
               "base-content": "#fcc5cd",
@@ -84,6 +90,7 @@
             ]
           },
           {
+            "__resolveType": "site/sections/Content/BigTitle.tsx",
             "supTitle": "Our team",
             "titleWords": [
               {
@@ -97,8 +104,7 @@
                 "title": "Centric"
               }
             ],
-            "showIconDown": true,
-            "__resolveType": "site/sections/Content/BigTitle.tsx"
+            "showIconDown": true
           },
           {
             "cards": [
@@ -131,6 +137,7 @@
             "__resolveType": "site/sections/Content/PeopleCard.tsx"
           },
           {
+            "__resolveType": "site/sections/Content/PeopleCard.tsx",
             "cards": [
               {
                 "name": "Gabriela Cardozo",
@@ -221,8 +228,7 @@
                   "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/bec060f9-bf50-49e3-b096-22cdc9ffe07e"
                 }
               }
-            ],
-            "__resolveType": "site/sections/Content/PeopleCard.tsx"
+            ]
           },
           {
             "__resolveType": "Global Footer"
