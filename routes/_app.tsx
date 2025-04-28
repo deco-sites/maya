@@ -41,7 +41,7 @@ export default defineApp(async (_req, ctx) => {
 
         <link
           rel="icon"
-          href="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/maya/55e8ddb1-5814-494e-a04c-3aeabd76d1b1/MAYA_LOGO_CMYK_VERTICAL_DUO-1.jpg"
+          href="https://assets.decocache.com/maya/a7bfa47f-25c7-4a6b-aae4-2302ba06a856/FaviconMAYA.png"
         />
 
         {/* Local Second Font */}
