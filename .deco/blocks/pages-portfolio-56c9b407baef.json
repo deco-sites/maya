@@ -794,6 +794,41 @@
                 "description": "Platform that leverages the power of fintech, gamification, and community to empower teens to reach their full potential."
               },
               {
+                "name": "Nexa Finance",
+                "content": {
+                  "image": {
+                    "mobile": "https://assets.decocache.com/maya/20c521c9-a311-4b67-8f6d-fbe8b830c7da/Captura-de-tela-2025-07-02-141628.png",
+                    "desktop": "https://assets.decocache.com/maya/20c521c9-a311-4b67-8f6d-fbe8b830c7da/Captura-de-tela-2025-07-02-141628.png"
+                  },
+                  "sector": [
+                    {
+                      "label": "Fintech"
+                    }
+                  ],
+                  "country": {
+                    "label": "Brazil"
+                  },
+                  "website": "https://nexafinance.com.br/en-us",
+                  "founders": [
+                    {
+                      "name": "Eduardo Furuie",
+                      "image": "https://assets.decocache.com/maya/e3f45ded-a266-4be5-b69a-a76e79b19d38/1730832794944.jpg"
+                    },
+                    {
+                      "name": "Bernardo Luca",
+                      "image": "https://assets.decocache.com/maya/dec717a9-af81-4684-855d-d326c2f6474e/1640365649687.jpg"
+                    },
+                    {
+                      "name": "Lucas Danicek Borges",
+                      "image": "https://assets.decocache.com/maya/2464c071-bfa8-4f9d-8d6b-a5c4dd3a771c/1731438640267.jpg"
+                    }
+                  ],
+                  "coInvestors": "Canary, GFC, Grão VC, Softbank",
+                  "longDescription": "Nexa is making alternative investments, like private equity and real estate, more accessible to a wider audience. The company uses a blockchain platform to tokenize these assets, creating more efficient and customizable investment opportunities. It partners with wealth managers and financial advisors to distribute these personalized portfolios at scale."
+                },
+                "description": "Nexa is making alternative investments, like private equity and real estate, more accessible to a wider audience. The company uses a blockchain platform to tokenize these assets, creating more efficient and customizable investment opportunities. It partners with wealth managers and financial advisors to distribute these personalized portfolios at scale."
+              },
+              {
                 "name": "Nilo",
                 "content": {
                   "image": {
@@ -885,6 +920,37 @@
                   "longDescription": "A technology-enabled freight forwarder focused on Intra- Americas trade lanes."
                 },
                 "description": "A technology-enabled freight forwarder focused on Intra- Americas trade lanes."
+              },
+              {
+                "name": "Polaxys",
+                "content": {
+                  "image": {
+                    "mobile": "https://assets.decocache.com/maya/cbedf5eb-0daa-41f7-ac94-2226b366427f/polaxys.png",
+                    "desktop": "https://assets.decocache.com/maya/cbedf5eb-0daa-41f7-ac94-2226b366427f/polaxys.png"
+                  },
+                  "sector": [
+                    {
+                      "label": "Saas B2B"
+                    }
+                  ],
+                  "country": {
+                    "label": "Brazil"
+                  },
+                  "website": "https://www.polaxys.com/",
+                  "founders": [
+                    {
+                      "name": "Rafael Martins",
+                      "image": "https://assets.decocache.com/maya/3d0c24cb-8d68-4018-8bf0-36e7705b99e6/1694461663666.jpg"
+                    },
+                    {
+                      "name": "Bernardo Rufino",
+                      "image": "https://assets.decocache.com/maya/17ea2f1e-140d-4327-b6b3-11b8aefdae7d/1736191356213.jpg"
+                    }
+                  ],
+                  "coInvestors": "Propel",
+                  "longDescription": "Polaxys is tackling the challenge corporate analysts face with fragmented systems and time-consuming manual work. The company is building a unified, AI-native platform that lets users co-create analyses and gain proactive insights. This ultimately helps businesses make faster and more intelligent decisions."
+                },
+                "description": "Polaxys is tackling the challenge corporate analysts face with fragmented systems and time-consuming manual work. The company is building a unified, AI-native platform that lets users co-create analyses and gain proactive insights. This ultimately helps businesses make faster and more intelligent decisions."
               },
               {
                 "name": "SafeSpace",
@@ -1374,6 +1440,41 @@
                   "longDescription": "Reselling mobile app transforming anyone into a reseller  in Brazil without any investment."
                 },
                 "description": "Reselling mobile app transforming anyone into a reseller  in Brazil without any investment."
+              },
+              {
+                "name": "XFX",
+                "content": {
+                  "image": {
+                    "mobile": "https://assets.decocache.com/maya/dbf59423-3689-45f5-86e6-e067754d104f/1745430257520.jpg",
+                    "desktop": "https://assets.decocache.com/maya/dbf59423-3689-45f5-86e6-e067754d104f/1745430257520.jpg"
+                  },
+                  "sector": [
+                    {
+                      "label": "Fintech"
+                    }
+                  ],
+                  "country": {
+                    "label": "Mexico"
+                  },
+                  "website": "https://www.xfx.io/",
+                  "founders": [
+                    {
+                      "name": "Santiago Alvarado",
+                      "image": "https://assets.decocache.com/maya/8c0f94e8-d277-4d33-9899-020da6889eba/1591764409691.jpg"
+                    },
+                    {
+                      "name": "Alberto Sánchez Tello",
+                      "image": "https://assets.decocache.com/maya/cd777a23-02d5-4ba0-b10c-ca6ac8859748/alberto.jpg"
+                    },
+                    {
+                      "name": "Jason Losh",
+                      "image": "https://assets.decocache.com/maya/caebf60c-a3d3-48b1-9818-ec764c40b05d/jason-losh.jpg"
+                    }
+                  ],
+                  "coInvestors": "Haun Ventures, Castle Island Ventures",
+                  "longDescription": "XFX is revolutionizing international business payments, which are currently slow and expensive due to outdated systems. Its all-in-one platform combines currency exchange, payments, credit, and compliance to help businesses save time and money. The company is launching by connecting Latin America to the global economy, starting with payment corridors to Mexico."
+                },
+                "description": "XFX is revolutionizing international business payments, which are currently slow and expensive due to outdated systems. Its all-in-one platform combines currency exchange, payments, credit, and compliance to help businesses save time and money. The company is launching by connecting Latin America to the global economy, starting with payment corridors to Mexico."
               },
               {
                 "name": "Zenpli",
