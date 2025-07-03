@@ -140,19 +140,6 @@
             "__resolveType": "site/sections/Content/PeopleCard.tsx",
             "cards": [
               {
-                "name": "Gabriela Cardozo",
-                "image": {
-                  "alt": "Go To Linkedin ",
-                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/68e351f5-a924-4fd1-bb40-fe8e3d62feaf"
-                },
-                "jobPosition": "Investments",
-                "socialAction": {
-                  "alt": "Go to Linkedin ",
-                  "href": "https://www.linkedin.com/in/gabriela-cardozo-rocha/",
-                  "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/c2abeeff-0541-413b-928c-e6802cb4a7d6"
-                }
-              },
-              {
                 "name": "Igor Passarin  ",
                 "image": {
                   "alt": "Go To Linkedin ",
@@ -179,10 +166,22 @@
                 }
               },
               {
+                "name": "Letícia Lage Neves",
+                "image": {
+                  "src": "https://assets.decocache.com/maya/a012c5cd-29fa-4d91-b7a1-ba41368ce6db/WhatsApp-Image-2025-06-30-at-15.16.51.jpeg"
+                },
+                "jobPosition": "Investments",
+                "socialAction": {
+                  "alt": "Go to LInkedIn",
+                  "href": "https://www.linkedin.com/in/leticia-lage-neves/?originalSubdomain=br",
+                  "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/170caf6e-a2bf-4c27-9496-6cb6d4f307b7"
+                }
+              },
+              {
                 "name": "Luiza Saliba",
                 "image": {
-                  "alt": "Go To Linkedin ",
-                  "src": "https://assets.decocache.com/maya/dad7bada-4807-485d-b1c1-6fcbfa3e2238/20250325_144529-(1).jpg"
+                  "src": "https://assets.decocache.com/maya/dad7bada-4807-485d-b1c1-6fcbfa3e2238/20250325_144529-(1).jpg",
+                  "alt": "Go To Linkedin "
                 },
                 "jobPosition": "Community & Operations",
                 "socialAction": {
@@ -202,18 +201,6 @@
                   "alt": "Go To Linkedin ",
                   "href": "https://www.linkedin.com/in/marina-guglielmi-a1844ba5/",
                   "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/c2abeeff-0541-413b-928c-e6802cb4a7d6"
-                }
-              },
-              {
-                "name": "Paloma Licht",
-                "image": {
-                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/fb32c519-d896-4bdf-8ff2-9e4650cd1754"
-                },
-                "jobPosition": "Investments",
-                "socialAction": {
-                  "alt": "Go to LInkedIn",
-                  "href": "https://www.linkedin.com/in/paloma-licht/",
-                  "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/170caf6e-a2bf-4c27-9496-6cb6d4f307b7"
                 }
               },
               {
