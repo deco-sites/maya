@@ -151,7 +151,7 @@ const Content = ({ name, description, content }: ContentCollapse) => {
               </div>
               <div className="flex flex-col">
                 <span className={`font-bold ${styleTextContent}`}>
-                  Co-Invertors
+                  Co-Investors
                 </span>
                 <span className={` ${styleTextContent}`}>
                   {content.coInvestors}
