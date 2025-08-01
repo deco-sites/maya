@@ -140,6 +140,19 @@
             "__resolveType": "site/sections/Content/PeopleCard.tsx",
             "cards": [
               {
+                "name": "Gabriela Cardozo",
+                "image": {
+                  "alt": "Go To Linkedin ",
+                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/68e351f5-a924-4fd1-bb40-fe8e3d62feaf"
+                },
+                "jobPosition": "Investments",
+                "socialAction": {
+                  "alt": "Go to Linkedin ",
+                  "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/c2abeeff-0541-413b-928c-e6802cb4a7d6",
+                  "href": "https://www.linkedin.com/in/gabriela-cardozo-rocha/?originalSubdomain=br"
+                }
+              },
+              {
                 "name": "Igor Passarin  ",
                 "image": {
                   "alt": "Go To Linkedin ",
@@ -155,8 +168,8 @@
               {
                 "name": "Luana Marcondes  ",
                 "image": {
-                  "alt": "Go To Linkedin ",
-                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/629af41b-350d-4ab2-8eae-7df963b74143"
+                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/629af41b-350d-4ab2-8eae-7df963b74143",
+                  "alt": "Go To Linkedin "
                 },
                 "jobPosition": "Investments",
                 "socialAction": {
