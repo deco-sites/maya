@@ -140,19 +140,6 @@
             "__resolveType": "site/sections/Content/PeopleCard.tsx",
             "cards": [
               {
-                "name": "Gabriela Cardozo",
-                "image": {
-                  "alt": "Go To Linkedin ",
-                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/68e351f5-a924-4fd1-bb40-fe8e3d62feaf"
-                },
-                "jobPosition": "Investments",
-                "socialAction": {
-                  "alt": "Go to Linkedin ",
-                  "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/c2abeeff-0541-413b-928c-e6802cb4a7d6",
-                  "href": "https://www.linkedin.com/in/gabriela-cardozo-rocha/?originalSubdomain=br"
-                }
-              },
-              {
                 "name": "Igor Passarin  ",
                 "image": {
                   "alt": "Go To Linkedin ",
@@ -161,15 +148,15 @@
                 "jobPosition": "Investments",
                 "socialAction": {
                   "alt": "Go to Linkedin ",
-                  "href": "https://www.linkedin.com/in/igor-voelzke-passarin-3a144a131/",
-                  "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/c2abeeff-0541-413b-928c-e6802cb4a7d6"
+                  "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/c2abeeff-0541-413b-928c-e6802cb4a7d6",
+                  "href": "https://www.linkedin.com/in/igor-voelzke-passarin-3a144a131/"
                 }
               },
               {
                 "name": "Luana Marcondes  ",
                 "image": {
-                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/629af41b-350d-4ab2-8eae-7df963b74143",
-                  "alt": "Go To Linkedin "
+                  "alt": "Go To Linkedin ",
+                  "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/629af41b-350d-4ab2-8eae-7df963b74143"
                 },
                 "jobPosition": "Investments",
                 "socialAction": {
@@ -188,19 +175,6 @@
                   "alt": "Go to LInkedIn",
                   "href": "https://www.linkedin.com/in/leticia-lage-neves/?originalSubdomain=br",
                   "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/170caf6e-a2bf-4c27-9496-6cb6d4f307b7"
-                }
-              },
-              {
-                "name": "Luiza Saliba",
-                "image": {
-                  "src": "https://assets.decocache.com/maya/dad7bada-4807-485d-b1c1-6fcbfa3e2238/20250325_144529-(1).jpg",
-                  "alt": "Go To Linkedin "
-                },
-                "jobPosition": "Community & Operations",
-                "socialAction": {
-                  "alt": "Go to Linkedin ",
-                  "href": "https://www.linkedin.com/in/saliba196/",
-                  "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/c2abeeff-0541-413b-928c-e6802cb4a7d6"
                 }
               },
               {
@@ -226,6 +200,19 @@
                   "alt": "Go to LinkedIn",
                   "href": "https://www.linkedin.com/in/samuelvelosop/",
                   "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/bec060f9-bf50-49e3-b096-22cdc9ffe07e"
+                }
+              },
+              {
+                "name": "Sara Santos",
+                "image": {
+                  "src": "https://assets.decocache.com/maya/0d1f5262-b9ee-451c-b70d-6f2db4b0ac53/IMG_5847-(1).jpg",
+                  "alt": "Go To Linkedin "
+                },
+                "jobPosition": "Investments",
+                "socialAction": {
+                  "alt": "Go to Linkedin ",
+                  "href": "https://www.linkedin.com/in/sara-santos-47754b99/",
+                  "icon": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/c2abeeff-0541-413b-928c-e6802cb4a7d6"
                 }
               }
             ]
