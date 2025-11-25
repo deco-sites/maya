@@ -101,6 +101,22 @@
           {
             "posts": [
               {
+                "date": "2025-11-25",
+                "type": {
+                  "label": "INVESTMENTS",
+                  "value": "INVESTMENTS"
+                },
+                "image": {
+                  "src": "https://assets.decocache.com/maya/d48c0c70-5157-4d0c-ad10-10878c4f5c1a/sharpi_ai_logo.jpg",
+                  "srcMobile": "https://assets.decocache.com/maya/d48c0c70-5157-4d0c-ad10-10878c4f5c1a/sharpi_ai_logo.jpg"
+                },
+                "title": "Why We Invested in Sharpi",
+                "callToAction": {
+                  "href": "https://mayacapital.medium.com/why-we-invested-in-sharpi-ed5605ecc9f3",
+                  "text": "Read more"
+                }
+              },
+              {
                 "date": "2025-03-10",
                 "type": {
                   "label": "INVESTMENTS",
@@ -110,11 +126,11 @@
                   "src": "https://data.decoassets.com/maya/22cd0cc3-b0c2-4171-915e-9dac3e9f5c8b/WhatsApp-Image-2025-02-21-at-16.53.36.jpeg",
                   "srcMobile": "https://data.decoassets.com/maya/22cd0cc3-b0c2-4171-915e-9dac3e9f5c8b/WhatsApp-Image-2025-02-21-at-16.53.36.jpeg"
                 },
-                "title": "Why We Invested in Jusfy",
                 "callToAction": {
                   "href": "https://mayacapital.medium.com/why-we-invested-in-jusfy-48c1d4cfdbab",
                   "text": "Read more"
-                }
+                },
+                "title": "Why We Invested in Jusfy"
               },
               {
                 "date": "2025-02-12",
@@ -126,11 +142,11 @@
                   "src": "https://data.decoassets.com/maya/98adf092-7afa-468e-961f-a355c7bf5347/phone-computer-graphic-showing-mobile-phone-lifestyle.jpg",
                   "srcMobile": "https://data.decoassets.com/maya/98adf092-7afa-468e-961f-a355c7bf5347/phone-computer-graphic-showing-mobile-phone-lifestyle.jpg"
                 },
+                "title": "Why We Invested in Tempo",
                 "callToAction": {
                   "href": "https://mayacapital.medium.com/why-we-invested-in-tempo-c8ddb98f16bf",
                   "text": "Read more"
-                },
-                "title": "Why We Invested in Tempo"
+                }
               },
               {
                 "date": "2023-10-23",
