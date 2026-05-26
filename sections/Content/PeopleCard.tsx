@@ -1,4 +1,4 @@
-import Image from "apps/website/components/Image.tsx";
+import SmartImage from "site/components/ui/SmartImage.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
 
 /** @title {{name}} */

@@ -1,4 +1,4 @@
-import Image from "apps/website/components/Image.tsx";
+import SmartImage from "site/components/ui/SmartImage.tsx";
 
 export interface Props {
   oldImage: { src: string; alt: string };

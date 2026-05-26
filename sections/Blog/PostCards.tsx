@@ -1,5 +1,5 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+import SmartImage from "site/components/ui/SmartImage.tsx";
 import { type SectionProps } from "@deco/deco";
 import { usePartialSection } from "@deco/deco/hooks";
 export interface FilterBy {

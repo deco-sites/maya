@@ -1,6 +1,6 @@
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
+import SmartImage from "site/components/ui/SmartImage.tsx";
 
 /**
  * @titleBy alt
@@ -93,17 +93,17 @@ const DEFAULT_PROPS: Props = {
       alt: "a",
       href: "a",
       srcMobile:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/82727553-f670-4e7c-b9c2-9452aed1955f",
+        "https://decoims.com/maya/6782cdde-889b-4c4c-8604-79483232614a/82727553-f670-4e7c-b9c2-9452aed1955f.jpg",
       srcDesktop:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/7b3a9d75-57a5-43cf-a3c5-f689a997f24e",
+        "https://decoims.com/maya/34b61aab-2ddf-4851-b849-c38867dfecb3/7b3a9d75-57a5-43cf-a3c5-f689a997f24e.jpg",
     },
     {
       alt: "a",
       href: "a",
       srcMobile:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/c5c6bdf6-5555-488c-8b14-719e4158dea6",
+        "https://decoims.com/maya/9ba578a7-2547-44c1-bd4d-17cb27844747/c5c6bdf6-5555-488c-8b14-719e4158dea6.jpg",
       srcDesktop:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/3e2b7824-d75c-4704-8d32-621bfc9b20cf",
+        "https://decoims.com/maya/3b5709f4-7cc8-4eeb-9eb3-1783218c7081/3e2b7824-d75c-4704-8d32-621bfc9b20cf.jpg",
     },
   ],
   borderRadius: {

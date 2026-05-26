@@ -1,4 +1,4 @@
-import Image from "apps/website/components/Image.tsx";
+import SmartImage from "site/components/ui/SmartImage.tsx";
 import Header from "site/components/ui/SectionHeader.tsx";
 import { type SectionProps } from "@deco/deco";
 export interface layout {

@@ -2,7 +2,7 @@ import { Title } from "site/sections/Content/HeroMain.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Text from "site/components/ui/Text.tsx";
 import Icon from "site/components/ui/Icon.tsx";
-import Image from "apps/website/components/Image.tsx";
+import SmartImage from "site/components/ui/SmartImage.tsx";
 import { SelectOptions } from "site/components/ui/SelectOptions.tsx";
 import { type SectionProps } from "@deco/deco";
 interface FilteredBy {
@@ -295,9 +295,9 @@ const DEFAULT_PROPS = {
       content: {
         image: {
           desktop:
-            "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/cc66e76b-1f1c-434a-97cf-2d3a4f22c9f8",
+            "https://decoims.com/maya/1006ed7f-a6df-4f1b-975d-477706c65baa/cc66e76b-1f1c-434a-97cf-2d3a4f22c9f8.png",
           mobile:
-            "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/cc66e76b-1f1c-434a-97cf-2d3a4f22c9f8",
+            "https://decoims.com/maya/1006ed7f-a6df-4f1b-975d-477706c65baa/cc66e76b-1f1c-434a-97cf-2d3a4f22c9f8.png",
           alt: "Company Alice",
         },
         sector: [
@@ -322,22 +322,22 @@ const DEFAULT_PROPS = {
           {
             "name": "Andrea Florence",
             "image":
-              "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/f5cb0d0b-05ea-4eeb-89c9-9ea952ac380f",
+              "https://decoims.com/maya/a0d44610-4391-4534-8f32-06a1dd534fe0/f5cb0d0b-05ea-4eeb-89c9-9ea952ac380f.png",
           },
           {
             "name": "Guilherme Azevedo",
             "image":
-              "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/fd64c41f-6085-44d7-a78e-ae21996e1549",
+              "https://decoims.com/maya/ce99258f-5f7d-4051-9ee9-9c5d2486dd1c/fd64c41f-6085-44d7-a78e-ae21996e1549.png",
           },
           {
             "name": "Andrea Florence",
             "image":
-              "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/fd64c41f-6085-44d7-a78e-ae21996e1549",
+              "https://decoims.com/maya/ce99258f-5f7d-4051-9ee9-9c5d2486dd1c/fd64c41f-6085-44d7-a78e-ae21996e1549.png",
           },
           {
             "name": "Guilherme Azevedo",
             "image":
-              "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/fd64c41f-6085-44d7-a78e-ae21996e1549",
+              "https://decoims.com/maya/ce99258f-5f7d-4051-9ee9-9c5d2486dd1c/fd64c41f-6085-44d7-a78e-ae21996e1549.png",
           },
         ],
       },

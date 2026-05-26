@@ -40,7 +40,7 @@ export const ContactEmailTemplate = ({
       <Container style={container}>
         <Section style={box}>
           <Img
-            src={`https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/ce106e89-e920-43e4-bc2f-530da75d149e`}
+            src={`https://decoims.com/maya/b910e804-3bef-4e0b-9a2c-7ac5db6eb697/ce106e89-e920-43e4-bc2f-530da75d149e.png
             width="246"
             height="45"
             alt="Maya"
