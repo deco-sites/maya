@@ -1,6 +1,6 @@
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
-import SmartImage from "site/components/ui/SmartImage.tsx";
+import Image from "apps/website/components/Image.tsx";
 import { type SectionProps } from "@deco/deco";
 /**
  * @titleBy matcher

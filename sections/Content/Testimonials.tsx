@@ -1,5 +1,5 @@
 import Icon from "site/components/ui/Icon.tsx";
-import SmartImage from "site/components/ui/SmartImage.tsx";
+import Image from "apps/website/components/Image.tsx";
 import Header from "site/components/ui/SectionHeader.tsx";
 import Slider from "site/components/ui/Slider.tsx";
 import SliderJS from "site/islands/SliderJS.tsx";

@@ -2,7 +2,7 @@ import { Title } from "site/sections/Content/HeroMain.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Text from "site/components/ui/Text.tsx";
 import Icon from "site/components/ui/Icon.tsx";
-import SmartImage from "site/components/ui/SmartImage.tsx";
+import Image from "apps/website/components/Image.tsx";
 import { SelectOptions } from "site/components/ui/SelectOptions.tsx";
 import { type SectionProps } from "@deco/deco";
 interface FilteredBy {

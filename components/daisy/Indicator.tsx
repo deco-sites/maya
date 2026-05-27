@@ -1,4 +1,3 @@
-import SmartImage from "site/components/ui/SmartImage.tsx";
 
 export interface Props {
   text?: string;
@@ -21,7 +20,7 @@ export default function Indicator(props: Props) {
       >
         {!avatar && text}
         {avatar && (
-          <SmartImage alt={avatar.alt} src={avatar.src} width={80} height={80} />
+          <img alt={avatar.alt} src={avatar.src} width={80} height={80} />
         )}
       </div>
     </div>

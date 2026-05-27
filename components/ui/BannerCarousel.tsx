@@ -9,7 +9,7 @@ import SliderJS from "site/islands/SliderJS.tsx";
 import { useId } from "site/sdk/useId.ts";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
-import SmartImage from "site/components/ui/SmartImage.tsx";
+import Image from "apps/website/components/Image.tsx";
 
 /**
  * @titleBy alt

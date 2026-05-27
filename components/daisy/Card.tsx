@@ -1,4 +1,3 @@
-import SmartImage from "site/components/ui/SmartImage.tsx";
 
 export interface Props {
   image?: { src: string; alt: string };
@@ -51,7 +50,7 @@ function CardImage({ image }: { image?: { src: string; alt: string } }) {
     <>
       {image && (
         <figure>
-          <SmartImage src={image?.src} alt={image?.alt} width={385} height={226} />
+          <img src={image?.src} alt={image?.alt} width={385} height={226} />
         </figure>
       )}
     </>

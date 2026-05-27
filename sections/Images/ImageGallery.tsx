@@ -1,5 +1,5 @@
 import { Picture, Source } from "apps/website/components/Picture.tsx";
-import SmartImage from "site/components/ui/SmartImage.tsx";
+import Image from "apps/website/components/Image.tsx";
 import Header from "site/components/ui/SectionHeader.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 

@@ -1,5 +1,5 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
-import SmartImage from "site/components/ui/SmartImage.tsx";
+import Image from "apps/website/components/Image.tsx";
 import Icon, { AvailableIcons } from "site/components/ui/Icon.tsx";
 import type { ComponentChildren } from "preact";
 

@@ -2,7 +2,7 @@ import { Title } from "site/sections/Content/HeroMain.tsx";
 import type { FilterBy } from "./Programs.tsx";
 import type { Graphics } from "site/components/ui/Grafismo.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
-import SmartImage from "site/components/ui/SmartImage.tsx";
+import Image from "apps/website/components/Image.tsx";
 import { Grafismo } from "site/components/ui/Grafismo.tsx";
 
 /** @title Variant Default */

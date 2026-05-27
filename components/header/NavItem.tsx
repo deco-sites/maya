@@ -1,5 +1,5 @@
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
-import SmartImage from "site/components/ui/SmartImage.tsx";
+import Image from "apps/website/components/Image.tsx";
 import { headerHeight } from "./constants.ts";
 
 function NavItem({ item }: { item: SiteNavigationElement }) {

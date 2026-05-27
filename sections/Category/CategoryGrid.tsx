@@ -1,6 +1,6 @@
 import Header from "site/components/ui/SectionHeader.tsx";
 import { useId } from "site/sdk/useId.ts";
-import SmartImage from "site/components/ui/SmartImage.tsx";
+import Image from "apps/website/components/Image.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import Button from "site/components/ui/Button.tsx";
 
