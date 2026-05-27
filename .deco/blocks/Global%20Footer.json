@@ -1,7 +1,7 @@
 {
   "logo": {
     "alt": "Maya Capital Logo",
-    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/2abca53a-11f5-4177-961e-53f8156ad49a"
+    "src": "https://decoims.com/maya/7a02147d-c981-4c96-96cf-c653eedc670c/2abca53a-11f5-4177-961e-53f8156ad49a.png"
   },
   "items": [
     {
@@ -42,12 +42,12 @@
   "socialIcons": [
     {
       "href": "https://www.linkedin.com/company/mayacapital/",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/fa76030a-8352-4316-80ec-fdcb9b0ef012",
+      "image": "https://decoims.com/maya/a7f53a70-ee04-403f-bfc3-468f717efa6d/fa76030a-8352-4316-80ec-fdcb9b0ef012.png",
       "label": "Mays Capital Linkedin"
     },
     {
       "href": "https://mayacapital.medium.com/",
-      "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/657163b0-0232-47e8-9508-6b1d0044ad00",
+      "image": "https://decoims.com/maya/fab81ce6-fad4-4bb0-b88d-1b3a429294d9/657163b0-0232-47e8-9508-6b1d0044ad00.png",
       "label": "Maya Capital Medium"
     }
   ],

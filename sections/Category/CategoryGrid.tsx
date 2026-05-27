@@ -38,28 +38,28 @@ function CategoryGrid(props: Props) {
       {
         href: "/category",
         image:
-          "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/01c01ba9-ac16-4371-82ca-b93d17545f9c",
+          "https://decoims.com/maya/c905ff20-a48f-4b73-9e52-3e3cba085c81/01c01ba9-ac16-4371-82ca-b93d17545f9c.png",
         label: "category",
         buttonText: "Explore collection",
       },
       {
         href: "/category",
         image:
-          "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/9b80d57d-64b0-4eef-a3cd-fa8daafaae9c",
+          "https://decoims.com/maya/262c7161-6eb0-4307-ba8f-0aef68f08c22/9b80d57d-64b0-4eef-a3cd-fa8daafaae9c.png",
         label: "category",
         buttonText: "Explore collection",
       },
       {
         href: "/category",
         image:
-          "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/ed4c0eb3-96ab-484f-b293-e91d196a5063",
+          "https://decoims.com/maya/36376fd8-846e-44c6-9365-3923e68dd0a0/ed4c0eb3-96ab-484f-b293-e91d196a5063.png",
         label: "category",
         buttonText: "Explore collection",
       },
       {
         href: "/category",
         image:
-          "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/b9882ff7-3dbc-43e4-9813-5cec23c012cd",
+          "https://decoims.com/maya/13b1d5f4-43fd-4c29-977d-a429b1a380d9/b9882ff7-3dbc-43e4-9813-5cec23c012cd.png",
         label: "category",
         buttonText: "Explore collection",
       },

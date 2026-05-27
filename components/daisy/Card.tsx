@@ -1,4 +1,3 @@
-import Image from "apps/website/components/Image.tsx";
 
 export interface Props {
   image?: { src: string; alt: string };
@@ -51,7 +50,7 @@ function CardImage({ image }: { image?: { src: string; alt: string } }) {
     <>
       {image && (
         <figure>
-          <Image src={image?.src} alt={image?.alt} width={385} height={226} />
+          <img src={image?.src} alt={image?.alt} width={385} height={226} />
         </figure>
       )}
     </>

@@ -355,28 +355,28 @@
       "__resolveType": "site/sections/Content/HeroCentric.tsx",
       "imageBackground": [
         {
-          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/ac6b0622-323c-44b3-9b2b-0c1097579eed"
+          "src": "https://decoims.com/maya/3dfbd579-f419-4fd0-8ba2-e21cdde439c0/ac6b0622-323c-44b3-9b2b-0c1097579eed.png"
         },
         {
-          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/a635ee1c-930a-4392-bcdf-d62e74009aa7"
+          "src": "https://decoims.com/maya/1fb8d4da-2486-4bab-bec9-fe96db5a3559/a635ee1c-930a-4392-bcdf-d62e74009aa7.png"
         },
         {
-          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/a6710953-e0bc-47d4-97b6-e45b2fa7f8b1"
+          "src": "https://decoims.com/maya/cdf58e28-5413-4c72-807e-85a3820164e9/a6710953-e0bc-47d4-97b6-e45b2fa7f8b1.png"
         },
         {
-          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/a78bce59-23d6-43e3-8ec0-50cc4c05a427"
+          "src": "https://decoims.com/maya/25897af9-15cb-4834-a709-372404bfb12b/a78bce59-23d6-43e3-8ec0-50cc4c05a427.png"
         },
         {
-          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/0bf1fde3-db84-476d-854d-f00f0f77bde2"
+          "src": "https://decoims.com/maya/4e51076a-c713-4d84-a450-cb3bd01b0998/0bf1fde3-db84-476d-854d-f00f0f77bde2.png"
         }
       ]
     },
     {
       "image": {
         "alt": "Infinity symbol with markers for the threads at the ends",
-        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/1b523aa7-c637-498e-987a-3fc78246a051",
-        "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/1b523aa7-c637-498e-987a-3fc78246a051",
-        "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/1b523aa7-c637-498e-987a-3fc78246a051"
+        "src": "https://decoims.com/maya/d912a9b8-eac1-4d17-81ca-e599dfa9c7df/1b523aa7-c637-498e-987a-3fc78246a051.png",
+        "mobile": "https://decoims.com/maya/d912a9b8-eac1-4d17-81ca-e599dfa9c7df/1b523aa7-c637-498e-987a-3fc78246a051.png",
+        "desktop": "https://decoims.com/maya/d912a9b8-eac1-4d17-81ca-e599dfa9c7df/1b523aa7-c637-498e-987a-3fc78246a051.png"
       },
       "title": "Maya's Flywheel",
       "topics": [

@@ -6,18 +6,18 @@
       "__resolveType": "site/sections/Header/Header.tsx",
       "logo": {
         "alt": "Maya Capital",
-        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/ce106e89-e920-43e4-bc2f-530da75d149e",
+        "src": "https://decoims.com/maya/b910e804-3bef-4e0b-9a2c-7ac5db6eb697/ce106e89-e920-43e4-bc2f-530da75d149e.png",
         "width": 327,
         "height": 40,
         "default": {
           "alt": "Maya Capital",
-          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/a73914d0-15cc-47e8-8a78-d33823039e02",
+          "src": "https://decoims.com/maya/00db5ca5-e5c9-490c-b40a-1fb2225fd192/a73914d0-15cc-47e8-8a78-d33823039e02.png",
           "width": 280,
           "height": 40
         },
         "variant": {
           "alt": "Maya Capital",
-          "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/2abca53a-11f5-4177-961e-53f8156ad49a",
+          "src": "https://decoims.com/maya/7a02147d-c981-4c96-96cf-c653eedc670c/2abca53a-11f5-4177-961e-53f8156ad49a.png",
           "width": 280,
           "height": 40
         }
@@ -422,9 +422,9 @@
     {
       "image": {
         "alt": "Infinity symbol with markers for the threads at the ends",
-        "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/1b523aa7-c637-498e-987a-3fc78246a051",
-        "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/1b523aa7-c637-498e-987a-3fc78246a051",
-        "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/4277/1b523aa7-c637-498e-987a-3fc78246a051"
+        "src": "https://decoims.com/maya/d912a9b8-eac1-4d17-81ca-e599dfa9c7df/1b523aa7-c637-498e-987a-3fc78246a051.png",
+        "mobile": "https://decoims.com/maya/d912a9b8-eac1-4d17-81ca-e599dfa9c7df/1b523aa7-c637-498e-987a-3fc78246a051.png",
+        "desktop": "https://decoims.com/maya/d912a9b8-eac1-4d17-81ca-e599dfa9c7df/1b523aa7-c637-498e-987a-3fc78246a051.png"
       },
       "title": "Maya's Flywheel",
       "topics": [
