@@ -35,12 +35,13 @@
     "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.199.1/",
     "fast-json-patch": "npm:fast-json-patch@^3.1.1",
     "https://esm.sh/*preact-render-to-string@6.3.1": "npm:preact-render-to-string@6.4.2",
-    "partytown/": "https://denopkg.com/deco-cx/partytown@0.4.8/",
+    "partytown/": "https://cdn.jsdelivr.net/gh/deco-cx/partytown@0.4.8/",
     "preact": "npm:preact@10.23.1",
     "preact-render-to-string": "npm:preact-render-to-string@6.4.2",
     "simple-git": "npm:simple-git@^3.25.0",
     "site/": "./",
-    "std/": "https://deno.land/std@0.190.0/"
+    "std/": "https://deno.land/std@0.190.0/",
+    "https://denopkg.com/deco-cx/": "https://cdn.jsdelivr.net/gh/deco-cx/"
   },
   "tasks": {
     "start": "deno run -A --unstable-http --env https://deco.cx/run -- deno task dev",
